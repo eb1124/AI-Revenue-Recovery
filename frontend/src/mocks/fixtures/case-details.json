@@ -1,0 +1,2991 @@
+{
+  "evt_010006ZJZ55H9CDDNCAWAFKHJ7": {
+    "event": {
+      "id": "evt_010006ZJZ55H9CDDNCAWAFKHJ7",
+      "customer": {
+        "id": "cus_010005H93PASW2FT4Z5PP7D5MA",
+        "display_name": "Meera Raghavan",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Chennai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 340000,
+      "cause_code": "upi_timeout",
+      "cause_confidence": 0.86,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "HOLD",
+        "reason_code": "no_action_beats_hold",
+        "best_ev_paise": 0,
+        "margin_protected_paise": 34000
+      },
+      "outcome": {
+        "resolution_path": "self_recovered",
+        "net_profit_paise": 74800
+      },
+      "detected_at_sim": "2026-09-14T00:35:30Z",
+      "headline": "Returned on their own in 3h 12m. We spent nothing."
+    },
+    "customer_context": {
+      "tenure_days": 412,
+      "ltv_expected_paise": 2840000,
+      "gross_margin_bps": 2200,
+      "abandon_rate_90d": 0.31,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 28,
+      "farming_score": 0.19,
+      "farming_signals": {
+        "abandon_rate": 0.169,
+        "post_incentive_conversion": 0.153,
+        "incentive_dependency": 0.213,
+        "timing_regularity": 0.208,
+        "stage_consistency": 0.098
+      },
+      "recent_events": [
+        {
+          "id": "evt_010007A9AN75PA3A1J6FCPXSE4",
+          "kind": "abandoned_checkout",
+          "outcome": "self_recovered",
+          "at": "2026-08-27T00:35:30Z"
+        },
+        {
+          "id": "evt_010008VGTWE4KS6CHZFVTQ125G",
+          "kind": "abandoned_checkout",
+          "outcome": "self_recovered",
+          "at": "2026-08-04T00:35:30Z"
+        }
+      ]
+    },
+    "diagnosis": {
+      "cause_code": "upi_timeout",
+      "confidence": 0.86,
+      "narrative": "UPI collect request timed out at 14:32. This customer has timed out twice before and completed payment within four hours both times.",
+      "evidence": [
+        {
+          "signal": "gateway_upi_success_rate_1h",
+          "value": "71%",
+          "weight": 0.34
+        },
+        {
+          "signal": "prior_self_recoveries",
+          "value": "2",
+          "weight": 0.22
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.61,
+      "p_baseline_ci": [
+        0.54,
+        0.68
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "cause_code=upi_timeout",
+          "contribution": 0.28
+        },
+        {
+          "name": "prior_self_recoveries",
+          "contribution": 0.19
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.58,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.603,
+        "uplift": 0.023,
+        "gross_gain_paise": 1720,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 202,
+        "farming_cost_paise": 0,
+        "ev_paise": -136,
+        "ci_low_paise": -336,
+        "ci_high_paise": 64,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.705,
+        "uplift": 0.125,
+        "gross_gain_paise": 9350,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1270,
+        "farming_cost_paise": 0,
+        "ev_paise": -939,
+        "ci_low_paise": -1418,
+        "ci_high_paise": -460,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.585,
+        "uplift": 0.005,
+        "gross_gain_paise": 374,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 942,
+        "farming_cost_paise": 0,
+        "ev_paise": -768,
+        "ci_low_paise": -1187,
+        "ci_high_paise": -349,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.681,
+        "uplift": 0.101,
+        "gross_gain_paise": 7555,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 18122,
+        "annoyance_cost_paise": 306,
+        "farming_cost_paise": 0,
+        "ev_paise": -10908,
+        "ci_low_paise": -14876,
+        "ci_high_paise": -6940,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.619,
+        "uplift": 0.039,
+        "gross_gain_paise": 2917,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 23354,
+        "farming_cost_paise": 0,
+        "ev_paise": -28937,
+        "ci_low_paise": -39215,
+        "ci_high_paise": -18659,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "decided_by": "engine",
+      "latency_ms": 34,
+      "explanation": "Every intervention costs more than the margin it would add. This customer recovers on their own 61% of the time after a UPI timeout, and a 10% incentive would buy 13 points of uplift for ₹340 of margin on a ₹3,400 cart worth ₹748 in gross profit.",
+      "blocked_actions": []
+    },
+    "actions": [],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "recovered_paise": 340000,
+      "total_cost_paise": 0,
+      "net_profit_paise": 74800,
+      "counterfactual_recovered_paise": 340000,
+      "incremental_profit_paise": 0,
+      "resolved_at_sim": "2026-09-14T03:47:34Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "payment_initiated with no terminal state for 30 minutes.",
+        "sim_time": "2026-09-14T00:35:30Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "diagnose",
+        "summary": "Classified as upi_timeout, confidence 0.86.",
+        "sim_time": "2026-09-14T00:35:34Z",
+        "actor": "llm"
+      },
+      {
+        "stage": "score",
+        "summary": "p_baseline=0.61, CI [0.54, 0.68].",
+        "sim_time": "2026-09-14T00:35:39Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose HOLD — no action beats doing nothing.",
+        "sim_time": "2026-09-14T00:36:04Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Customer self-recovered 3h 12m after detection.",
+        "sim_time": "2026-09-14T03:47:34Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01000AY2VDG3T1B7PJ3YRNSHSG": {
+    "event": {
+      "id": "evt_01000AY2VDG3T1B7PJ3YRNSHSG",
+      "customer": {
+        "id": "cus_010009NBYMAV4B02MQYWEP4841",
+        "display_name": "Rahul Verma",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 118000,
+      "cause_code": "do_not_honour",
+      "cause_confidence": 0.872,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "NUDGE_FREE",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 3954,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 34775
+      },
+      "detected_at_sim": "2026-09-09T02:22:54Z",
+      "headline": "Recovered after a free reminder — the incentive offer was capped by the 24h contact policy."
+    },
+    "customer_context": {
+      "tenure_days": 1810,
+      "ltv_expected_paise": 23001684,
+      "gross_margin_bps": 2950,
+      "abandon_rate_90d": 0.325,
+      "messages_received_7d": 1,
+      "inferred_salary_day": null,
+      "farming_score": 0.24,
+      "farming_signals": {
+        "abandon_rate": 0.279,
+        "post_incentive_conversion": 0.242,
+        "incentive_dependency": 0.192,
+        "timing_regularity": 0.209,
+        "stage_consistency": 0.313
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "do_not_honour",
+      "confidence": 0.872,
+      "narrative": "Issuer declined with a generic do-not-honour code. No pattern of prior declines on this instrument.",
+      "evidence": [
+        {
+          "signal": "issuer_decline_rate_24h",
+          "value": "9%",
+          "weight": 0.18
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.11,
+      "p_baseline_ci": [
+        0.07,
+        0.16
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "cause_code=do_not_honour",
+          "contribution": 0.21
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.11,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.144,
+        "uplift": 0.034,
+        "gross_gain_paise": 1184,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 216,
+        "farming_cost_paise": 0,
+        "ev_paise": 3954,
+        "ci_low_paise": 3187,
+        "ci_high_paise": 5488,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.209,
+        "uplift": 0.099,
+        "gross_gain_paise": 3446,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 749,
+        "farming_cost_paise": 0,
+        "ev_paise": 2497,
+        "ci_low_paise": 1473,
+        "ci_high_paise": 3521,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.122,
+        "uplift": 0.012,
+        "gross_gain_paise": 418,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 534,
+        "farming_cost_paise": 0,
+        "ev_paise": -316,
+        "ci_low_paise": -577,
+        "ci_high_paise": -55,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.225,
+        "uplift": 0.115,
+        "gross_gain_paise": 4003,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 10278,
+        "annoyance_cost_paise": 269,
+        "farming_cost_paise": 0,
+        "ev_paise": -6579,
+        "ci_low_paise": -9032,
+        "ci_high_paise": -4126,
+        "allowed": false,
+        "block_reason": "Blocked by policy: Maximum 1 message per customer per 24h.",
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.164,
+        "uplift": 0.054,
+        "gross_gain_paise": 1880,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 17907,
+        "farming_cost_paise": 0,
+        "ev_paise": -24527,
+        "ci_low_paise": -33261,
+        "ci_high_paise": -15793,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 57,
+      "explanation": "NUDGE_INCENTIVE had the highest raw EV but was blocked — this customer already received a message in the last 24 hours. NUDGE_FREE is the best remaining allowed action and clears the minimum edge on its own.",
+      "blocked_actions": [
+        {
+          "action": "NUDGE_INCENTIVE",
+          "policy_id": "pol_max_1_message_24h",
+          "policy_name": "Maximum 1 message per customer per 24h"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "id": "act_01000B52318NNHZ0CA9TH6YY8G",
+        "decision_id": "dec_01000DAWDAHTKVP49YF8MRQP5V",
+        "risk_event_id": "evt_01000AY2VDG3T1B7PJ3YRNSHSG",
+        "type": "NUDGE_FREE",
+        "params": {
+          "channel": "whatsapp",
+          "language": "hinglish"
+        },
+        "scheduled_for_sim": "2026-09-09T02:37:54Z",
+        "executed_at_sim": "2026-09-09T02:37:54Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 35
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_01000CXNJS9FRHNHHYZR9MNVCW",
+        "action_id": "act_01000B52318NNHZ0CA9TH6YY8G",
+        "channel": "whatsapp",
+        "language": "hinglish",
+        "body": "Hi Rahul, aapka ₹1,180 ka order abhi bhi pending hai. Card details saved hain, ek tap mein complete karein: hold.app/r/8f2k",
+        "incentive_bps": 0,
+        "tone": "warm",
+        "policy_checks_passed": [
+          {
+            "rule": "no_urgency_pressure",
+            "passed": true
+          },
+          {
+            "rule": "no_third_party_mention",
+            "passed": true
+          },
+          {
+            "rule": "under_320_chars",
+            "passed": true
+          }
+        ],
+        "sent_at_sim": "2026-09-09T02:37:54Z",
+        "opened": true,
+        "clicked": true
+      }
+    ],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 118000,
+      "total_cost_paise": 35,
+      "net_profit_paise": 34775,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 34775,
+      "resolved_at_sim": "2026-09-09T03:07:54Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Issuer decline, do_not_honour.",
+        "sim_time": "2026-09-09T02:22:54Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "policy",
+        "summary": "NUDGE_INCENTIVE blocked: max 1 message / 24h already used.",
+        "sim_time": "2026-09-09T02:23:00Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose NUDGE_FREE — best allowed action.",
+        "sim_time": "2026-09-09T02:23:06Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Sent WhatsApp reminder in Hinglish.",
+        "sim_time": "2026-09-09T02:37:54Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Payment completed 30 minutes after the message.",
+        "sim_time": "2026-09-09T03:07:54Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01000F6SG42RDVSFY54HN6R74N": {
+    "event": {
+      "id": "evt_01000F6SG42RDVSFY54HN6R74N",
+      "customer": {
+        "id": "cus_010001KEVN5G8KVF7WQ96GNK0F",
+        "display_name": "Rohit Menon",
+        "segment": "regular",
+        "farming_tier": "flagged",
+        "city": "Kochi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 214000,
+      "cause_code": "upi_timeout",
+      "cause_confidence": 0.751,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "HOLD",
+        "reason_code": "no_action_beats_hold",
+        "best_ev_paise": 0,
+        "margin_protected_paise": 29960
+      },
+      "outcome": {
+        "resolution_path": "lost",
+        "net_profit_paise": 0
+      },
+      "detected_at_sim": "2026-08-26T04:34:18Z",
+      "headline": "Flagged farmer (score 0.71) — incentive withheld. Cut off at ₹0 cost."
+    },
+    "customer_context": {
+      "tenure_days": 27,
+      "ltv_expected_paise": 154472,
+      "gross_margin_bps": 2008,
+      "abandon_rate_90d": 0.58,
+      "messages_received_7d": 3,
+      "inferred_salary_day": 17,
+      "farming_score": 0.71,
+      "farming_signals": {
+        "abandon_rate": 0.62,
+        "post_incentive_conversion": 0.91,
+        "incentive_dependency": 0.74,
+        "timing_regularity": 0.68,
+        "stage_consistency": 0.55
+      },
+      "recent_events": [
+        {
+          "id": "evt_01000GH6XGQ1YJ91APR8VE5MG6",
+          "kind": "abandoned_checkout",
+          "outcome": "agent_recovered",
+          "at": "2026-08-20T04:34:18Z"
+        },
+        {
+          "id": "evt_01000HV24Z6FGKFN5ZTB6GREF8",
+          "kind": "abandoned_checkout",
+          "outcome": "agent_recovered",
+          "at": "2026-08-13T04:34:18Z"
+        },
+        {
+          "id": "evt_01000IF1VBD8G1N2WRNS1JHFGF",
+          "kind": "abandoned_checkout",
+          "outcome": "agent_recovered",
+          "at": "2026-08-06T04:34:18Z"
+        }
+      ]
+    },
+    "diagnosis": {
+      "cause_code": "upi_timeout",
+      "confidence": 0.751,
+      "narrative": "UPI timeout, but the pattern underneath is different from a typical timeout case: 9 of his last 11 abandonments converted within 30 minutes of receiving an incentive. That is a learned response, not friction.",
+      "evidence": [
+        {
+          "signal": "post_incentive_conversion_rate",
+          "value": "91%",
+          "weight": 0.3
+        },
+        {
+          "signal": "incentive_dependency",
+          "value": "74%",
+          "weight": 0.2
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.34,
+      "p_baseline_ci": [
+        0.26,
+        0.43
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "farming_score",
+          "contribution": 0.31
+        },
+        {
+          "name": "post_incentive_conversion_rate",
+          "contribution": 0.24
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.58,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.634,
+        "uplift": 0.054,
+        "gross_gain_paise": 2320,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 345,
+        "farming_cost_paise": 0,
+        "ev_paise": -3358,
+        "ci_low_paise": -4683,
+        "ci_high_paise": -2033,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.627,
+        "uplift": 0.047,
+        "gross_gain_paise": 2020,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 359,
+        "farming_cost_paise": 0,
+        "ev_paise": -1588,
+        "ci_low_paise": -2294,
+        "ci_high_paise": -882,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.594,
+        "uplift": 0.014,
+        "gross_gain_paise": 602,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 562,
+        "farming_cost_paise": 0,
+        "ev_paise": -160,
+        "ci_low_paise": -366,
+        "ci_high_paise": 46,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.818,
+        "uplift": 0.238,
+        "gross_gain_paise": 10227,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 19410,
+        "annoyance_cost_paise": 253,
+        "farming_cost_paise": 0,
+        "ev_paise": -9471,
+        "ci_low_paise": -12936,
+        "ci_high_paise": -6006,
+        "allowed": false,
+        "block_reason": "Blocked by policy: No incentives to flagged farmers.",
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.655,
+        "uplift": 0.075,
+        "gross_gain_paise": 3223,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 14124,
+        "farming_cost_paise": 0,
+        "ev_paise": -19401,
+        "ci_low_paise": -26341,
+        "ci_high_paise": -12461,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "decided_by": "engine",
+      "latency_ms": 38,
+      "explanation": "This customer’s farming score crossed 0.65 this run. NUDGE_INCENTIVE is removed from the action set entirely for flagged farmers, and every remaining action costs more than the margin it would add. We hold, and pay nothing.",
+      "blocked_actions": [
+        {
+          "action": "NUDGE_INCENTIVE",
+          "policy_id": "pol_no_incentive_flagged_farmer",
+          "policy_name": "No incentives to flagged farmers"
+        }
+      ]
+    },
+    "actions": [],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "lost",
+      "recovered_paise": 0,
+      "total_cost_paise": 0,
+      "net_profit_paise": 0,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 0,
+      "resolved_at_sim": "2026-09-09T04:34:18Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "payment_initiated with no terminal state for 30 minutes.",
+        "sim_time": "2026-08-26T04:34:18Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "policy",
+        "summary": "farming_tier=flagged (score 0.71) — NUDGE_INCENTIVE removed from candidate set.",
+        "sim_time": "2026-08-26T04:34:23Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose HOLD — every remaining action is negative EV.",
+        "sim_time": "2026-08-26T04:34:40Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "No further contact; event expired unresolved after 14 sim-days.",
+        "sim_time": "2026-09-09T04:34:18Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01000KQ147KBMZDSQ0NW8JWECT": {
+    "event": {
+      "id": "evt_01000KQ147KBMZDSQ0NW8JWECT",
+      "customer": {
+        "id": "cus_01000JWE1JFEER3PKYTF0X1GFN",
+        "display_name": "Anjali Krishnan",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 3180000,
+      "cause_code": "risk_declined",
+      "cause_confidence": 0.663,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "ESCALATE_HUMAN",
+        "reason_code": "high_value_ambiguous",
+        "best_ev_paise": 155288,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 846920
+      },
+      "detected_at_sim": "2026-09-16T08:43:59Z",
+      "headline": "Routed to a human — ₹31,800 renewal flagged as possible fraud, above the ₹25,000 threshold."
+    },
+    "customer_context": {
+      "tenure_days": 825,
+      "ltv_expected_paise": 4104700,
+      "gross_margin_bps": 2690,
+      "abandon_rate_90d": 0.102,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 23,
+      "farming_score": 0.11,
+      "farming_signals": {
+        "abandon_rate": 0.22,
+        "post_incentive_conversion": 0.286,
+        "incentive_dependency": 0.327,
+        "timing_regularity": 0.188,
+        "stage_consistency": 0.269
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "risk_declined",
+      "confidence": 0.663,
+      "narrative": "Renewal declined with a risk flag from the issuer, on a plan worth ₹31,800. The confidence interval on recovery is wide enough, and the value large enough, that this should not be resolved by formula alone.",
+      "evidence": [
+        {
+          "signal": "issuer_risk_flag",
+          "value": "present",
+          "weight": 0.4
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.31,
+      "p_baseline_ci": [
+        0.14,
+        0.49
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "cause_code=risk_declined",
+          "contribution": 0.33
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.08,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.136,
+        "uplift": 0.056,
+        "gross_gain_paise": 47904,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 95,
+        "farming_cost_paise": 0,
+        "ev_paise": 47774,
+        "ci_low_paise": 30903,
+        "ci_high_paise": 64645,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.259,
+        "uplift": 0.179,
+        "gross_gain_paise": 153120,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 429,
+        "farming_cost_paise": 0,
+        "ev_paise": 152491,
+        "ci_low_paise": 98969,
+        "ci_high_paise": 206013,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.131,
+        "uplift": 0.051,
+        "gross_gain_paise": 43626,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1066,
+        "farming_cost_paise": 0,
+        "ev_paise": 42360,
+        "ci_low_paise": 27384,
+        "ci_high_paise": 57336,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.206,
+        "uplift": 0.126,
+        "gross_gain_paise": 107783,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 346302,
+        "annoyance_cost_paise": 309,
+        "farming_cost_paise": 0,
+        "ev_paise": -238863,
+        "ci_low_paise": -322615,
+        "ci_high_paise": -155111,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.156,
+        "uplift": 0.076,
+        "gross_gain_paise": 65012,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 22364,
+        "farming_cost_paise": 0,
+        "ev_paise": 155288,
+        "ci_low_paise": 128037,
+        "ci_high_paise": 209789,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      }
+    ],
+    "decision": {
+      "chosen_action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "decided_by": "engine",
+      "latency_ms": 56,
+      "explanation": "Value at risk is ₹31,800, above the ₹25,000 threshold for automatic action, and the recovery confidence interval straddles a wide range. Policy 10 routes this to a human for review rather than acting automatically.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_01000LMAEGZ5K2MSDKTCJ5Z5NP",
+        "decision_id": "dec_01000MHMWR013X01G1QM0CTB6Q",
+        "risk_event_id": "evt_01000KQ147KBMZDSQ0NW8JWECT",
+        "type": "ESCALATE_HUMAN",
+        "params": {
+          "queue": "high_value_review"
+        },
+        "scheduled_for_sim": "2026-09-16T08:43:59Z",
+        "executed_at_sim": "2026-09-16T09:03:59Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 8500
+      }
+    ],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 3180000,
+      "total_cost_paise": 8500,
+      "net_profit_paise": 846920,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 846920,
+      "resolved_at_sim": "2026-09-16T11:43:59Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal declined, risk_declined, ₹31,800 at risk.",
+        "sim_time": "2026-09-16T08:43:59Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "policy",
+        "summary": "Value above ₹25,000 — human approval required.",
+        "sim_time": "2026-09-16T08:44:07Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Routed to ESCALATE_HUMAN.",
+        "sim_time": "2026-09-16T08:44:21Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Queued for human review.",
+        "sim_time": "2026-09-16T09:03:59Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Analyst confirmed the card and renewal completed.",
+        "sim_time": "2026-09-16T11:43:59Z",
+        "actor": "human"
+      }
+    ]
+  },
+  "evt_01000ONHWJVEMEJNMD50PCA04M": {
+    "event": {
+      "id": "evt_01000ONHWJVEMEJNMD50PCA04M",
+      "customer": {
+        "id": "cus_01000NPQ9XYDKANZWPAXGX74AZ",
+        "display_name": "Suresh Nair",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Thiruvananthapuram"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 890000,
+      "cause_code": "insufficient_funds",
+      "cause_confidence": 0.834,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "RETRY_SCHEDULED",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 24770,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "self_recovered",
+        "net_profit_paise": 239855
+      },
+      "detected_at_sim": "2026-09-15T13:03:34Z",
+      "headline": "Paid on their own 3 days later — the scheduled retry was cancelled before it fired."
+    },
+    "customer_context": {
+      "tenure_days": 410,
+      "ltv_expected_paise": 4041565,
+      "gross_margin_bps": 2695,
+      "abandon_rate_90d": 0.504,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 1,
+      "farming_score": 0.15,
+      "farming_signals": {
+        "abandon_rate": 0.542,
+        "post_incentive_conversion": 0.51,
+        "incentive_dependency": 0.546,
+        "timing_regularity": 0.455,
+        "stage_consistency": 0.441
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "insufficient_funds",
+      "confidence": 0.834,
+      "narrative": "Renewal declined for insufficient funds two days before this customer’s inferred salary date (the 1st of the month). Retrying now would likely fail again; scheduling for the salary window is the higher-odds move.",
+      "evidence": [
+        {
+          "signal": "inferred_salary_day",
+          "value": "1",
+          "weight": 0.31
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.22,
+      "p_baseline_ci": [
+        0.16,
+        0.29
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "days_to_inferred_salary_day",
+          "contribution": 0.27
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.22,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.232,
+        "uplift": 0.012,
+        "gross_gain_paise": 2878,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 262,
+        "farming_cost_paise": 0,
+        "ev_paise": 2581,
+        "ci_low_paise": 1528,
+        "ci_high_paise": 3634,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.327,
+        "uplift": 0.107,
+        "gross_gain_paise": 25664,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 694,
+        "farming_cost_paise": 0,
+        "ev_paise": 24770,
+        "ci_low_paise": 20360,
+        "ci_high_paise": 33590,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.23,
+        "uplift": 0.01,
+        "gross_gain_paise": 2399,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1276,
+        "farming_cost_paise": 0,
+        "ev_paise": 923,
+        "ci_low_paise": 450,
+        "ci_high_paise": 1396,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.344,
+        "uplift": 0.124,
+        "gross_gain_paise": 29742,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 76273,
+        "annoyance_cost_paise": 199,
+        "farming_cost_paise": 0,
+        "ev_paise": -46765,
+        "ci_low_paise": -63283,
+        "ci_high_paise": -30247,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.248,
+        "uplift": 0.028,
+        "gross_gain_paise": 6716,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 34745,
+        "farming_cost_paise": 0,
+        "ev_paise": -36529,
+        "ci_low_paise": -49464,
+        "ci_high_paise": -23594,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      }
+    ],
+    "decision": {
+      "chosen_action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 36,
+      "explanation": "Scheduling the retry for the customer’s inferred salary date clears the minimum edge with room to spare.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_01000P81EP4P68KABKET26BWVY",
+        "decision_id": "dec_01000Q5NKRYCC5WJ51V3HGKZGN",
+        "risk_event_id": "evt_01000ONHWJVEMEJNMD50PCA04M",
+        "type": "RETRY_SCHEDULED",
+        "params": {
+          "scheduled_for_sim": "2026-09-21T13:03:34Z",
+          "gateway": "razorpay"
+        },
+        "scheduled_for_sim": "2026-09-21T13:03:34Z",
+        "executed_at_sim": null,
+        "status": "cancelled",
+        "cancel_reason": "Customer paid manually before the scheduled retry executed.",
+        "cost_paise": 0
+      }
+    ],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "recovered_paise": 890000,
+      "total_cost_paise": 0,
+      "net_profit_paise": 239855,
+      "counterfactual_recovered_paise": 890000,
+      "incremental_profit_paise": 0,
+      "resolved_at_sim": "2026-09-18T18:03:34Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal declined, insufficient_funds.",
+        "sim_time": "2026-09-15T13:03:34Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Scheduled retry for inferred salary date (+6d).",
+        "sim_time": "2026-09-15T13:03:52Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Retry scheduled for salary window.",
+        "sim_time": "2026-09-15T13:04:04Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Customer paid manually 3 days in — scheduled retry cancelled.",
+        "sim_time": "2026-09-18T18:03:34Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01000SD0C1CFC0YR736PSZVW7P": {
+    "event": {
+      "id": "evt_01000SD0C1CFC0YR736PSZVW7P",
+      "customer": {
+        "id": "cus_01000RAMVW7JFGQJDZ7D1413AR",
+        "display_name": "Farhan Sheikh",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Lucknow"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 62000,
+      "cause_code": "card_limit_exceeded",
+      "cause_confidence": 0.755,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "NUDGE_FREE",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 190,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 12210
+      },
+      "detected_at_sim": "2026-08-30T17:51:17Z",
+      "headline": "This customer’s first order — an ops analyst sent a reminder anyway, and it worked."
+    },
+    "customer_context": {
+      "tenure_days": 35,
+      "ltv_expected_paise": 478714,
+      "gross_margin_bps": 1975,
+      "abandon_rate_90d": 0.172,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 21,
+      "farming_score": 0.08,
+      "farming_signals": {
+        "abandon_rate": 0.347,
+        "post_incentive_conversion": 0.322,
+        "incentive_dependency": 0.303,
+        "timing_regularity": 0.272,
+        "stage_consistency": 0.284
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "card_limit_exceeded",
+      "confidence": 0.755,
+      "narrative": "Card limit exceeded on a first-time customer’s very first order. No history to score against.",
+      "evidence": [
+        {
+          "signal": "customer_tenure_days",
+          "value": "3",
+          "weight": 0.25
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.19,
+      "p_baseline_ci": [
+        0.09,
+        0.31
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "tenure_days",
+          "contribution": 0.22
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.19,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.229,
+        "uplift": 0.039,
+        "gross_gain_paise": 478,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 116,
+        "farming_cost_paise": 0,
+        "ev_paise": -4084,
+        "ci_low_paise": -5663,
+        "ci_high_paise": -2505,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.347,
+        "uplift": 0.157,
+        "gross_gain_paise": 1922,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 663,
+        "farming_cost_paise": 0,
+        "ev_paise": 231,
+        "ci_low_paise": 0,
+        "ci_high_paise": 462,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.246,
+        "uplift": 0.056,
+        "gross_gain_paise": 686,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 490,
+        "farming_cost_paise": 0,
+        "ev_paise": -4,
+        "ci_low_paise": -204,
+        "ci_high_paise": 196,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.358,
+        "uplift": 0.168,
+        "gross_gain_paise": 2057,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 3379,
+        "annoyance_cost_paise": 326,
+        "farming_cost_paise": 0,
+        "ev_paise": -1683,
+        "ci_low_paise": -2422,
+        "ci_high_paise": -944,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.219,
+        "uplift": 0.029,
+        "gross_gain_paise": 355,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 45029,
+        "farming_cost_paise": 0,
+        "ev_paise": -53174,
+        "ci_low_paise": -71935,
+        "ci_high_paise": -34413,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "decided_by": "human_override",
+      "latency_ms": 0,
+      "explanation": "Engine recommended HOLD — the model edge was below the ₹5 minimum on a cold-start customer with no history. An ops analyst overrode it: first-order customers are worth a free nudge even at thin model confidence, since a bad first experience is costly beyond this one order.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_01000TGT60TXX740YNM2MPS0V7",
+        "decision_id": "dec_01000VHKNJ2WNKDS7D3Y67KKHD",
+        "risk_event_id": "evt_01000SD0C1CFC0YR736PSZVW7P",
+        "type": "NUDGE_FREE",
+        "params": {
+          "channel": "email",
+          "language": "en",
+          "override": true
+        },
+        "scheduled_for_sim": "2026-08-30T19:21:17Z",
+        "executed_at_sim": "2026-08-30T19:21:17Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 35
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_01000UB28WZH61S1XAYYR4B92M",
+        "action_id": "act_01000TGT60TXX740YNM2MPS0V7",
+        "channel": "email",
+        "language": "en",
+        "body": "Hi Farhan, your order for ₹620 is still waiting — your card details are saved, so you can finish in one tap: hold.app/r/8f2k",
+        "incentive_bps": 0,
+        "tone": "warm",
+        "policy_checks_passed": [
+          {
+            "rule": "no_urgency_pressure",
+            "passed": true
+          },
+          {
+            "rule": "no_third_party_mention",
+            "passed": true
+          },
+          {
+            "rule": "under_320_chars",
+            "passed": true
+          }
+        ],
+        "sent_at_sim": "2026-08-30T19:21:17Z",
+        "opened": true,
+        "clicked": false
+      }
+    ],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 62000,
+      "total_cost_paise": 35,
+      "net_profit_paise": 12210,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 12210,
+      "resolved_at_sim": "2026-08-30T20:01:17Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Card limit exceeded on first order.",
+        "sim_time": "2026-08-30T17:51:17Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Engine chose HOLD — edge too thin (cold start, no history).",
+        "sim_time": "2026-08-30T17:51:32Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "override",
+        "summary": "Human override: send NUDGE_FREE regardless — first-order customer.",
+        "sim_time": "2026-08-30T19:21:17Z",
+        "actor": "human"
+      },
+      {
+        "stage": "act",
+        "summary": "Sent email reminder.",
+        "sim_time": "2026-08-30T19:21:18Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Customer completed payment 40 minutes later.",
+        "sim_time": "2026-08-30T20:01:17Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_010011VQNFBKZ9DD9NB6MSHZVW": {
+    "event": {
+      "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+      "customer": {
+        "id": "cus_010010R4EMC6ZXDXW3FV8FSBQB",
+        "display_name": "Saranya Murugan",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Coimbatore"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 156000,
+      "cause_code": "do_not_honour",
+      "cause_confidence": 0.845,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "NUDGE_INCENTIVE",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 9012,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 20506
+      },
+      "detected_at_sim": "2026-09-01T15:44:58Z",
+      "headline": "Recovered after an 8% incentive — genuinely price-sensitive, not a repeat pattern."
+    },
+    "customer_context": {
+      "tenure_days": 384,
+      "ltv_expected_paise": 1120834,
+      "gross_margin_bps": 2118,
+      "abandon_rate_90d": 0.252,
+      "messages_received_7d": 0,
+      "inferred_salary_day": null,
+      "farming_score": 0.21,
+      "farming_signals": {
+        "abandon_rate": 0.07,
+        "post_incentive_conversion": 0.075,
+        "incentive_dependency": 0.121,
+        "timing_regularity": 0.131,
+        "stage_consistency": 0.042
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "do_not_honour",
+      "confidence": 0.845,
+      "narrative": "Issuer decline with no retry pattern. This customer has never received an incentive before and their abandon-to-convert timing is irregular — the opposite of a learned farming pattern.",
+      "evidence": [
+        {
+          "signal": "incentive_dependency",
+          "value": "5%",
+          "weight": 0.17
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.11,
+      "p_baseline_ci": [
+        0.06,
+        0.18
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "incentive_dependency",
+          "contribution": 0.15
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.11,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.125,
+        "uplift": 0.015,
+        "gross_gain_paise": 496,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 90,
+        "farming_cost_paise": 0,
+        "ev_paise": 371,
+        "ci_low_paise": 91,
+        "ci_high_paise": 651,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.246,
+        "uplift": 0.136,
+        "gross_gain_paise": 4494,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 491,
+        "farming_cost_paise": 0,
+        "ev_paise": 3803,
+        "ci_low_paise": 2322,
+        "ci_high_paise": 5284,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.103,
+        "uplift": -0.007,
+        "gross_gain_paise": -231,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1035,
+        "farming_cost_paise": 0,
+        "ev_paise": -1466,
+        "ci_low_paise": -2129,
+        "ci_high_paise": -803,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.305,
+        "uplift": 0.195,
+        "gross_gain_paise": 6443,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 13806,
+        "annoyance_cost_paise": 191,
+        "farming_cost_paise": 0,
+        "ev_paise": 9012,
+        "ci_low_paise": 7360,
+        "ci_high_paise": 12316,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.184,
+        "uplift": 0.074,
+        "gross_gain_paise": 2445,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 35425,
+        "farming_cost_paise": 0,
+        "ev_paise": -41480,
+        "ci_low_paise": -56148,
+        "ci_high_paise": -26812,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 28,
+      "explanation": "The smallest incentive that clears positive EV is 8%. Farming signals are low, so the incentive cost is genuinely incremental spend, not a discount being farmed.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_010012KGCV81K04Q575CZFPVS8",
+        "decision_id": "dec_0100142WPT73TCJVDBH19YYJH6",
+        "risk_event_id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+        "type": "NUDGE_INCENTIVE",
+        "params": {
+          "channel": "whatsapp",
+          "language": "ta",
+          "incentive_bps": 800
+        },
+        "scheduled_for_sim": "2026-09-01T16:04:58Z",
+        "executed_at_sim": "2026-09-01T16:04:58Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 12535
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_010013B81QRWF8KM8WSMMGXDYT",
+        "action_id": "act_010012KGCV81K04Q575CZFPVS8",
+        "channel": "whatsapp",
+        "language": "ta",
+        "body": "Hi Saranya, ungal ₹1,560 order innum complete aagala. Adutha 2 mani neram-la order pannina ₹125 discount kidaikum: hold.app/r/8f2k",
+        "incentive_bps": 801,
+        "tone": "warm",
+        "policy_checks_passed": [
+          {
+            "rule": "no_urgency_pressure",
+            "passed": true
+          },
+          {
+            "rule": "no_third_party_mention",
+            "passed": true
+          },
+          {
+            "rule": "under_320_chars",
+            "passed": true
+          }
+        ],
+        "sent_at_sim": "2026-09-01T16:04:58Z",
+        "opened": false,
+        "clicked": true
+      }
+    ],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 156000,
+      "total_cost_paise": 12535,
+      "net_profit_paise": 20506,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 20506,
+      "resolved_at_sim": "2026-09-01T17:04:58Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Issuer decline, do_not_honour.",
+        "sim_time": "2026-09-01T15:44:58Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "score",
+        "summary": "Low farming score (0.21) — incentive spend treated as genuine.",
+        "sim_time": "2026-09-01T15:45:08Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose NUDGE_INCENTIVE at 8% — smallest incentive clearing positive EV.",
+        "sim_time": "2026-09-01T15:45:22Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Sent Tamil WhatsApp message with incentive.",
+        "sim_time": "2026-09-01T16:04:58Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Payment completed within the hour.",
+        "sim_time": "2026-09-01T17:04:58Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01001649KQQYFVXPVB61GK8ZYQ": {
+    "event": {
+      "id": "evt_01001649KQQYFVXPVB61GK8ZYQ",
+      "customer": {
+        "id": "cus_010015MCR5JEJBFFFN6NSK4A5V",
+        "display_name": "Vikram Deshpande",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 449000,
+      "cause_code": "bank_downtime",
+      "cause_confidence": 0.832,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "RETRY_NOW",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 13438,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 98580
+      },
+      "detected_at_sim": "2026-09-12T05:35:58Z",
+      "headline": "Immediate retry succeeded — bank gateway outage had already cleared."
+    },
+    "customer_context": {
+      "tenure_days": 324,
+      "ltv_expected_paise": 533622,
+      "gross_margin_bps": 2200,
+      "abandon_rate_90d": 0.441,
+      "messages_received_7d": 0,
+      "inferred_salary_day": null,
+      "farming_score": 0.09,
+      "farming_signals": {
+        "abandon_rate": 0.814,
+        "post_incentive_conversion": 0.787,
+        "incentive_dependency": 0.79,
+        "timing_regularity": 0.94,
+        "stage_consistency": 0.962
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "bank_downtime",
+      "confidence": 0.832,
+      "narrative": "Gateway-side timeout consistent with a known issuer outage window. Historically resolves within minutes.",
+      "evidence": [
+        {
+          "signal": "gateway_success_rate_10m",
+          "value": "94%",
+          "weight": 0.29
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.71,
+      "p_baseline_ci": [
+        0.63,
+        0.79
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "cause_code=bank_downtime",
+          "contribution": 0.24
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.71,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.741,
+        "uplift": 0.031,
+        "gross_gain_paise": 3062,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 214,
+        "farming_cost_paise": 0,
+        "ev_paise": 2813,
+        "ci_low_paise": 1678,
+        "ci_high_paise": 3948,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.824,
+        "uplift": 0.114,
+        "gross_gain_paise": 11261,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 942,
+        "farming_cost_paise": 0,
+        "ev_paise": 10119,
+        "ci_low_paise": 6427,
+        "ci_high_paise": 13811,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.769,
+        "uplift": 0.059,
+        "gross_gain_paise": 5828,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 454,
+        "farming_cost_paise": 0,
+        "ev_paise": 13438,
+        "ci_low_paise": 11011,
+        "ci_high_paise": 18291,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.92,
+        "uplift": 0.21,
+        "gross_gain_paise": 20744,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 47235,
+        "annoyance_cost_paise": 151,
+        "farming_cost_paise": 0,
+        "ev_paise": -26677,
+        "ci_low_paise": -36164,
+        "ci_high_paise": -17190,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.747,
+        "uplift": 0.037,
+        "gross_gain_paise": 3655,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 21990,
+        "farming_cost_paise": 0,
+        "ev_paise": -26835,
+        "ci_low_paise": -36377,
+        "ci_high_paise": -17293,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 33,
+      "explanation": "Gateway success rate has already recovered to 94% in the last 10 minutes. An immediate retry clears positive EV cheaply.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_010017Z7S29GMZRQSZSVKWBH1B",
+        "decision_id": "dec_010018Q6N7R9046YZAAWQ7A5JW",
+        "risk_event_id": "evt_01001649KQQYFVXPVB61GK8ZYQ",
+        "type": "RETRY_NOW",
+        "params": {
+          "gateway": "payu"
+        },
+        "scheduled_for_sim": "2026-09-12T05:45:58Z",
+        "executed_at_sim": "2026-09-12T05:45:58Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 200
+      }
+    ],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 449000,
+      "total_cost_paise": 200,
+      "net_profit_paise": 98580,
+      "counterfactual_recovered_paise": 449000,
+      "incremental_profit_paise": -200,
+      "resolved_at_sim": "2026-09-12T05:46:28Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal failed, bank_downtime.",
+        "sim_time": "2026-09-12T05:35:58Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose RETRY_NOW — gateway already recovering.",
+        "sim_time": "2026-09-12T05:36:10Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Retried on payu.",
+        "sim_time": "2026-09-12T05:45:58Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Retry succeeded.",
+        "sim_time": "2026-09-12T05:46:28Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01001A7FCAGE2FQ4097DXWMDM7": {
+    "event": {
+      "id": "evt_01001A7FCAGE2FQ4097DXWMDM7",
+      "customer": {
+        "id": "cus_010019TAXYP56GWCT21KC4MV62",
+        "display_name": "Geeta Bora",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Guwahati"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 61900,
+      "cause_code": "insufficient_funds",
+      "cause_confidence": 0.764,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "RETRY_SCHEDULED",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 1959,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 14644
+      },
+      "detected_at_sim": "2026-09-02T13:24:53Z",
+      "headline": "Retry timed to the 7th (inferred salary day) succeeded on the first attempt."
+    },
+    "customer_context": {
+      "tenure_days": 521,
+      "ltv_expected_paise": 5489443,
+      "gross_margin_bps": 2398,
+      "abandon_rate_90d": 0.128,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 7,
+      "farming_score": 0.17,
+      "farming_signals": {
+        "abandon_rate": 0.084,
+        "post_incentive_conversion": 0.044,
+        "incentive_dependency": 0.19,
+        "timing_regularity": 0.016,
+        "stage_consistency": 0.113
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "insufficient_funds",
+      "confidence": 0.764,
+      "narrative": "Insufficient funds, five days before this customer’s inferred salary date of the 7th. Retrying now would likely repeat the decline.",
+      "evidence": [
+        {
+          "signal": "inferred_salary_day",
+          "value": "7",
+          "weight": 0.29
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.22,
+      "p_baseline_ci": [
+        0.15,
+        0.3
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "days_to_inferred_salary_day",
+          "contribution": 0.26
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.22,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.232,
+        "uplift": 0.012,
+        "gross_gain_paise": 178,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 232,
+        "farming_cost_paise": 0,
+        "ev_paise": -89,
+        "ci_low_paise": -289,
+        "ci_high_paise": 111,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.321,
+        "uplift": 0.101,
+        "gross_gain_paise": 1499,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 928,
+        "farming_cost_paise": 0,
+        "ev_paise": 1959,
+        "ci_low_paise": 1541,
+        "ci_high_paise": 2795,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.247,
+        "uplift": 0.027,
+        "gross_gain_paise": 401,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 536,
+        "farming_cost_paise": 0,
+        "ev_paise": -335,
+        "ci_low_paise": -602,
+        "ci_high_paise": -68,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.377,
+        "uplift": 0.157,
+        "gross_gain_paise": 2330,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 5918,
+        "annoyance_cost_paise": 100,
+        "farming_cost_paise": 0,
+        "ev_paise": -3723,
+        "ci_low_paise": -5176,
+        "ci_high_paise": -2270,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.285,
+        "uplift": 0.065,
+        "gross_gain_paise": 965,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 50161,
+        "farming_cost_paise": 0,
+        "ev_paise": -57696,
+        "ci_low_paise": -78040,
+        "ci_high_paise": -37352,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 26,
+      "explanation": "Scheduling for the inferred salary date turns a low-odds immediate retry into a high-odds one.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_01001BX6PTGKANJ8F7BE4FA7BA",
+        "decision_id": "dec_01001CR1DTNE2J45T7HDRJFTKC",
+        "risk_event_id": "evt_01001A7FCAGE2FQ4097DXWMDM7",
+        "type": "RETRY_SCHEDULED",
+        "params": {
+          "scheduled_for_sim": "2026-09-07T13:24:53Z",
+          "gateway": "cashfree"
+        },
+        "scheduled_for_sim": "2026-09-07T13:24:53Z",
+        "executed_at_sim": "2026-09-07T13:24:53Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 200
+      }
+    ],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 61900,
+      "total_cost_paise": 200,
+      "net_profit_paise": 14644,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 14644,
+      "resolved_at_sim": "2026-09-07T13:26:53Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal failed, insufficient_funds.",
+        "sim_time": "2026-09-02T13:24:53Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Scheduled retry for inferred salary day (+5d).",
+        "sim_time": "2026-09-02T13:25:09Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Retry executed on schedule.",
+        "sim_time": "2026-09-07T13:24:53Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Retry succeeded on first attempt.",
+        "sim_time": "2026-09-07T13:26:53Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01001ER2129FE3QYFFC2ZJ2521": {
+    "event": {
+      "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+      "customer": {
+        "id": "cus_01001DFH9KVADZWQ0GX731D8TV",
+        "display_name": "Priya Subramaniam",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Hyderabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 224000,
+      "cause_code": "expired_card",
+      "cause_confidence": 0.89,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "NUDGE_FREE",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 3305,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "agent_recovered",
+        "net_profit_paise": 58922
+      },
+      "detected_at_sim": "2026-09-10T17:29:51Z",
+      "headline": "Card expired — retries blocked by policy. Sent an update-card link instead."
+    },
+    "customer_context": {
+      "tenure_days": 2395,
+      "ltv_expected_paise": 12300608,
+      "gross_margin_bps": 2632,
+      "abandon_rate_90d": 0.258,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 23,
+      "farming_score": 0.13,
+      "farming_signals": {
+        "abandon_rate": 0.226,
+        "post_incentive_conversion": 0.213,
+        "incentive_dependency": 0.201,
+        "timing_regularity": 0.375,
+        "stage_consistency": 0.328
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "expired_card",
+      "confidence": 0.89,
+      "narrative": "Card on file expired last month. No retry will succeed against an expired instrument — this needs a new card, not a retry.",
+      "evidence": [
+        {
+          "signal": "card_expiry_date",
+          "value": "past",
+          "weight": 0.4
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.04,
+      "p_baseline_ci": [
+        0.01,
+        0.09
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "cause_code=expired_card",
+          "contribution": 0.36
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.04,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.099,
+        "uplift": 0.059,
+        "gross_gain_paise": 3478,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 138,
+        "farming_cost_paise": 0,
+        "ev_paise": 3305,
+        "ci_low_paise": 2651,
+        "ci_high_paise": 4612,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.085,
+        "uplift": 0.045,
+        "gross_gain_paise": 2653,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 787,
+        "farming_cost_paise": 0,
+        "ev_paise": 1666,
+        "ci_low_paise": 933,
+        "ci_high_paise": 2399,
+        "allowed": false,
+        "block_reason": "Blocked by policy: No retries on expired_card / mandate_revoked.",
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.084,
+        "uplift": 0.044,
+        "gross_gain_paise": 2594,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 919,
+        "farming_cost_paise": 0,
+        "ev_paise": 1475,
+        "ci_low_paise": 809,
+        "ci_high_paise": 2141,
+        "allowed": false,
+        "block_reason": "Blocked by policy: No retries on expired_card / mandate_revoked.",
+        "rank": 3
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.268,
+        "uplift": 0.228,
+        "gross_gain_paise": 13442,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 21146,
+        "annoyance_cost_paise": 226,
+        "farming_cost_paise": 0,
+        "ev_paise": -7965,
+        "ci_low_paise": -10903,
+        "ci_high_paise": -5027,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.066,
+        "uplift": 0.026,
+        "gross_gain_paise": 1533,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 14820,
+        "farming_cost_paise": 0,
+        "ev_paise": -21787,
+        "ci_low_paise": -29562,
+        "ci_high_paise": -14012,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 24,
+      "explanation": "Retrying an expired card can never succeed, so both retry actions are policy-blocked. A free update-card nudge is the only path to recovery and it clears positive EV easily.",
+      "blocked_actions": [
+        {
+          "action": "RETRY_NOW",
+          "policy_id": "pol_no_retry_dead_mandate",
+          "policy_name": "No retries on expired_card / mandate_revoked"
+        },
+        {
+          "action": "RETRY_SCHEDULED",
+          "policy_id": "pol_no_retry_dead_mandate",
+          "policy_name": "No retries on expired_card / mandate_revoked"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "id": "act_01001F6QPC6CR35EYC23YJZEDD",
+        "decision_id": "dec_01001HBGZRE143SG0RQQFMQW5S",
+        "risk_event_id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+        "type": "NUDGE_FREE",
+        "params": {
+          "channel": "email",
+          "language": "en",
+          "link_type": "update_card"
+        },
+        "scheduled_for_sim": "2026-09-10T17:41:31Z",
+        "executed_at_sim": "2026-09-10T17:41:31Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 35
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_01001GSN5XYKD8P65NXCY5WBCC",
+        "action_id": "act_01001F6QPC6CR35EYC23YJZEDD",
+        "channel": "email",
+        "language": "en",
+        "body": "Hi Priya, the card on file for your ₹2,240 order has expired. Update it here and we'll retry automatically: hold.app/r/8f2k",
+        "incentive_bps": 0,
+        "tone": "neutral",
+        "policy_checks_passed": [
+          {
+            "rule": "no_urgency_pressure",
+            "passed": true
+          },
+          {
+            "rule": "no_third_party_mention",
+            "passed": true
+          },
+          {
+            "rule": "under_320_chars",
+            "passed": true
+          }
+        ],
+        "sent_at_sim": "2026-09-10T17:41:31Z",
+        "opened": true,
+        "clicked": false
+      }
+    ],
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "recovered_paise": 224000,
+      "total_cost_paise": 35,
+      "net_profit_paise": 58922,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": 58922,
+      "resolved_at_sim": "2026-09-10T19:11:31Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal failed, expired_card.",
+        "sim_time": "2026-09-10T17:29:51Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "policy",
+        "summary": "RETRY_NOW and RETRY_SCHEDULED blocked — expired instrument.",
+        "sim_time": "2026-09-10T17:29:56Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose NUDGE_FREE with an update-card link.",
+        "sim_time": "2026-09-10T17:30:05Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Sent update-card email.",
+        "sim_time": "2026-09-10T17:41:31Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Customer updated card and renewal completed.",
+        "sim_time": "2026-09-10T19:11:31Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01001JVH71SYR59A68Z3B4667Y": {
+    "event": {
+      "id": "evt_01001JVH71SYR59A68Z3B4667Y",
+      "customer": {
+        "id": "cus_01001I85QH35H4ZYH9EE8893Z4",
+        "display_name": "Ritwik Chatterjee",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Kolkata"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 512000,
+      "cause_code": "issuer_declined",
+      "cause_confidence": 0.494,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "HOLD",
+        "reason_code": "uncertain_uplift",
+        "best_ev_paise": 0,
+        "margin_protected_paise": 25600
+      },
+      "outcome": {
+        "resolution_path": "self_recovered",
+        "net_profit_paise": 126362
+      },
+      "detected_at_sim": "2026-09-02T14:21:47Z",
+      "headline": "Held — the model’s confidence interval on retrying straddled zero. Recovered anyway."
+    },
+    "customer_context": {
+      "tenure_days": 483,
+      "ltv_expected_paise": 5429232,
+      "gross_margin_bps": 2468,
+      "abandon_rate_90d": 0.193,
+      "messages_received_7d": 0,
+      "inferred_salary_day": 27,
+      "farming_score": 0.05,
+      "farming_signals": {
+        "abandon_rate": 0.026,
+        "post_incentive_conversion": 0.157,
+        "incentive_dependency": 0.172,
+        "timing_regularity": 0.097,
+        "stage_consistency": 0.19
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "issuer_declined",
+      "confidence": 0.494,
+      "narrative": "Opaque issuer decline on a customer with only 11 days of history. The model has too little signal to be confident either way about whether a retry would help.",
+      "evidence": [
+        {
+          "signal": "customer_tenure_days",
+          "value": "11",
+          "weight": 0.2
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.15,
+      "p_baseline_ci": [
+        0.05,
+        0.29
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "tenure_days",
+          "contribution": 0.18
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.15,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.201,
+        "uplift": 0.051,
+        "gross_gain_paise": 6444,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 228,
+        "farming_cost_paise": 0,
+        "ev_paise": 7492,
+        "ci_low_paise": -1663,
+        "ci_high_paise": 10264,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.187,
+        "uplift": 0.037,
+        "gross_gain_paise": 4675,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 590,
+        "farming_cost_paise": 0,
+        "ev_paise": -209,
+        "ci_low_paise": -432,
+        "ci_high_paise": 14,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.205,
+        "uplift": 0.055,
+        "gross_gain_paise": 6950,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1154,
+        "farming_cost_paise": 0,
+        "ev_paise": -1453,
+        "ci_low_paise": -2112,
+        "ci_high_paise": -794,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.306,
+        "uplift": 0.156,
+        "gross_gain_paise": 19712,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 35123,
+        "annoyance_cost_paise": 215,
+        "farming_cost_paise": 0,
+        "ev_paise": -15661,
+        "ci_low_paise": -21292,
+        "ci_high_paise": -10030,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.235,
+        "uplift": 0.085,
+        "gross_gain_paise": 10741,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 20007,
+        "farming_cost_paise": 0,
+        "ev_paise": -17766,
+        "ci_low_paise": -24134,
+        "ci_high_paise": -11398,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "decided_by": "engine",
+      "latency_ms": 29,
+      "explanation": "The best candidate has a positive point-estimate EV, but its confidence interval crosses zero — we are not sure it actually helps. Value at risk is below the ambiguity-escalation threshold, so we hold rather than escalate.",
+      "blocked_actions": []
+    },
+    "actions": [],
+    "messages": [],
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "recovered_paise": 512000,
+      "total_cost_paise": 0,
+      "net_profit_paise": 126362,
+      "counterfactual_recovered_paise": 512000,
+      "incremental_profit_paise": 0,
+      "resolved_at_sim": "2026-09-04T14:21:47Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Renewal failed, issuer_declined.",
+        "sim_time": "2026-09-02T14:21:47Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "score",
+        "summary": "p_baseline CI [0.05, 0.29] — wide, low-history customer.",
+        "sim_time": "2026-09-02T14:21:55Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose HOLD — best candidate CI straddles zero.",
+        "sim_time": "2026-09-02T14:22:08Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "Customer self-recovered 2 days later.",
+        "sim_time": "2026-09-04T14:21:47Z",
+        "actor": "simulator"
+      }
+    ]
+  },
+  "evt_01001L4NCA5XW1WB9RXGX5TZQ7": {
+    "event": {
+      "id": "evt_01001L4NCA5XW1WB9RXGX5TZQ7",
+      "customer": {
+        "id": "cus_01001K222ZPBQ5A3TA9PEB4KKP",
+        "display_name": "Neha Bansal",
+        "segment": "casual",
+        "farming_tier": "watch",
+        "city": "Jaipur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 187000,
+      "cause_code": "do_not_honour",
+      "cause_confidence": 0.691,
+      "status": "resolved",
+      "arm": "agent",
+      "decision": {
+        "action": "NUDGE_INCENTIVE",
+        "reason_code": "positive_ev",
+        "best_ev_paise": 5051,
+        "margin_protected_paise": 0
+      },
+      "outcome": {
+        "resolution_path": "lost",
+        "net_profit_paise": -9435
+      },
+      "detected_at_sim": "2026-09-11T17:42:33Z",
+      "headline": "Positive-EV incentive sent, capped for watch-tier — customer still did not return. Marked lost."
+    },
+    "customer_context": {
+      "tenure_days": 1413,
+      "ltv_expected_paise": 16291910,
+      "gross_margin_bps": 2464,
+      "abandon_rate_90d": 0.44,
+      "messages_received_7d": 2,
+      "inferred_salary_day": 17,
+      "farming_score": 0.48,
+      "farming_signals": {
+        "abandon_rate": 0.44,
+        "post_incentive_conversion": 0.58,
+        "incentive_dependency": 0.4,
+        "timing_regularity": 0.5,
+        "stage_consistency": 0.42
+      },
+      "recent_events": []
+    },
+    "diagnosis": {
+      "cause_code": "do_not_honour",
+      "confidence": 0.691,
+      "narrative": "Watch-tier farming score (0.48). Incentive capped at half-strength rather than withdrawn — the signal isn’t strong enough yet to remove it entirely.",
+      "evidence": [
+        {
+          "signal": "farming_score",
+          "value": "0.48",
+          "weight": 0.22
+        }
+      ]
+    },
+    "scoring": {
+      "p_baseline": 0.11,
+      "p_baseline_ci": [
+        0.05,
+        0.19
+      ],
+      "model_version": "p_baseline@2026-08-23T09:11Z",
+      "top_features": [
+        {
+          "name": "farming_score",
+          "contribution": 0.2
+        }
+      ]
+    },
+    "candidates": [
+      {
+        "action": "HOLD",
+        "p_recover": 0.11,
+        "uplift": 0,
+        "gross_gain_paise": 0,
+        "direct_cost_paise": 0,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 0,
+        "farming_cost_paise": 0,
+        "ev_paise": 0,
+        "ci_low_paise": -200,
+        "ci_high_paise": 200,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 4
+      },
+      {
+        "action": "NUDGE_FREE",
+        "p_recover": 0.15,
+        "uplift": 0.04,
+        "gross_gain_paise": 1843,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 326,
+        "farming_cost_paise": 0,
+        "ev_paise": 1482,
+        "ci_low_paise": 813,
+        "ci_high_paise": 2151,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 3
+      },
+      {
+        "action": "RETRY_SCHEDULED",
+        "p_recover": 0.168,
+        "uplift": 0.058,
+        "gross_gain_paise": 2672,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 452,
+        "farming_cost_paise": 0,
+        "ev_paise": 2020,
+        "ci_low_paise": 1163,
+        "ci_high_paise": 2877,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 2
+      },
+      {
+        "action": "RETRY_NOW",
+        "p_recover": 0.108,
+        "uplift": -0.002,
+        "gross_gain_paise": -92,
+        "direct_cost_paise": 200,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 1361,
+        "farming_cost_paise": 0,
+        "ev_paise": -1653,
+        "ci_low_paise": -2382,
+        "ci_high_paise": -924,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 5
+      },
+      {
+        "action": "NUDGE_INCENTIVE",
+        "p_recover": 0.267,
+        "uplift": 0.157,
+        "gross_gain_paise": 7234,
+        "direct_cost_paise": 35,
+        "incentive_cost_paise": 9387,
+        "annoyance_cost_paise": 366,
+        "farming_cost_paise": 0,
+        "ev_paise": 5051,
+        "ci_low_paise": 4092,
+        "ci_high_paise": 6969,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 1
+      },
+      {
+        "action": "ESCALATE_HUMAN",
+        "p_recover": 0.14,
+        "uplift": 0.03,
+        "gross_gain_paise": 1382,
+        "direct_cost_paise": 8500,
+        "incentive_cost_paise": 0,
+        "annoyance_cost_paise": 15769,
+        "farming_cost_paise": 0,
+        "ev_paise": -22887,
+        "ci_low_paise": -31047,
+        "ci_high_paise": -14727,
+        "allowed": true,
+        "block_reason": null,
+        "rank": 6
+      }
+    ],
+    "decision": {
+      "chosen_action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "decided_by": "engine",
+      "latency_ms": 44,
+      "explanation": "Capped at 5% (half the standard rate for watch-tier customers), the incentive still cleared positive EV on the model’s estimate. The customer did not convert — a reminder that a correct expected-value decision is not a guarantee.",
+      "blocked_actions": []
+    },
+    "actions": [
+      {
+        "id": "act_01001MSWGH93TY0QKGN4NBM532",
+        "decision_id": "dec_01001OF2MY51XS71HNFS2TD4YZ",
+        "risk_event_id": "evt_01001L4NCA5XW1WB9RXGX5TZQ7",
+        "type": "NUDGE_INCENTIVE",
+        "params": {
+          "channel": "whatsapp",
+          "language": "hinglish",
+          "incentive_bps": 500,
+          "capped": true
+        },
+        "scheduled_for_sim": "2026-09-11T18:07:33Z",
+        "executed_at_sim": "2026-09-11T18:07:33Z",
+        "status": "executed",
+        "cancel_reason": null,
+        "cost_paise": 9435
+      }
+    ],
+    "messages": [
+      {
+        "id": "msg_01001N4BS3M03X1S788HHZNNCK",
+        "action_id": "act_01001MSWGH93TY0QKGN4NBM532",
+        "channel": "whatsapp",
+        "language": "hinglish",
+        "body": "Hi Neha, aapka ₹1,870 ka order abhi tak complete nahi hua. Agle 2 ghante mein order karein aur ₹94 off paayein: hold.app/r/8f2k",
+        "incentive_bps": 503,
+        "tone": "warm",
+        "policy_checks_passed": [
+          {
+            "rule": "no_urgency_pressure",
+            "passed": true
+          },
+          {
+            "rule": "no_third_party_mention",
+            "passed": true
+          },
+          {
+            "rule": "under_320_chars",
+            "passed": true
+          }
+        ],
+        "sent_at_sim": "2026-09-11T18:07:33Z",
+        "opened": true,
+        "clicked": false
+      }
+    ],
+    "outcome": {
+      "resolution_path": "lost",
+      "recovered_paise": 0,
+      "total_cost_paise": 9435,
+      "net_profit_paise": -9435,
+      "counterfactual_recovered_paise": 0,
+      "incremental_profit_paise": -9435,
+      "resolved_at_sim": "2026-09-25T18:07:33Z"
+    },
+    "audit_trail": [
+      {
+        "stage": "detect",
+        "summary": "Issuer decline, do_not_honour.",
+        "sim_time": "2026-09-11T17:42:33Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "policy",
+        "summary": "watch-tier: incentive capped at 5% (half strength).",
+        "sim_time": "2026-09-11T17:42:39Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "decide",
+        "summary": "Chose NUDGE_INCENTIVE at capped 5%.",
+        "sim_time": "2026-09-11T17:42:53Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "act",
+        "summary": "Sent Hinglish WhatsApp message with incentive.",
+        "sim_time": "2026-09-11T18:07:33Z",
+        "actor": "engine"
+      },
+      {
+        "stage": "verify",
+        "summary": "No conversion within 14 sim-days. Marked lost.",
+        "sim_time": "2026-09-25T18:07:33Z",
+        "actor": "simulator"
+      }
+    ]
+  }
+}

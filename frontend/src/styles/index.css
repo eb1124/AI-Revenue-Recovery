@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f2f1ed; /* app ground — cool paper, NOT cream */
+  --color-card: #ffffff;
+  --color-rule: #dad8d1; /* hairlines, everywhere */
+  --color-ink: #14161a;
+  --color-muted: #6b6e75;
+  --color-faint: #9b9da3;
+
+  --color-hold: #3b3a8f; /* indigo — RESERVED for HOLD. Never used for anything else. */
+  --color-gain: #12694a; /* money recovered */
+  --color-burn: #a32d2d; /* money spent / lost */
+  --color-warn: #8a5a0b; /* policy blocks, farming */
+
+  --radius: 4px; /* the only radius in the product */
+
+  --font-sans: "Instrument Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  font-variant-numeric: tabular-nums;
+}

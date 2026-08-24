@@ -1,0 +1,220 @@
+[
+  {
+    "id": "pol_0100EEBK9V6BMBA1A5GSSA6GF8",
+    "name": "Quiet hours 20:00–09:00 IST",
+    "kind": "hard_block",
+    "rule": {
+      "any": [
+        {
+          "field": "sim_time.hour",
+          "op": "gte",
+          "value": 20
+        },
+        {
+          "field": "sim_time.hour",
+          "op": "lt",
+          "value": 9
+        }
+      ]
+    },
+    "applies_to": [
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 71
+  },
+  {
+    "id": "pol_0100EFWXE4XFY9052AFXEKPXC5",
+    "name": "Hard opt-out is permanent",
+    "kind": "hard_block",
+    "rule": {
+      "field": "customer.hard_optout",
+      "op": "eq",
+      "value": true
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED",
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE",
+      "ESCALATE_HUMAN"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 4
+  },
+  {
+    "id": "pol_0100EG8Q1NSGH816HYM2J6TRRB",
+    "name": "Maximum 3 contacts per event",
+    "kind": "cap",
+    "rule": {
+      "field": "event.contact_count",
+      "op": "gte",
+      "value": 3
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED",
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE",
+      "ESCALATE_HUMAN"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 18
+  },
+  {
+    "id": "pol_0100EHRCSQDG64HTFDQEYTEBC6",
+    "name": "Maximum 1 message per customer per 24h",
+    "kind": "cap",
+    "rule": {
+      "field": "customer.messages_sent_24h",
+      "op": "gte",
+      "value": 1
+    },
+    "applies_to": [
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 53
+  },
+  {
+    "id": "pol_0100EI5W6JKKKFT27NG5XK4GVY",
+    "name": "Maximum 5 messages per customer per 7 days",
+    "kind": "cap",
+    "rule": {
+      "field": "customer.messages_sent_7d",
+      "op": "gte",
+      "value": 5
+    },
+    "applies_to": [
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 9
+  },
+  {
+    "id": "pol_0100EJNT70NYN7J6648Q8ECD7G",
+    "name": "No retries on expired_card / mandate_revoked",
+    "kind": "hard_block",
+    "rule": {
+      "any": [
+        {
+          "field": "event.cause_code",
+          "op": "eq",
+          "value": "expired_card"
+        },
+        {
+          "field": "event.cause_code",
+          "op": "eq",
+          "value": "mandate_revoked"
+        }
+      ]
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 26
+  },
+  {
+    "id": "pol_0100EKSXB7GFF5SBTN7MSEZ5CA",
+    "name": "Maximum 4 mandate retry attempts",
+    "kind": "cap",
+    "rule": {
+      "field": "event.attempt_number",
+      "op": "gte",
+      "value": 4
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 7
+  },
+  {
+    "id": "pol_0100ELY5MGT3JVNY8MHPEJQATT",
+    "name": "No incentives to flagged farmers",
+    "kind": "hard_block",
+    "rule": {
+      "field": "customer.farming_tier",
+      "op": "eq",
+      "value": "flagged"
+    },
+    "applies_to": [
+      "NUDGE_INCENTIVE"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 34
+  },
+  {
+    "id": "pol_0100EM6GRTPZA8XT0J404QEYZF",
+    "name": "Half incentive to watch farmers",
+    "kind": "cap",
+    "rule": {
+      "if": {
+        "field": "customer.farming_tier",
+        "op": "eq",
+        "value": "watch"
+      },
+      "max_incentive_bps": 500
+    },
+    "applies_to": [
+      "NUDGE_INCENTIVE"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 12
+  },
+  {
+    "id": "pol_0100ENCQBEXV9Y4ET0V9X68MMD",
+    "name": "Human approval above ₹25,000",
+    "kind": "require_approval",
+    "rule": {
+      "field": "event.value_at_risk_paise",
+      "op": "gte",
+      "value": 2500000
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED",
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE",
+      "ESCALATE_HUMAN"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 3
+  },
+  {
+    "id": "pol_0100EOWXN9YS83TWHM1DQB7PEZ",
+    "name": "72h cool-down after resolution",
+    "kind": "hard_block",
+    "rule": {
+      "field": "event.hours_since_resolution",
+      "op": "lt",
+      "value": 72
+    },
+    "applies_to": [
+      "RETRY_NOW",
+      "RETRY_SCHEDULED",
+      "NUDGE_FREE",
+      "NUDGE_INCENTIVE",
+      "ESCALATE_HUMAN"
+    ],
+    "enabled": true,
+    "authored_by": "system",
+    "trigger_count": 15
+  }
+]

@@ -1,0 +1,5602 @@
+[
+  {
+    "id": "evt_01004E5CZSTEVQCYZ5ZH081JJ5",
+    "customer": {
+      "id": "cus_01004DJA7DR5BT0BF7BEH0VYH7",
+      "display_name": "Rajesh Gupta",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 41567,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.709,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 5112,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -264
+    },
+    "detected_at_sim": "2026-09-08T00:29:57Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01002SDERZMDBDDGHCD9S39661",
+    "customer": {
+      "id": "cus_01002RCCB3KJJB76MGYD8SX47D",
+      "display_name": "Abir Kapoor",
+      "segment": "regular",
+      "farming_tier": "flagged",
+      "city": "Visakhapatnam"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 75692,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.931,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6341,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 17794
+    },
+    "detected_at_sim": "2026-09-06T06:49:05Z",
+    "headline": "Recovered ₹757 on retry."
+  },
+  {
+    "id": "evt_01009QQ81DSVP9228ZG180NHKJ",
+    "customer": {
+      "id": "cus_01009PAPTD6SHB86DK9Y4EMWWZ",
+      "display_name": "Manoj Yadav",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Surat"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 30647,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.822,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -37268,
+      "margin_protected_paise": 559
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 7066
+    },
+    "detected_at_sim": "2026-08-28T10:37:06Z",
+    "headline": "Came back unprompted after 7h 29m. No message sent."
+  },
+  {
+    "id": "evt_0100BGQ33QNEG7WQG3R87NWQWZ",
+    "customer": {
+      "id": "cus_0100BFEA5FEN3DR8Y830FBRKZJ",
+      "display_name": "Dhruv Rathi",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kochi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 34502,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.893,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -10868,
+      "margin_protected_paise": 1335
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-30T06:30:40Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01004UR9SYD9BAH3B77H3YDGBJ",
+    "customer": {
+      "id": "cus_01004T179P8323MN36BVEMDQHS",
+      "display_name": "Gaurav Verma",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 42065,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.834,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -25597,
+      "margin_protected_paise": 3692
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 8606
+    },
+    "detected_at_sim": "2026-08-24T23:18:19Z",
+    "headline": "Came back unprompted after 9h 53m. No message sent."
+  },
+  {
+    "id": "evt_01004CC65MATP5R5S6CCDMRPMD",
+    "customer": {
+      "id": "cus_01004B6ND6P3QABVG476Y0XFSW",
+      "display_name": "Dinesh Malhotra",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 225392,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.844,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 7214,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 53486
+    },
+    "detected_at_sim": "2026-09-18T18:52:26Z",
+    "headline": "Resolved: ₹2,254 at risk."
+  },
+  {
+    "id": "evt_010038P9YKJFJW8VHRX11WPKJV",
+    "customer": {
+      "id": "cus_010037923AP6WZMT641MXR4RX0",
+      "display_name": "Rekha Roy",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 30101,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.585,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2174,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -142
+    },
+    "detected_at_sim": "2026-09-14T19:55:09Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100322SHMN8BW4NGEB94MHJHH",
+    "customer": {
+      "id": "cus_0100317HSC4ZQQND3HPW2FTNTQ",
+      "display_name": "Manisha Tiwari",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 98435,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.648,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 21397,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18385
+    },
+    "detected_at_sim": "2026-09-11T12:54:24Z",
+    "headline": "Recovered ₹984 on retry."
+  },
+  {
+    "id": "evt_010024MNNWF961H71VKBF43M34",
+    "customer": {
+      "id": "cus_010023CZ1A5K1WHGAMHWPMFC2F",
+      "display_name": "Imran Gogoi",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Bhopal"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 85899,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.593,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5357,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18564
+    },
+    "detected_at_sim": "2026-08-25T18:25:49Z",
+    "headline": "Recovered ₹859 after a free reminder."
+  },
+  {
+    "id": "evt_0100B4HGXCPMXNZYFVC6QDC5F3",
+    "customer": {
+      "id": "cus_0100B364Y3V4NXZSHT0MWD7B2V",
+      "display_name": "Swati Pandey",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 56272,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.714,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -22806,
+      "margin_protected_paise": 3915
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-30T12:51:12Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100A09T8AMQPTWM5F0G5PCV5R",
+    "customer": {
+      "id": "cus_01009VGSASVBMZ7RWXZSF9NV4Z",
+      "display_name": "Farhan Trivedi",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Coimbatore"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 51972,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.762,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6337,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12124
+    },
+    "detected_at_sim": "2026-08-24T14:22:53Z",
+    "headline": "Recovered ₹520 on retry."
+  },
+  {
+    "id": "evt_0100A62TQMNFZDKFZXVPP53NFX",
+    "customer": {
+      "id": "cus_0100A56S34SG7A0VX4F8KB6QH1",
+      "display_name": "Deepak Gogoi",
+      "segment": "power",
+      "farming_tier": "flagged",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 129904,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.83,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 24067,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 39199
+    },
+    "detected_at_sim": "2026-09-21T21:50:20Z",
+    "headline": "Recovered ₹1,299 on retry."
+  },
+  {
+    "id": "evt_010020X4748R0MXYJ6K7H07CQY",
+    "customer": {
+      "id": "cus_01001VNMDW0MKPZWW7ZA872ZF4",
+      "display_name": "Debashish Mishra",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Nagpur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 33665,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.599,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4478,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 6299
+    },
+    "detected_at_sim": "2026-08-31T12:32:12Z",
+    "headline": "Resolved: ₹337 at risk."
+  },
+  {
+    "id": "evt_01007MB3TXYJ0K999PAD8BSW5E",
+    "customer": {
+      "id": "cus_01007LFBPG939CRCBSRHME6TFC",
+      "display_name": "Vihaan Rathi",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Kochi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 130829,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.656,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 15246,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 24649
+    },
+    "detected_at_sim": "2026-09-11T14:02:58Z",
+    "headline": "Recovered ₹1,308 on retry."
+  },
+  {
+    "id": "evt_0100CQJ0JHMTHQ73P6FYE3C4P3",
+    "customer": {
+      "id": "cus_0100CPZNDVB7EZX2NR0E3VJK7J",
+      "display_name": "Arun Pandey",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Hyderabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 54401,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.715,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11957,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10970
+    },
+    "detected_at_sim": "2026-09-11T07:51:24Z",
+    "headline": "Recovered ₹544 after a free reminder."
+  },
+  {
+    "id": "evt_0100AKBMMQAERSDX41HNBK1S5R",
+    "customer": {
+      "id": "cus_0100AJDJGX4HA444V5522RCJAB",
+      "display_name": "Gaurav Patel",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 56735,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.871,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 370,
+      "margin_protected_paise": 1060
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T13:19:08Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01000AY2VDG3T1B7PJ3YRNSHSG",
+    "customer": {
+      "id": "cus_010009NBYMAV4B02MQYWEP4841",
+      "display_name": "Rahul Verma",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 118000,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.872,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3954,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 34775
+    },
+    "detected_at_sim": "2026-09-09T02:22:54Z",
+    "headline": "Recovered after a free reminder — the incentive offer was capped by the 24h contact policy."
+  },
+  {
+    "id": "evt_01009UPRCQDVK6Q4QMZSYA2YWD",
+    "customer": {
+      "id": "cus_01009T6G8F71G42XNNV2XWZR6B",
+      "display_name": "Ritwik Mukherjee",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Lucknow"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 31127,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.831,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5016,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -236
+    },
+    "detected_at_sim": "2026-09-02T10:13:48Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01006GNTMGYHFF2ME9N19ZV6CW",
+    "customer": {
+      "id": "cus_01006FAX87X539MWC2P0JAZ7FJ",
+      "display_name": "Meera Baruah",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 100378,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.946,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 364,
+      "margin_protected_paise": 3069
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-13T22:38:05Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01002EETJZ4TK5CA9JM5ZA90PW",
+    "customer": {
+      "id": "cus_01002DJ2G7XH3QADT1BM1XPC7Y",
+      "display_name": "Kabir Tiwari",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 135659,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.708,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 10877,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 19964
+    },
+    "detected_at_sim": "2026-09-13T20:22:41Z",
+    "headline": "Recovered after human follow-up."
+  },
+  {
+    "id": "evt_01002QJXYGXVTFW6JYAZP19KXV",
+    "customer": {
+      "id": "cus_01002P8JA9EFVY19CTS0MGNEX8",
+      "display_name": "Shreya Murthy",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Nashik"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 162593,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.611,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -7960,
+      "margin_protected_paise": 9677
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 31997
+    },
+    "detected_at_sim": "2026-09-08T04:16:42Z",
+    "headline": "Returned on their own in 9h 58m. We spent nothing."
+  },
+  {
+    "id": "evt_0100B26FTHC4BG0HAG823HYYMX",
+    "customer": {
+      "id": "cus_0100B1NR7X4SZNYN9XS8PAJWAA",
+      "display_name": "Krishna Sharma",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Bhubaneswar"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 52119,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.749,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 8668,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 3922
+    },
+    "detected_at_sim": "2026-09-18T07:52:09Z",
+    "headline": "Recovered after human follow-up."
+  },
+  {
+    "id": "evt_010048D0ZZRDT4MYM6MD0D10V5",
+    "customer": {
+      "id": "cus_0100476FQTY0WJ2JPBN1G07KSG",
+      "display_name": "Shreya Agarwal",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 123318,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.583,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 19558,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 30203
+    },
+    "detected_at_sim": "2026-09-07T22:28:48Z",
+    "headline": "Recovered ₹1,233 on retry."
+  },
+  {
+    "id": "evt_01002IS45MAST7AV6ZX7ZR7962",
+    "customer": {
+      "id": "cus_01002HQ0FG756RDCZ16M5TWT02",
+      "display_name": "Anand Venkatesan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 38475,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.598,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -22923,
+      "margin_protected_paise": 1887
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-29T09:00:10Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01002A3C8SGRN3RVMX34AM5F2Z",
+    "customer": {
+      "id": "cus_01002942DS2YWJ209VQKAKPJTB",
+      "display_name": "Ira Bhatt",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Indore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 30379,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.794,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -28217,
+      "margin_protected_paise": 1707
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-31T00:35:45Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01005AGC3TH12442W8ZDKEQ5HY",
+    "customer": {
+      "id": "cus_0100590M4K5YYE9D8BBMV9RBNE",
+      "display_name": "Mou Gupta",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Ahmedabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 39075,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.662,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 5967,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7872
+    },
+    "detected_at_sim": "2026-09-11T19:30:05Z",
+    "headline": "Recovered ₹391 after a free reminder."
+  },
+  {
+    "id": "evt_01001L4NCA5XW1WB9RXGX5TZQ7",
+    "customer": {
+      "id": "cus_01001K222ZPBQ5A3TA9PEB4KKP",
+      "display_name": "Neha Bansal",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Jaipur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 187000,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.691,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5051,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -9435
+    },
+    "detected_at_sim": "2026-09-11T17:42:33Z",
+    "headline": "Positive-EV incentive sent, capped for watch-tier — customer still did not return. Marked lost."
+  },
+  {
+    "id": "evt_010052H8PZH4A0RR2ANV49Z5Q9",
+    "customer": {
+      "id": "cus_010051SS9KFRTCX8NDB5ENARW0",
+      "display_name": "Myra Subramaniam",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Jaipur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 100341,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.938,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 17729,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 20763
+    },
+    "detected_at_sim": "2026-09-21T22:01:55Z",
+    "headline": "Recovered ₹1,003 on retry."
+  },
+  {
+    "id": "evt_010054BNAT1H23P4CE5AVX8V1R",
+    "customer": {
+      "id": "cus_0100533P562Q6QVGP8726YGV1T",
+      "display_name": "Arun Bhatt",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 31893,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.79,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3213,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7227
+    },
+    "detected_at_sim": "2026-09-08T17:40:43Z",
+    "headline": "Recovered ₹319 after a free reminder."
+  },
+  {
+    "id": "evt_01007Q2X13TS4CB1F2TZ61RPN2",
+    "customer": {
+      "id": "cus_01007PFWNFWXTVBM3BJ39WMVK8",
+      "display_name": "Kavita Jain",
+      "segment": "casual",
+      "farming_tier": "flagged",
+      "city": "Patna"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 54040,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.828,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2126,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -127
+    },
+    "detected_at_sim": "2026-09-15T13:23:47Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+    "customer": {
+      "id": "cus_010010R4EMC6ZXDXW3FV8FSBQB",
+      "display_name": "Saranya Murugan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 156000,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.845,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 9012,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 20506
+    },
+    "detected_at_sim": "2026-09-01T15:44:58Z",
+    "headline": "Recovered after an 8% incentive — genuinely price-sensitive, not a repeat pattern."
+  },
+  {
+    "id": "evt_01002UR9R7DFH6941433QSKDTR",
+    "customer": {
+      "id": "cus_01002T15FANXMFMAY5F11XVEZ6",
+      "display_name": "Mou Baruah",
+      "segment": "regular",
+      "farming_tier": "watch",
+      "city": "Guwahati"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 55223,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.646,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2184,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12161
+    },
+    "detected_at_sim": "2026-08-30T19:29:32Z",
+    "headline": "Recovered ₹552 on retry."
+  },
+  {
+    "id": "evt_0100BS92TZJAS158C1ZBNG78MJ",
+    "customer": {
+      "id": "cus_0100BR6BPQS92G0CS45S0XF0RG",
+      "display_name": "Ritwik Saikia",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 207477,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.877,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -7931,
+      "margin_protected_paise": 11776
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-12T10:42:35Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01007CBNMBS8DTY41AKVZVNY7Y",
+    "customer": {
+      "id": "cus_01007B9WAS2QVDJ27PP4Y2SYAC",
+      "display_name": "Sara Murthy",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Vadodara"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 53682,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.697,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2033,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12715
+    },
+    "detected_at_sim": "2026-09-02T11:24:25Z",
+    "headline": "Recovered ₹537 on retry."
+  },
+  {
+    "id": "evt_01009K54YQ1GGZKM5XHXY7BR6K",
+    "customer": {
+      "id": "cus_01009JCZNE14RZ3QYHV6FDF81B",
+      "display_name": "Saranya Rajan",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 47025,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.802,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5658,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 10085
+    },
+    "detected_at_sim": "2026-09-07T06:19:41Z",
+    "headline": "Resolved: ₹470 at risk."
+  },
+  {
+    "id": "evt_010088Q0N0M98YHPXKXYNK44VB",
+    "customer": {
+      "id": "cus_01008773KEFH4C94D5M5DGDQWS",
+      "display_name": "Deepak Kumar",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Vadodara"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 234629,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.737,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -8773,
+      "margin_protected_paise": 22208
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-08T06:32:55Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010022BT0Q2X94RHAWXKRGMK5F",
+    "customer": {
+      "id": "cus_010021RH6WSCNHA8FZZFHQ0204",
+      "display_name": "Karan Shah",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Bhubaneswar"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 73134,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.703,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4164,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18728
+    },
+    "detected_at_sim": "2026-09-11T05:51:04Z",
+    "headline": "Recovered ₹731 on retry."
+  },
+  {
+    "id": "evt_010066HQCTJ3Q3K4N062HARVJ3",
+    "customer": {
+      "id": "cus_010065MVC880C5EBQRJ1G5RN16",
+      "display_name": "Zainab Jain",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 46014,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.89,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2480,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 11812
+    },
+    "detected_at_sim": "2026-09-04T03:05:02Z",
+    "headline": "Resolved: ₹460 at risk."
+  },
+  {
+    "id": "evt_0100BOB6HR462CQ1J734WRCYSP",
+    "customer": {
+      "id": "cus_0100BN2E58F3X0A5TH5F14ATX2",
+      "display_name": "Shreya Nair",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 55023,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.738,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5507,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -120
+    },
+    "detected_at_sim": "2026-09-03T21:45:06Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01001Q2FDQFZKSHXM4WW1CYEHE",
+    "customer": {
+      "id": "cus_01001PGTR7VJ16MW8HAM28H346",
+      "display_name": "Manisha Pandey",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Patna"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 32899,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.688,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 1344,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 6148
+    },
+    "detected_at_sim": "2026-09-13T22:56:00Z",
+    "headline": "Recovered ₹329 on retry."
+  },
+  {
+    "id": "evt_01006KJFH11KR621HW0ZE0BAHR",
+    "customer": {
+      "id": "cus_01006JT16SGNZ8CPD2GPRP28ZZ",
+      "display_name": "Sana Joshi",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 39832,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.945,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 241,
+      "margin_protected_paise": 1543
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-11T21:00:47Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100C4A1NWYZA4Y9E4N4K47V1N",
+    "customer": {
+      "id": "cus_0100C38YTK331Z9TFN4XGCVD05",
+      "display_name": "Neha Venkatesan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Lucknow"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 241809,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.763,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 9013,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 57992
+    },
+    "detected_at_sim": "2026-09-16T02:35:37Z",
+    "headline": "Recovered ₹2,418 after a free reminder."
+  },
+  {
+    "id": "evt_0100C27FMS1AE02XVQGJ4WFSRB",
+    "customer": {
+      "id": "cus_0100C1DWTP2BBWEMNHNY9RD7SG",
+      "display_name": "Anika Roy",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 181290,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.686,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 31574,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -235
+    },
+    "detected_at_sim": "2026-09-15T00:11:00Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100BEEQQTMGQRHMNY3TBHR463",
+    "customer": {
+      "id": "cus_0100BD7T77TJM4EPAC13A6TWWA",
+      "display_name": "Nithya Desai",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 113617,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.81,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11052,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23934
+    },
+    "detected_at_sim": "2026-08-25T17:46:44Z",
+    "headline": "Recovered ₹1,136 after a free reminder."
+  },
+  {
+    "id": "evt_01005IPWDT029G3Z2BNA210HJ2",
+    "customer": {
+      "id": "cus_01005HK8481QQHPHEQGTQB9YZF",
+      "display_name": "Vignesh Chauhan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 155361,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.722,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -40929,
+      "margin_protected_paise": 13326
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-11T01:10:08Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010084CZ5RAFXN60VWR5PH3CK8",
+    "customer": {
+      "id": "cus_010083WXRCAF8MB5GH5GJM4CPQ",
+      "display_name": "Vignesh Raghavan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 93581,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.863,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 14221,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 25024
+    },
+    "detected_at_sim": "2026-09-08T22:15:13Z",
+    "headline": "Recovered ₹936 after a free reminder."
+  },
+  {
+    "id": "evt_010090VPDY0B8ZK0FQADAD2MJX",
+    "customer": {
+      "id": "cus_01008V8Z9VEXPTHYB0T2C1Z8G7",
+      "display_name": "Vivaan Shah",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 53508,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.593,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12467,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 9692
+    },
+    "detected_at_sim": "2026-09-07T18:01:08Z",
+    "headline": "Recovered ₹535 on retry."
+  },
+  {
+    "id": "evt_0100CIRH7HAJ3MPJMJFX1FT76Z",
+    "customer": {
+      "id": "cus_0100CHC9DYYCZWY79DZMVMF7NE",
+      "display_name": "Nisha Naidu",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Bhopal"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 200336,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.952,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5182,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 46577
+    },
+    "detected_at_sim": "2026-08-31T06:54:25Z",
+    "headline": "Recovered ₹2,003 after a free reminder."
+  },
+  {
+    "id": "evt_010078Y24FC44F1J71G5NNHQ0N",
+    "customer": {
+      "id": "cus_010077AYXDW4VM9YJGHGG6WCQ4",
+      "display_name": "Suresh Joshi",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 51703,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.757,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6003,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -71
+    },
+    "detected_at_sim": "2026-09-05T08:19:59Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_010092KNA8ZYSTHEQ5HMES2TJR",
+    "customer": {
+      "id": "cus_0100916AX73CGPXA002WXJ4W9M",
+      "display_name": "Lakshmi Mukherjee",
+      "segment": "new",
+      "farming_tier": "flagged",
+      "city": "Nashik"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 124572,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.963,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 8004,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 26038
+    },
+    "detected_at_sim": "2026-09-05T20:28:21Z",
+    "headline": "Resolved: ₹1,246 at risk."
+  },
+  {
+    "id": "evt_01006ETNXGHER35NKF4CF2T0KS",
+    "customer": {
+      "id": "cus_01006D27601R2HTGH5ABCAEDD1",
+      "display_name": "Rashmi Krishnan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 249945,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.827,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 9931,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -102
+    },
+    "detected_at_sim": "2026-09-16T19:47:28Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01001649KQQYFVXPVB61GK8ZYQ",
+    "customer": {
+      "id": "cus_010015MCR5JEJBFFFN6NSK4A5V",
+      "display_name": "Vikram Deshpande",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 449000,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.832,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 13438,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 98580
+    },
+    "detected_at_sim": "2026-09-12T05:35:58Z",
+    "headline": "Immediate retry succeeded — bank gateway outage had already cleared."
+  },
+  {
+    "id": "evt_0100CU6AP0WHHE7QAPBMB0GJDJ",
+    "customer": {
+      "id": "cus_0100CT9FDZJ6DYD27QKS5JG5AF",
+      "display_name": "Amit Venkatesan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 206039,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.91,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -33905,
+      "margin_protected_paise": 17885
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-27T06:28:03Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010034P0C8T5E0RWW7VJZW99H9",
+    "customer": {
+      "id": "cus_010033SB75KPEGCG0GJ19AD1FN",
+      "display_name": "Vikram Bhatt",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 198174,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.588,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -17595,
+      "margin_protected_paise": 7216
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-21T07:55:40Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100B01R5CDT3VW7AXK2GXP8K7",
+    "customer": {
+      "id": "cus_0100AVDFXPZJQ4FTEDNQ6X5BHN",
+      "display_name": "Imran Menon",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 147877,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.724,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 15112,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 27987
+    },
+    "detected_at_sim": "2026-09-18T03:59:39Z",
+    "headline": "Recovered ₹1,479 on retry."
+  },
+  {
+    "id": "evt_0100D66YTE2Q8MCMWQ23BTDEEF",
+    "customer": {
+      "id": "cus_0100D5YMFE1X0HNQYRPTWYN427",
+      "display_name": "Vikram Bhatt",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 31440,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.653,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5470,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -122
+    },
+    "detected_at_sim": "2026-09-11T21:24:29Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01007O6GXNP2XYJH9P573T8H7J",
+    "customer": {
+      "id": "cus_01007N9MF6P5G6FN2BAFPNF6F3",
+      "display_name": "Vihaan Kumar",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 36743,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.713,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -3996,
+      "margin_protected_paise": 1499
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-15T07:27:04Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01009MS8E08XXN7Q7V8H8EAH98",
+    "customer": {
+      "id": "cus_01009LJTHR41FSPBMV34YSJJZN",
+      "display_name": "Trisha Patel",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 36679,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.97,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5045,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 5632
+    },
+    "detected_at_sim": "2026-09-01T17:42:19Z",
+    "headline": "Recovered ₹367 after an incentive."
+  },
+  {
+    "id": "evt_01005GW57821ZNWQVYVQJXW48G",
+    "customer": {
+      "id": "cus_01005FARR8VMKDEA7SYM13M3V1",
+      "display_name": "Rohan Murthy",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 43958,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.783,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 8724,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 9072
+    },
+    "detected_at_sim": "2026-08-30T19:39:41Z",
+    "headline": "Recovered ₹440 after a free reminder."
+  },
+  {
+    "id": "evt_0100BU9G2ERCRRG9SAZ392M6V4",
+    "customer": {
+      "id": "cus_0100BTAVBGE8SHEN8TFAX6MT32",
+      "display_name": "Gaurav Pandey",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 62735,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.635,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12498,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12275
+    },
+    "detected_at_sim": "2026-08-23T12:27:30Z",
+    "headline": "Recovered ₹627 on retry."
+  },
+  {
+    "id": "evt_010050Z3FPPYH4NYNX4HW8N9KT",
+    "customer": {
+      "id": "cus_01004V20Z4C3VCMPYKM1TKSTTP",
+      "display_name": "Aarushi Saikia",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 76844,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.803,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 207,
+      "margin_protected_paise": 2249
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 17036
+    },
+    "detected_at_sim": "2026-09-17T01:02:43Z",
+    "headline": "Returned on their own in 3h 13m. We spent nothing."
+  },
+  {
+    "id": "evt_01008GYZRG7NVH14214RKX4TMY",
+    "customer": {
+      "id": "cus_01008FHSP5WWF3D15N9ZCK6WEZ",
+      "display_name": "Mou Jain",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Indore"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 71962,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.623,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11517,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13893
+    },
+    "detected_at_sim": "2026-09-02T22:53:35Z",
+    "headline": "Recovered ₹720 on retry."
+  },
+  {
+    "id": "evt_0100CMYATCDZCNTB3EP3B8N9Y0",
+    "customer": {
+      "id": "cus_0100CLE74GBCM2HK2QYCBWPTW8",
+      "display_name": "Saranya Nair",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Vadodara"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 35291,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.644,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -40314,
+      "margin_protected_paise": 1602
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-19T00:37:01Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01003MH7HXGT7YKZVJ66ZH4CHG",
+    "customer": {
+      "id": "cus_01003LTXTBDEN810X50Q4TP726",
+      "display_name": "Kiara Roy",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 117574,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.827,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -16967,
+      "margin_protected_paise": 8837
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 25086
+    },
+    "detected_at_sim": "2026-09-05T21:00:42Z",
+    "headline": "Came back unprompted after 3h 45m. No message sent."
+  },
+  {
+    "id": "evt_0100800Y9S9Y9FMGMPTZH004CS",
+    "customer": {
+      "id": "cus_01007VXBSEZ4PRKGZ3FWFXTVCY",
+      "display_name": "Rahul Jain",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 30197,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.668,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -23881,
+      "margin_protected_paise": 2183
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 7757
+    },
+    "detected_at_sim": "2026-09-21T23:50:24Z",
+    "headline": "Returned on their own in 11h 0m. We spent nothing."
+  },
+  {
+    "id": "evt_01001SY5156YV810ZQWYCVYN5S",
+    "customer": {
+      "id": "cus_01001RXD6BAQSFW81JWGNTMPEC",
+      "display_name": "Sara Bose",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 59063,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.607,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 10875,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -122
+    },
+    "detected_at_sim": "2026-09-07T18:32:39Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01000KQ147KBMZDSQ0NW8JWECT",
+    "customer": {
+      "id": "cus_01000JWE1JFEER3PKYTF0X1GFN",
+      "display_name": "Anjali Krishnan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 3180000,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.663,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 155288,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 846920
+    },
+    "detected_at_sim": "2026-09-16T08:43:59Z",
+    "headline": "Routed to a human — ₹31,800 renewal flagged as possible fraud, above the ₹25,000 threshold."
+  },
+  {
+    "id": "evt_01004A13VDP26WBWPVVCNBPKTS",
+    "customer": {
+      "id": "cus_010049Z39YHZFV1PK0HAANG6CJ",
+      "display_name": "Sai Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 30165,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.71,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 1421,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -284
+    },
+    "detected_at_sim": "2026-09-10T04:55:12Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100DEMWVBP2ZEXSADHHSSKXGA",
+    "customer": {
+      "id": "cus_0100DD1Q9V5H7ZM894BJNPTKKD",
+      "display_name": "Sneha Rathi",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Vadodara"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 162421,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.881,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 13192,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -201
+    },
+    "detected_at_sim": "2026-09-18T16:18:04Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100B8REPPWVWXVSQ1FJRE9DDD",
+    "customer": {
+      "id": "cus_0100B7MXSJ0A9ESZZRH7GQVZXG",
+      "display_name": "Nithya Mishra",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 49041,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.956,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -36593,
+      "margin_protected_paise": 5222
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-11T14:41:46Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01007S7P44K9J32DBXBRHWF7MT",
+    "customer": {
+      "id": "cus_01007R4W3EHC3QP6BBYBHDJ0X3",
+      "display_name": "Manoj Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Ranchi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 77276,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.806,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2692,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -307
+    },
+    "detected_at_sim": "2026-09-02T23:06:59Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01007K7KDD9JB77225ES1Q1MS9",
+    "customer": {
+      "id": "cus_01007J3Y8VDS4W4TMR651TC77W",
+      "display_name": "Pooja Gogoi",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Guwahati"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 35439,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.638,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 1454,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 8460
+    },
+    "detected_at_sim": "2026-09-18T18:52:39Z",
+    "headline": "Recovered ₹354 after a free reminder."
+  },
+  {
+    "id": "evt_01006ATW0HKGVQDZC9E7DSYW0W",
+    "customer": {
+      "id": "cus_010069NNHP7635V0HPVQD602HV",
+      "display_name": "Ritwik Rathi",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 29992,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.954,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -14439,
+      "margin_protected_paise": 745
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 7249
+    },
+    "detected_at_sim": "2026-09-02T20:20:04Z",
+    "headline": "Came back unprompted after 2h 26m. No message sent."
+  },
+  {
+    "id": "evt_01005MQ5KM93FWZT6S83DK0V5J",
+    "customer": {
+      "id": "cus_01005LVB2QGPD2Z23FRMHGRAWC",
+      "display_name": "Neha Joshi",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 32245,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.81,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2443,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 8037
+    },
+    "detected_at_sim": "2026-09-19T20:54:01Z",
+    "headline": "Recovered ₹322 after a free reminder."
+  },
+  {
+    "id": "evt_01009IJMF66FXYSGNHJYTXGKM5",
+    "customer": {
+      "id": "cus_01009HFSJB3VTRSBR6HS07NVVK",
+      "display_name": "Keerthana Reddy",
+      "segment": "casual",
+      "farming_tier": "flagged",
+      "city": "Patna"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 208019,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.731,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 21171,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 45237
+    },
+    "detected_at_sim": "2026-09-13T11:52:47Z",
+    "headline": "Recovered ₹2,080 after a free reminder."
+  },
+  {
+    "id": "evt_010070THYQ3Z1EBGJDGY2GD4D0",
+    "customer": {
+      "id": "cus_01006VAJ54P9B21N62BKFPHRE8",
+      "display_name": "Rohit Pandey",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 152164,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.753,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -4598,
+      "margin_protected_paise": 5886
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 34659
+    },
+    "detected_at_sim": "2026-09-01T14:43:45Z",
+    "headline": "Returned on their own in 11h 52m. We spent nothing."
+  },
+  {
+    "id": "evt_01003CTJPARPHWVN4SS94GMWYW",
+    "customer": {
+      "id": "cus_01003B8NKTW183PVT6JVMZ7CB0",
+      "display_name": "Dhruv Chatterjee",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Jaipur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 92775,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.959,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 16693,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 21222
+    },
+    "detected_at_sim": "2026-08-24T21:19:14Z",
+    "headline": "Recovered ₹928 on retry."
+  },
+  {
+    "id": "evt_01000ONHWJVEMEJNMD50PCA04M",
+    "customer": {
+      "id": "cus_01000NPQ9XYDKANZWPAXGX74AZ",
+      "display_name": "Suresh Nair",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 890000,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.834,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 24770,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 239855
+    },
+    "detected_at_sim": "2026-09-15T13:03:34Z",
+    "headline": "Paid on their own 3 days later — the scheduled retry was cancelled before it fired."
+  },
+  {
+    "id": "evt_01008O8WKNR1B6GY51JW22TZW6",
+    "customer": {
+      "id": "cus_01008NCHP1RJ1X61AQ23PE9C0A",
+      "display_name": "Reyansh Gogoi",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 175352,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.931,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 35738,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 42394
+    },
+    "detected_at_sim": "2026-08-23T13:43:22Z",
+    "headline": "Recovered ₹1,754 after a free reminder."
+  },
+  {
+    "id": "evt_0100BIE8R05066H7B91GF7TP2D",
+    "customer": {
+      "id": "cus_0100BHT7KZM0SYA9F260RQCBM3",
+      "display_name": "Sai Chatterjee",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 66556,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.809,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 8599,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13364
+    },
+    "detected_at_sim": "2026-09-21T22:12:52Z",
+    "headline": "Recovered ₹666 after a free reminder."
+  },
+  {
+    "id": "evt_01003S07A4AS5VPK7GSWM9AYA5",
+    "customer": {
+      "id": "cus_01003R81RRYG1K38E1EY19Y60C",
+      "display_name": "Gowtham Patel",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Lucknow"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 236646,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.871,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 17645,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -108
+    },
+    "detected_at_sim": "2026-08-23T18:59:51Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100BMQFTCJF9N7K9JPRNNAF53",
+    "customer": {
+      "id": "cus_0100BLAVMSWF40NZ4YF0ZMKWMW",
+      "display_name": "Ishaan Pandey",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 14145110,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.807,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 1340619,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -8506
+    },
+    "detected_at_sim": "2026-08-24T15:03:38Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01009O7S5DZ3HSX9E93FK158AG",
+    "customer": {
+      "id": "cus_01009NFQGBEZR9K5W8ZGTS9B2C",
+      "display_name": "Keerthana Joshi",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 87109,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.588,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2750,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 20654
+    },
+    "detected_at_sim": "2026-09-15T16:12:20Z",
+    "headline": "Recovered ₹871 after a free reminder."
+  },
+  {
+    "id": "evt_01006C9T5DGNTP400GNMCBNRVH",
+    "customer": {
+      "id": "cus_01006BZ62YAE1R80J4N58AJA8K",
+      "display_name": "Lakshmi Murthy",
+      "segment": "power",
+      "farming_tier": "watch",
+      "city": "Jaipur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 68840,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.738,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 10140,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10923
+    },
+    "detected_at_sim": "2026-09-13T14:34:34Z",
+    "headline": "Recovered ₹688 after an incentive."
+  },
+  {
+    "id": "evt_0100D8ANH24Q2TFVH6VBSKZ596",
+    "customer": {
+      "id": "cus_0100D7W7T6W6W3AT317JCJRPBH",
+      "display_name": "Ishaan Saikia",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 51070,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.611,
+    "status": "expired",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6103,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7910
+    },
+    "detected_at_sim": "2026-09-14T07:28:22Z",
+    "headline": "Recovered ₹511 after an incentive."
+  },
+  {
+    "id": "evt_01007ESAMB4HFNEDG6WKDN72Y3",
+    "customer": {
+      "id": "cus_01007D11PE0NJCDKV51JXAPNAD",
+      "display_name": "Anjali Chatterjee",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Ranchi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 34558,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.871,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2510,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 6218
+    },
+    "detected_at_sim": "2026-09-08T09:35:55Z",
+    "headline": "Recovered ₹346 on retry."
+  },
+  {
+    "id": "evt_01004KPEHWNHJV363XR3Q9E1X4",
+    "customer": {
+      "id": "cus_01004JHK9Y4Q3BXRM0W90NR8WS",
+      "display_name": "Pooja Chauhan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Visakhapatnam"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 205513,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.649,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 5505,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 50325
+    },
+    "detected_at_sim": "2026-08-26T00:31:18Z",
+    "headline": "Recovered ₹2,055 after a free reminder."
+  },
+  {
+    "id": "evt_0100562VGP1XRFN0E9VRAF2GJY",
+    "customer": {
+      "id": "cus_01005517CZ2Y2ECCGWQS3Y2R57",
+      "display_name": "Rekha Krishnan",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 56735,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.696,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12923,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 11064
+    },
+    "detected_at_sim": "2026-09-15T06:34:20Z",
+    "headline": "Recovered ₹567 after a free reminder."
+  },
+  {
+    "id": "evt_01006OCFD1JRR7JBEF9KH1Q9J7",
+    "customer": {
+      "id": "cus_01006NTPDXEXP844RRXPT89YX2",
+      "display_name": "Siddharth Chauhan",
+      "segment": "casual",
+      "farming_tier": "flagged",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 46470,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.831,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -2434,
+      "margin_protected_paise": 2587
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-25T03:24:03Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100DG8CG4TBASBHSGKQCDJEB4",
+    "customer": {
+      "id": "cus_0100DFPYKXWMGP8VGTWY496X45",
+      "display_name": "Diya Desai",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 134113,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.794,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 7697,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 30695
+    },
+    "detected_at_sim": "2026-09-01T16:18:19Z",
+    "headline": "Recovered ₹1,341 after a free reminder."
+  },
+  {
+    "id": "evt_0100D4CHXM9Y4DK4DG5TCBBGR1",
+    "customer": {
+      "id": "cus_0100D3XW09G2NGE2G255ECQ7H8",
+      "display_name": "Rashmi Pandey",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 31127,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.938,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -11156,
+      "margin_protected_paise": 1228
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 6412
+    },
+    "detected_at_sim": "2026-09-07T14:01:26Z",
+    "headline": "Came back unprompted after 1h 8m. No message sent."
+  },
+  {
+    "id": "evt_01001JVH71SYR59A68Z3B4667Y",
+    "customer": {
+      "id": "cus_01001I85QH35H4ZYH9EE8893Z4",
+      "display_name": "Ritwik Chatterjee",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 512000,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.494,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": 0,
+      "margin_protected_paise": 25600
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 126362
+    },
+    "detected_at_sim": "2026-09-02T14:21:47Z",
+    "headline": "Held — the model’s confidence interval on retrying straddled zero. Recovered anyway."
+  },
+  {
+    "id": "evt_01003EX4FYSHXQ666EDFTPFQTD",
+    "customer": {
+      "id": "cus_01003DSDZG2QWA24NP7BM8ZT8C",
+      "display_name": "Aarushi Nair",
+      "segment": "new",
+      "farming_tier": "flagged",
+      "city": "Bengaluru"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 105382,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.833,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 16716,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -94
+    },
+    "detected_at_sim": "2026-08-31T20:34:12Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01003UDZT6DPVEA3GTPEKE8GCV",
+    "customer": {
+      "id": "cus_01003T90T9AGN8JNSG8V03SBDR",
+      "display_name": "Kiara Baruah",
+      "segment": "regular",
+      "farming_tier": "watch",
+      "city": "Guwahati"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 35845,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.628,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3035,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -269
+    },
+    "detected_at_sim": "2026-09-01T10:09:38Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100ASMAHNQ0B793093846XBR3",
+    "customer": {
+      "id": "cus_0100ARA3FKET4C76WA946VVPXE",
+      "display_name": "Aryan Banerjee",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 66464,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.588,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11605,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13655
+    },
+    "detected_at_sim": "2026-09-02T08:02:39Z",
+    "headline": "Recovered ₹665 after a free reminder."
+  },
+  {
+    "id": "evt_01008SCNNKG6SSA4P9BNMJXT1F",
+    "customer": {
+      "id": "cus_01008R3ZB1MEFY44GAM2WG6SYH",
+      "display_name": "Sana Kapoor",
+      "segment": "regular",
+      "farming_tier": "watch",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 209349,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.588,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 29550,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 51735
+    },
+    "detected_at_sim": "2026-09-02T11:40:37Z",
+    "headline": "Recovered ₹2,093 on retry."
+  },
+  {
+    "id": "evt_0100AGZGNCT81M5HV2QQKQFX79",
+    "customer": {
+      "id": "cus_0100AFWDHYV4EAB29G3MQB2T4D",
+      "display_name": "Revathi Naidu",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Surat"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 195497,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.967,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 451,
+      "margin_protected_paise": 19017
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-29T10:19:47Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010046FHVHG840RW455VG3GSJX",
+    "customer": {
+      "id": "cus_0100454TXXZBF674H9EDEKPYYV",
+      "display_name": "Ganesh Mehta",
+      "segment": "power",
+      "farming_tier": "watch",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 201660,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.91,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 37527,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 53737
+    },
+    "detected_at_sim": "2026-08-27T03:29:12Z",
+    "headline": "Recovered ₹2,017 on retry."
+  },
+  {
+    "id": "evt_01005884R2J1XZ68CYQJTM3E2K",
+    "customer": {
+      "id": "cus_010057PKS8QFDPSAVAPP4ME237",
+      "display_name": "Saranya Venkatesan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 4230047,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.581,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 208690,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 844196
+    },
+    "detected_at_sim": "2026-09-07T12:31:43Z",
+    "headline": "Recovered ₹42,300 after an incentive."
+  },
+  {
+    "id": "evt_01006IWKEKR5BDB45WB0JGYT8J",
+    "customer": {
+      "id": "cus_01006H33QWFH6V0E02NZ40TSDN",
+      "display_name": "Navya Pillai",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Mysuru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 103782,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.775,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 21966,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -59
+    },
+    "detected_at_sim": "2026-08-24T21:32:09Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100BQA70PC6YB4S5WR8ZZSBCK",
+    "customer": {
+      "id": "cus_0100BPP4HT4BSHKJSKP7R5KF18",
+      "display_name": "Nisha Krishnan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 165583,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.659,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 110,
+      "margin_protected_paise": 8297
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 33734
+    },
+    "detected_at_sim": "2026-08-28T18:01:11Z",
+    "headline": "Returned on their own in 8h 26m. We spent nothing."
+  },
+  {
+    "id": "evt_01008QS216QC9Y79HNG6FADCMB",
+    "customer": {
+      "id": "cus_01008P3STZBX1K5PFQJSQH6FAX",
+      "display_name": "Nisha Roy",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 36417,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.632,
+    "status": "expired",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -35400,
+      "margin_protected_paise": 2854
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-17T15:50:06Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01005U537A289C820K1R18X1WW",
+    "customer": {
+      "id": "cus_01005THHM0GME3PKW42T8395AQ",
+      "display_name": "Priya Kulkarni",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 31141,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.885,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 7327,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 6694
+    },
+    "detected_at_sim": "2026-09-03T01:49:56Z",
+    "headline": "Recovered ₹311 on retry."
+  },
+  {
+    "id": "evt_0100601JM4QAWT1MV212BX97HE",
+    "customer": {
+      "id": "cus_01005VMHW4NJGW493K0XT3Y9EZ",
+      "display_name": "Ayaan Chopra",
+      "segment": "casual",
+      "farming_tier": "watch",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 119236,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.755,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 14017,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 28361
+    },
+    "detected_at_sim": "2026-08-24T14:09:05Z",
+    "headline": "Resolved: ₹1,192 at risk."
+  },
+  {
+    "id": "evt_0100CEQQ583MRXJ0P1ET9X34WE",
+    "customer": {
+      "id": "cus_0100CDZB5EH3KZCDM2NG7ECTGC",
+      "display_name": "Vikram Naidu",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Jaipur"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 88715,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.744,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 18033,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 22383
+    },
+    "detected_at_sim": "2026-09-04T03:21:56Z",
+    "headline": "Resolved: ₹887 at risk."
+  },
+  {
+    "id": "evt_0100AIDP9AZEHNHCNZ9AWQMHWQ",
+    "customer": {
+      "id": "cus_0100AH07W9R4DJQ3QGT9XV4MHF",
+      "display_name": "Shreya Verma",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Bengaluru"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 198250,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.625,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -19805,
+      "margin_protected_paise": 3954
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-07T02:05:19Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010098BZGREPDF4EN4JVK0QX46",
+    "customer": {
+      "id": "cus_0100970GS3ZKE43Z53SFNQMTHD",
+      "display_name": "Priya Trivedi",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Surat"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 33775,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.689,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -20927,
+      "margin_protected_paise": 2524
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-08T23:11:56Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010072YSDMHQF43R6PA67T0YCN",
+    "customer": {
+      "id": "cus_010071P07XD0W2BK35SRKXKK3E",
+      "display_name": "Ayesha Venkatesan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Guwahati"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 199241,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.586,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 20871,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 56476
+    },
+    "detected_at_sim": "2026-09-06T03:31:59Z",
+    "headline": "Recovered ₹1,992 after a free reminder."
+  },
+  {
+    "id": "evt_01004G0MK9PHSSZH0ZY4737FK2",
+    "customer": {
+      "id": "cus_01004FZHQRZQPY8KZP5W70VX6N",
+      "display_name": "Vignesh Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 193120,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.852,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6049,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 32937
+    },
+    "detected_at_sim": "2026-09-21T04:46:09Z",
+    "headline": "Recovered after human follow-up."
+  },
+  {
+    "id": "evt_010036KHR1HW7F5PE5G97XN3XB",
+    "customer": {
+      "id": "cus_010035MCXN2JVCYF74NN266XAV",
+      "display_name": "Ira Iyer",
+      "segment": "regular",
+      "farming_tier": "flagged",
+      "city": "Nagpur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 172086,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.888,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -27629,
+      "margin_protected_paise": 12384
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T06:57:19Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010042V20VXVQNER2BT53EVEK1",
+    "customer": {
+      "id": "cus_010041VJ3ABKASN5V6ENC9P73G",
+      "display_name": "Riya Mishra",
+      "segment": "regular",
+      "farming_tier": "watch",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 75706,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.583,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12844,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18507
+    },
+    "detected_at_sim": "2026-09-09T00:45:39Z",
+    "headline": "Recovered ₹757 after a free reminder."
+  },
+  {
+    "id": "evt_01002ORJSMEC8SKKCQACC6DD34",
+    "customer": {
+      "id": "cus_01002NDWMXEFTKX442GQBYV0K2",
+      "display_name": "Aditi Chatterjee",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 162596,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.952,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12206,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 34781
+    },
+    "detected_at_sim": "2026-09-10T01:24:16Z",
+    "headline": "Resolved: ₹1,626 at risk."
+  },
+  {
+    "id": "evt_01008U5ZJCBMRAEHH63VV6FYQX",
+    "customer": {
+      "id": "cus_01008TSMFH7T1PGGN9A7VXJKB9",
+      "display_name": "Sneha Gupta",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 37612,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.932,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 8167,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -8560
+    },
+    "detected_at_sim": "2026-09-18T08:11:54Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100C0KHJ4QP5VX9BGDKJN6AEK",
+    "customer": {
+      "id": "cus_0100BVMNA9WS2P5GSXW37RXB87",
+      "display_name": "Vivaan Mishra",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 169931,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.769,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5748,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 35910
+    },
+    "detected_at_sim": "2026-09-08T00:31:57Z",
+    "headline": "Recovered ₹1,699 on retry."
+  },
+  {
+    "id": "evt_01009G2JJKP683H4HJ1A86TVP6",
+    "customer": {
+      "id": "cus_01009FYHFQH9TPKQ7TBNMER3CR",
+      "display_name": "Farhan Krishnan",
+      "segment": "power",
+      "farming_tier": "watch",
+      "city": "Madurai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 65041,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.698,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4382,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 19712
+    },
+    "detected_at_sim": "2026-09-05T12:45:07Z",
+    "headline": "Recovered ₹650 on retry."
+  },
+  {
+    "id": "evt_010086BBJWYCX29YB962SKDNVD",
+    "customer": {
+      "id": "cus_010085SQP3YZMKV1AFXXZDDTWT",
+      "display_name": "Pari Roy",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 33602,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.637,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -19220,
+      "margin_protected_paise": 2318
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 8773
+    },
+    "detected_at_sim": "2026-09-14T22:26:55Z",
+    "headline": "Came back unprompted after 4h 34m. No message sent."
+  },
+  {
+    "id": "evt_0100COCFSHZMAX3N77P4NTSZK7",
+    "customer": {
+      "id": "cus_0100CN6KRHQT8J3AQPXPZNYNY9",
+      "display_name": "Saranya Sharma",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 113678,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.945,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -41480,
+      "margin_protected_paise": 6137
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-11T19:47:54Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010006ZJZ55H9CDDNCAWAFKHJ7",
+    "customer": {
+      "id": "cus_010005H93PASW2FT4Z5PP7D5MA",
+      "display_name": "Meera Raghavan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 340000,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.86,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": 0,
+      "margin_protected_paise": 34000
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 74800
+    },
+    "detected_at_sim": "2026-09-14T00:35:30Z",
+    "headline": "Returned on their own in 3h 12m. We spent nothing."
+  },
+  {
+    "id": "evt_01006QZ2S3GH9M491MTANFCW6R",
+    "customer": {
+      "id": "cus_01006PVPA7H3610S4YDHBQXAA3",
+      "display_name": "Myra Tiwari",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 245242,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.585,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -3720,
+      "margin_protected_paise": 17711
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T11:08:10Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01008EQ4RY6J48N7H5RT5G82QP",
+    "customer": {
+      "id": "cus_01008DAVT0Q4XSPPT31755DR0V",
+      "display_name": "Kavita Yadav",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chandigarh"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 82352,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.94,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -25013,
+      "margin_protected_paise": 2889
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-27T06:12:33Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100C8FGZVEJTQ9DBD2CA161FT",
+    "customer": {
+      "id": "cus_0100C7KTVS1WND8S123PA233DD",
+      "display_name": "Kiara Subramaniam",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Bhubaneswar"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 40204,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.805,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 7363,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 11335
+    },
+    "detected_at_sim": "2026-09-11T10:55:28Z",
+    "headline": "Recovered ₹402 after a free reminder."
+  },
+  {
+    "id": "evt_0100BAXQ7JSJNCB9PJVMHTTG53",
+    "customer": {
+      "id": "cus_0100B9AY5HAFS65RFSFKMKF0ZQ",
+      "display_name": "Myra Kumar",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Bhubaneswar"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 180198,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.634,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -11718,
+      "margin_protected_paise": 4362
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-09T17:11:34Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100D09NRJE7HAVR597HCM1SV1",
+    "customer": {
+      "id": "cus_0100CVMPRQ5C4GJM1EME6CPQW8",
+      "display_name": "Amit Krishnan",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 44664,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.835,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 9401,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -264
+    },
+    "detected_at_sim": "2026-09-17T02:37:31Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01003OE0ZNXJVZ28Z9MXPZG9VF",
+    "customer": {
+      "id": "cus_01003N97C4YSGH0873ASP04Q5D",
+      "display_name": "Vikram Jain",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 151292,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.776,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 9854,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 29958
+    },
+    "detected_at_sim": "2026-08-31T03:48:48Z",
+    "headline": "Resolved: ₹1,513 at risk."
+  },
+  {
+    "id": "evt_01003AMBWY3A5J9TA7AX9E5HR2",
+    "customer": {
+      "id": "cus_010039WQ9516388HBYNWNFGY4E",
+      "display_name": "Manisha Subramaniam",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 36835,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.695,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5902,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 4433
+    },
+    "detected_at_sim": "2026-08-27T18:28:32Z",
+    "headline": "Recovered ₹368 after an incentive."
+  },
+  {
+    "id": "evt_0100AOKJ1DX7QEP6GT7T0DH1DS",
+    "customer": {
+      "id": "cus_0100AN1VFKBQWNVEHZ117HGE2F",
+      "display_name": "Aadhya Baruah",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 85328,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.952,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 377,
+      "margin_protected_paise": 1481
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 18308
+    },
+    "detected_at_sim": "2026-09-01T11:25:07Z",
+    "headline": "Returned on their own in 5h 5m. We spent nothing."
+  },
+  {
+    "id": "evt_01007AC5J5N2T2J148P3MQ32ZK",
+    "customer": {
+      "id": "cus_0100793R15JK1KTBA9DVM4RC95",
+      "display_name": "Pooja Sharma",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 142234,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.613,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 15719,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 32376
+    },
+    "detected_at_sim": "2026-08-29T10:01:35Z",
+    "headline": "Recovered ₹1,422 after a free reminder."
+  },
+  {
+    "id": "evt_0100CGJZ1KSCZVATXE9F5MPVQQ",
+    "customer": {
+      "id": "cus_0100CF289KHAQBAVDRWP4EHGHJ",
+      "display_name": "Ramesh Roy",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 89634,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.701,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -3677,
+      "margin_protected_paise": 9379
+    },
+    "outcome": {
+      "resolution_path": "expired",
+      "net_profit_paise": -6
+    },
+    "detected_at_sim": "2026-08-25T13:21:51Z",
+    "headline": "Event aged out with no resolution."
+  },
+  {
+    "id": "evt_0100284HSD3TBF8P22PKC0SQMP",
+    "customer": {
+      "id": "cus_010027SS9T9KBPXVMPN6MNX39P",
+      "display_name": "Kavita Bhatt",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 210105,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.705,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 33213,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -152
+    },
+    "detected_at_sim": "2026-09-09T06:52:19Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01005S7B2MJJFKC8ME79YDSKHC",
+    "customer": {
+      "id": "cus_01005RBD6ZR65CQJAQ8A4YZXPJ",
+      "display_name": "Neha Raghavan",
+      "segment": "power",
+      "farming_tier": "watch",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 231450,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.857,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -30298,
+      "margin_protected_paise": 20153
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-17T18:28:45Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100AC14X8GQ116RXKV092MW0H",
+    "customer": {
+      "id": "cus_0100ABR7ZFB1B58XR35T7T11G5",
+      "display_name": "Jhanvi Bansal",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 129005,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.696,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 13240,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 31956
+    },
+    "detected_at_sim": "2026-09-04T16:41:38Z",
+    "headline": "Recovered ₹1,290 after a free reminder."
+  },
+  {
+    "id": "evt_01006M5YQRDNG08P8BQM513QBN",
+    "customer": {
+      "id": "cus_01006L6G1MB8NW3EQBP4XZ357K",
+      "display_name": "Sowmya Chauhan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 203609,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.584,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 20668,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -136
+    },
+    "detected_at_sim": "2026-09-01T17:43:14Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01006UJ8WXBCHG16E197ETQZN3",
+    "customer": {
+      "id": "cus_01006T59PV8FAX1M3QXFBQ3W2G",
+      "display_name": "Farhan Reddy",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 132249,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.898,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -38247,
+      "margin_protected_paise": 8647
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-26T15:28:55Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01009EGR82E842CQ8EZ8J5E595",
+    "customer": {
+      "id": "cus_01009DT1N79831MYFQSMEZME32",
+      "display_name": "Arjun Mukherjee",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 206649,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.915,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -39941,
+      "margin_protected_paise": 9898
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-09T06:02:48Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100CA187JGMTQJ23S0TH087TN",
+    "customer": {
+      "id": "cus_0100C9HYTG9HW9AK1HVKFGT0YZ",
+      "display_name": "Dhruv Naidu",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 47633,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.872,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2760,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10487
+    },
+    "detected_at_sim": "2026-09-12T03:41:08Z",
+    "headline": "Recovered ₹476 on retry."
+  },
+  {
+    "id": "evt_01006SE6NF17ZVPX4G3T412XG3",
+    "customer": {
+      "id": "cus_01006R3XY6JTGJR35HK6FCEYPY",
+      "display_name": "Ashok Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Chandigarh"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 147870,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.766,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 23196,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 30749
+    },
+    "detected_at_sim": "2026-08-29T12:45:13Z",
+    "headline": "Recovered ₹1,479 after a free reminder."
+  },
+  {
+    "id": "evt_0100683G79WASWRP3TCM17H663",
+    "customer": {
+      "id": "cus_0100674F8MKW2VQCX2FZ92V3S9",
+      "display_name": "Ritu Chauhan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 119348,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.813,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11902,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 28359
+    },
+    "detected_at_sim": "2026-09-04T09:12:09Z",
+    "headline": "Recovered ₹1,193 on retry."
+  },
+  {
+    "id": "evt_0100DAWSD2HBA26HG3Q1TCGA3G",
+    "customer": {
+      "id": "cus_0100D9VQDNHD5499SSKR0CWZG3",
+      "display_name": "Saranya Singh",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 128488,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.87,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 10414,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 29942
+    },
+    "detected_at_sim": "2026-09-04T07:59:57Z",
+    "headline": "Resolved: ₹1,285 at risk."
+  },
+  {
+    "id": "evt_01009S5D8TZE1PMGP3S4CHNVMR",
+    "customer": {
+      "id": "cus_01009R6S4BHT12GGVA8X82X9HR",
+      "display_name": "Anika Reddy",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 50836,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.942,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4515,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10400
+    },
+    "detected_at_sim": "2026-09-10T07:38:30Z",
+    "headline": "Recovered ₹508 after a free reminder."
+  },
+  {
+    "id": "evt_0100CK2E7FEZ430AAW7J2MSTSS",
+    "customer": {
+      "id": "cus_0100CJ7C0A8KJ1GSP9SBC8Q08W",
+      "display_name": "Diya Chatterjee",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Nashik"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 75826,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.736,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -23011,
+      "margin_protected_paise": 5460
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-06T20:45:45Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_010026QRWEM6J66TBKKYN0XVJT",
+    "customer": {
+      "id": "cus_010025X7VW71F4Z18KHSZAH1X0",
+      "display_name": "Sanjay Malhotra",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Nagpur"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 36299,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.754,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3107,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 8281
+    },
+    "detected_at_sim": "2026-08-26T16:42:24Z",
+    "headline": "Recovered ₹363 after a free reminder."
+  },
+  {
+    "id": "evt_010096PYW9TDZ911QMD0K5Z162",
+    "customer": {
+      "id": "cus_010095P5CYN95PG5VNPF1YBVTS",
+      "display_name": "Farhan Murthy",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 225113,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.781,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 16977,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -53
+    },
+    "detected_at_sim": "2026-09-15T18:13:54Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01004M0ZWFXJ0H9R7Y5ZAXNXXA",
+    "customer": {
+      "id": "cus_01004L3MXPPH54WNTV95J5FV6F",
+      "display_name": "Kavita Murthy",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 110636,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.596,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 16111,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 22980
+    },
+    "detected_at_sim": "2026-09-08T23:08:39Z",
+    "headline": "Recovered ₹1,106 on retry."
+  },
+  {
+    "id": "evt_01005E5BSZ1DNFDJS6KG81T8AJ",
+    "customer": {
+      "id": "cus_01005DN1J0ZXGV2T1JPSADEZHB",
+      "display_name": "Sunita Mishra",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 72411,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.851,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -27650,
+      "margin_protected_paise": 1396
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-30T16:39:21Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100BCAMGPBTT1VKS97WTW74FY",
+    "customer": {
+      "id": "cus_0100BB9FK67JZK5NX8WS94WARS",
+      "display_name": "Aadhya Naidu",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Nagpur"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 163559,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.594,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -14344,
+      "margin_protected_paise": 16642
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-30T20:04:35Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100CSWK12GZEZMRYYZNMPXC0R",
+    "customer": {
+      "id": "cus_0100CRWWPGDFEBWJDQT814EK28",
+      "display_name": "Shreya Sharma",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Guwahati"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 38008,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.857,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 2214,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": -1577
+    },
+    "detected_at_sim": "2026-09-18T11:22:01Z",
+    "headline": "Recovered after human follow-up."
+  },
+  {
+    "id": "evt_01002GYEFVDCG9S22GT7NS2FZ2",
+    "customer": {
+      "id": "cus_01002FHWP9SJXWS77VBB1Z8C6C",
+      "display_name": "Prabhu Gupta",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 79988,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.687,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2297,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 22617
+    },
+    "detected_at_sim": "2026-09-03T11:12:47Z",
+    "headline": "Resolved: ₹800 at risk."
+  },
+  {
+    "id": "evt_01002CS6KYBEGHTSS21QRZK57S",
+    "customer": {
+      "id": "cus_01002B9DJ5G44795CR5C99Z3T6",
+      "display_name": "Naveen Sharma",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 133539,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.72,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 139,
+      "margin_protected_paise": 7220
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 39752
+    },
+    "detected_at_sim": "2026-09-13T22:40:24Z",
+    "headline": "Came back unprompted after 1h 18m. No message sent."
+  },
+  {
+    "id": "evt_0100CCST68GCSBQHCY6RM1F62Q",
+    "customer": {
+      "id": "cus_0100CB7MHTC1N5QT588N0WXWHV",
+      "display_name": "Arun Kapoor",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Surat"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 203331,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.625,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -37862,
+      "margin_protected_paise": 20448
+    },
+    "outcome": {
+      "resolution_path": "expired",
+      "net_profit_paise": -6
+    },
+    "detected_at_sim": "2026-09-08T10:48:20Z",
+    "headline": "Event aged out with no resolution."
+  },
+  {
+    "id": "evt_01000F6SG42RDVSFY54HN6R74N",
+    "customer": {
+      "id": "cus_010001KEVN5G8KVF7WQ96GNK0F",
+      "display_name": "Rohit Menon",
+      "segment": "regular",
+      "farming_tier": "flagged",
+      "city": "Kochi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 214000,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.751,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": 0,
+      "margin_protected_paise": 29960
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-26T04:34:18Z",
+    "headline": "Flagged farmer (score 0.71) — incentive withheld. Cut off at ₹0 cost."
+  },
+  {
+    "id": "evt_0100C65KTZSN0MTF9PPG3KGVPS",
+    "customer": {
+      "id": "cus_0100C5YVQ31F74JFPSFSEQDDZM",
+      "display_name": "Naveen Pandey",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 149932,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.851,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -39404,
+      "margin_protected_paise": 9422
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-10T21:44:34Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100AEGQ0XTTC6EM6FNDHM1E29",
+    "customer": {
+      "id": "cus_0100ADTA0C3RFN5VWXEPH4N14E",
+      "display_name": "Pari Deshpande",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 66622,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.665,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 13117,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 11888
+    },
+    "detected_at_sim": "2026-08-30T13:27:18Z",
+    "headline": "Recovered ₹666 on retry."
+  },
+  {
+    "id": "evt_01008A8N7FWAZNAF9B6JBC743K",
+    "customer": {
+      "id": "cus_010089HFP0NVWEENYB4RE3X158",
+      "display_name": "Debashish Chopra",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 32338,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.967,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4633,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7602
+    },
+    "detected_at_sim": "2026-08-31T03:08:27Z",
+    "headline": "Recovered ₹323 on retry."
+  },
+  {
+    "id": "evt_01009404RG2W3SKA15VWJPXNPV",
+    "customer": {
+      "id": "cus_010093RJB1TBFY8D6GA4A1HCXA",
+      "display_name": "Sourav Kapoor",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 116311,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.79,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -33731,
+      "margin_protected_paise": 11704
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 33283
+    },
+    "detected_at_sim": "2026-09-07T09:22:57Z",
+    "headline": "Returned on their own in 10h 38m. We spent nothing."
+  },
+  {
+    "id": "evt_010082MSY5KP6QRZ8BRVK92BD0",
+    "customer": {
+      "id": "cus_0100819MQB80D7BWQGFXF6PASQ",
+      "display_name": "Keerthana Venkatesan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 63329,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.854,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -32972,
+      "margin_protected_paise": 5994
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-15T10:47:47Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100DCNMJCK0R508XZBEG5SR9C",
+    "customer": {
+      "id": "cus_0100DBENT1Q1GVN2N2JY56ZW7Z",
+      "display_name": "Jhanvi Mehta",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 78571,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.665,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 4308,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -244
+    },
+    "detected_at_sim": "2026-09-21T08:43:55Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100AMJGCRGG4FEKJ1MVKMNNVM",
+    "customer": {
+      "id": "cus_0100ALDN7F5TZWJF1SR4ZR5QPE",
+      "display_name": "Praveen Agarwal",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 125003,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.735,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 15580,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 26620
+    },
+    "detected_at_sim": "2026-08-29T22:29:53Z",
+    "headline": "Recovered ₹1,250 on retry."
+  },
+  {
+    "id": "evt_01001A7FCAGE2FQ4097DXWMDM7",
+    "customer": {
+      "id": "cus_010019TAXYP56GWCT21KC4MV62",
+      "display_name": "Geeta Bora",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Guwahati"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 61900,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.764,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 1959,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 14644
+    },
+    "detected_at_sim": "2026-09-02T13:24:53Z",
+    "headline": "Retry timed to the 7th (inferred salary day) succeeded on the first attempt."
+  },
+  {
+    "id": "evt_01002KZ34KZC3R4062M6AGPHQE",
+    "customer": {
+      "id": "cus_01002JHBM2J4APC5V7Z2K201S9",
+      "display_name": "Mou Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 173413,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.843,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "best_ev_paise": 27228,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 40096
+    },
+    "detected_at_sim": "2026-08-26T08:55:42Z",
+    "headline": "Resolved: ₹1,734 at risk."
+  },
+  {
+    "id": "evt_01004S8N5AETNPN77HH4NGHFHD",
+    "customer": {
+      "id": "cus_01004R2J7ZQNH10EZ78PKJ8JRT",
+      "display_name": "Ritu Banerjee",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Kochi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 156950,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.933,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 7064,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 38827
+    },
+    "detected_at_sim": "2026-08-30T12:18:21Z",
+    "headline": "Recovered ₹1,570 on retry."
+  },
+  {
+    "id": "evt_0100A8N2RD2XE3K0M2VZTDH4Y1",
+    "customer": {
+      "id": "cus_0100A7ARPGA9NZGH96QTQQ0NG3",
+      "display_name": "Rohit Bhatt",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 97123,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.911,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 14198,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 25441
+    },
+    "detected_at_sim": "2026-08-31T14:48:12Z",
+    "headline": "Resolved: ₹971 at risk."
+  },
+  {
+    "id": "evt_0100AQ3RABC7D2851SMVS624YB",
+    "customer": {
+      "id": "cus_0100APX4J6JAKE74SY4WJYG3GY",
+      "display_name": "Rekha Venkatesan",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 128890,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.594,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -25084,
+      "margin_protected_paise": 5681
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T01:39:37Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+    "customer": {
+      "id": "cus_01001DFH9KVADZWQ0GX731D8TV",
+      "display_name": "Priya Subramaniam",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Hyderabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 224000,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.89,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3305,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 58922
+    },
+    "detected_at_sim": "2026-09-10T17:29:51Z",
+    "headline": "Card expired — retries blocked by policy. Sent an update-card link instead."
+  },
+  {
+    "id": "evt_01003I55NC6FGFKY499CCD6MHC",
+    "customer": {
+      "id": "cus_01003HZBF6FDQKKZWFGRQQ8PTE",
+      "display_name": "Ashok Saikia",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Mysuru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 52804,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.89,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 11871,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10885
+    },
+    "detected_at_sim": "2026-09-06T02:35:35Z",
+    "headline": "Recovered ₹528 after a free reminder."
+  },
+  {
+    "id": "evt_0100D2XD2SBZF9GY4B6B3J1RB4",
+    "customer": {
+      "id": "cus_0100D1P55TX1W4TY52FBPWD8W6",
+      "display_name": "Aarav Trivedi",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 231436,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.81,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 49389,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 55984
+    },
+    "detected_at_sim": "2026-09-14T19:08:19Z",
+    "headline": "Recovered ₹2,314 after a free reminder."
+  },
+  {
+    "id": "evt_01005QXFEDBVB4049W7JAFFY7C",
+    "customer": {
+      "id": "cus_01005PEDRBYZZ7XGGDTDG7B5BT",
+      "display_name": "Prabhu Mehta",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 162004,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.593,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 8728,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 48779
+    },
+    "detected_at_sim": "2026-08-27T03:25:55Z",
+    "headline": "Recovered ₹1,620 on retry."
+  },
+  {
+    "id": "evt_01000SD0C1CFC0YR736PSZVW7P",
+    "customer": {
+      "id": "cus_01000RAMVW7JFGQJDZ7D1413AR",
+      "display_name": "Farhan Sheikh",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Lucknow"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 62000,
+    "cause_code": "card_limit_exceeded",
+    "cause_confidence": 0.755,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 190,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12210
+    },
+    "detected_at_sim": "2026-08-30T17:51:17Z",
+    "headline": "This customer’s first order — an ops analyst sent a reminder anyway, and it worked."
+  },
+  {
+    "id": "evt_0100442Z6AZF4WY0QRQX89YHV3",
+    "customer": {
+      "id": "cus_010043AAV0NRSJ022R0PRJHVBQ",
+      "display_name": "Naveen Bose",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Nashik"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 236769,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.861,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 8094,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -110
+    },
+    "detected_at_sim": "2026-09-16T02:58:49Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_0100760RWYD0KYQ45FPF7MV3MH",
+    "customer": {
+      "id": "cus_010075Q9X6AXEVSHAFWXHC8RPR",
+      "display_name": "Ayaan Deshpande",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Ranchi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 235372,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.645,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 18700,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 62484
+    },
+    "detected_at_sim": "2026-09-15T23:20:23Z",
+    "headline": "Resolved: ₹2,354 at risk."
+  },
+  {
+    "id": "evt_01009C5ZAM5MHWKDYMWE8ENRS0",
+    "customer": {
+      "id": "cus_01009BDCAYMBV2YT4QK89TQ5KV",
+      "display_name": "Rekha Krishnan",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Rajkot"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 127706,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.706,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -28588,
+      "margin_protected_paise": 6747
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 25919
+    },
+    "detected_at_sim": "2026-09-04T04:43:07Z",
+    "headline": "Came back unprompted after 3h 13m. No message sent."
+  },
+  {
+    "id": "evt_0100A266Y65YP1J6WFQ3C0EYRC",
+    "customer": {
+      "id": "cus_0100A1JEFSHJZTZX011Z014NWR",
+      "display_name": "Ramesh Desai",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Coimbatore"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 221150,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.866,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -33475,
+      "margin_protected_paise": 10340
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-08-30T21:11:30Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_010064QK5HFHZ8Q23DCBEGGYM2",
+    "customer": {
+      "id": "cus_010063JYQ58DY1J3RHX7T1MYAD",
+      "display_name": "Vignesh Deshpande",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 29995,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.674,
+    "status": "expired",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 3687,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7012
+    },
+    "detected_at_sim": "2026-08-28T10:59:47Z",
+    "headline": "Recovered ₹300 on retry."
+  },
+  {
+    "id": "evt_0100B6Z0M1RWFTD6TN29YNYQDX",
+    "customer": {
+      "id": "cus_0100B5TZ03TFF09XGWAA17V1EX",
+      "display_name": "Myra Iyer",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Ranchi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 76898,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.917,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5481,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13804
+    },
+    "detected_at_sim": "2026-09-16T21:44:05Z",
+    "headline": "Recovered ₹769 after an incentive."
+  },
+  {
+    "id": "evt_01002MFJT02KDKA8R36BFV0Q98",
+    "customer": {
+      "id": "cus_01002LEGSZAANGCTQ9YKQKH0B8",
+      "display_name": "Pari Kulkarni",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 175318,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.752,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 38650,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 40551
+    },
+    "detected_at_sim": "2026-09-21T18:04:10Z",
+    "headline": "Resolved: ₹1,753 at risk."
+  },
+  {
+    "id": "evt_01003K9839MS49SZ38PK774NDR",
+    "customer": {
+      "id": "cus_01003JXHAD13ZT29M2D7WFFBBF",
+      "display_name": "Ishaan Malhotra",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 33384,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.83,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 39,
+      "margin_protected_paise": 1363
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-07T07:32:32Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01007GCBA6RF79Y8Y5PETFX678",
+    "customer": {
+      "id": "cus_01007FFAZHYNSPK5BGD62JJ2PP",
+      "display_name": "Sana Kulkarni",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Mumbai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 30472,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.768,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 6030,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7643
+    },
+    "detected_at_sim": "2026-08-31T16:14:16Z",
+    "headline": "Recovered ₹305 on retry."
+  },
+  {
+    "id": "evt_010062XGCE15E126MCMT8QMYP5",
+    "customer": {
+      "id": "cus_010061HAM7R9N821Z7YYBZPF64",
+      "display_name": "Varun Raghavan",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 86893,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.702,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -17240,
+      "margin_protected_paise": 5420
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-05T10:11:50Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_01004OEAT6JDMSWH0J4FFGSFEY",
+    "customer": {
+      "id": "cus_01004NRXWAE28CKGZJ8PBWF3MT",
+      "display_name": "Gowtham Patel",
+      "segment": "casual",
+      "farming_tier": "flagged",
+      "city": "Chandigarh"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 30634,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.775,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -7940,
+      "margin_protected_paise": 2752
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-15T09:26:14Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01008CSDA6YMMSR6V8CTD526TD",
+    "customer": {
+      "id": "cus_01008BQ99JRMNRXGVC9RFVH4WG",
+      "display_name": "Arjun Chatterjee",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 94418,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.657,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 12250,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23422
+    },
+    "detected_at_sim": "2026-08-23T21:47:58Z",
+    "headline": "Recovered ₹944 on retry."
+  },
+  {
+    "id": "evt_01003QSAWMHYKH3DEP5M1VGD7G",
+    "customer": {
+      "id": "cus_01003PVTC4HMJ9PBQ36BXSH8TR",
+      "display_name": "Anjali Malhotra",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Surat"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 48780,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.774,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 10169,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -41
+    },
+    "detected_at_sim": "2026-09-13T18:56:57Z",
+    "headline": "No response after contact. Marked lost."
+  },
+  {
+    "id": "evt_0100A4AZ6NYYSVKQY5FHS96JKG",
+    "customer": {
+      "id": "cus_0100A3HG3YTAQV3DTJFAYAVFDG",
+      "display_name": "Karan Malhotra",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 244184,
+    "cause_code": "risk_declined",
+    "cause_confidence": 0.843,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -15388,
+      "margin_protected_paise": 10469
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T00:18:53Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010040YSGYZ8RPXA8Q9CD4HGFC",
+    "customer": {
+      "id": "cus_01003VAT1VFESXSMC3D4E9QZ0Z",
+      "display_name": "Gaurav Mukherjee",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 70858,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.872,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 5270,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18462
+    },
+    "detected_at_sim": "2026-08-30T05:20:17Z",
+    "headline": "Recovered ₹709 on retry."
+  },
+  {
+    "id": "evt_01005K1CA5ZE86A5NKBPJ6Z3Q1",
+    "customer": {
+      "id": "cus_01005JFN5985PA2T3EJZREMTHB",
+      "display_name": "Gowtham Gogoi",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 6806926,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.79,
+    "status": "expired",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 593944,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 1535637
+    },
+    "detected_at_sim": "2026-09-18T08:01:24Z",
+    "headline": "Resolved: ₹68,069 at risk."
+  },
+  {
+    "id": "evt_01005C8RK1D60CXJ7KP4MV03GW",
+    "customer": {
+      "id": "cus_01005B82B9HDN0HBV3WDD51JEY",
+      "display_name": "Farhan Bhatt",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 146069,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.742,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 19488,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 35264
+    },
+    "detected_at_sim": "2026-09-08T18:24:59Z",
+    "headline": "Recovered ₹1,461 after a free reminder."
+  },
+  {
+    "id": "evt_01007UQQD7JZN17MMX6WFZ6QHS",
+    "customer": {
+      "id": "cus_01007T3FGSQMWCBA4VKCW0JG96",
+      "display_name": "Siddharth Venkatesan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Madurai"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 175946,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.627,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 6317,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 46549
+    },
+    "detected_at_sim": "2026-08-28T06:29:48Z",
+    "headline": "Recovered ₹1,759 on retry."
+  },
+  {
+    "id": "evt_01003G5M6Z78SEF3JE4XZZ2QZ8",
+    "customer": {
+      "id": "cus_01003FQXJDFYA8KJM588BCZJ6K",
+      "display_name": "Farhan Bose",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Chennai"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 70662,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.917,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 14147,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 15025
+    },
+    "detected_at_sim": "2026-08-26T04:11:29Z",
+    "headline": "Recovered ₹707 on retry."
+  },
+  {
+    "id": "evt_0100309255CHVPA1YE0Y90PVKY",
+    "customer": {
+      "id": "cus_01002VV7SE2W7DNSBGR88KSKBM",
+      "display_name": "Varun Kapoor",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Lucknow"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 10812722,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.902,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -39177,
+      "margin_protected_paise": 233057
+    },
+    "outcome": {
+      "resolution_path": "expired",
+      "net_profit_paise": -19
+    },
+    "detected_at_sim": "2026-09-08T15:11:55Z",
+    "headline": "Event aged out with no resolution."
+  },
+  {
+    "id": "evt_01008KN0K3HAVXFHH52VQ9ZTN3",
+    "customer": {
+      "id": "cus_01008J973S135YCF7FG7APDBNF",
+      "display_name": "Sneha Verma",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 114785,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.771,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 10345,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23365
+    },
+    "detected_at_sim": "2026-09-04T04:03:54Z",
+    "headline": "Recovered ₹1,148 on retry."
+  },
+  {
+    "id": "evt_0100AUZFTG3MHRS3NVPA3BDD5M",
+    "customer": {
+      "id": "cus_0100ATDAA9YN2KK0G0V41ZDHT6",
+      "display_name": "Sneha Tiwari",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Chandigarh"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 80962,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.645,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -423,
+      "margin_protected_paise": 5998
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-03T00:23:19Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01005OVGRWYFPPEYYKSFS921CS",
+    "customer": {
+      "id": "cus_01005NYA02F0R72DFTRCDR0B4H",
+      "display_name": "Ananya2 Mehta",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Delhi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 217073,
+    "cause_code": "mandate_revoked",
+    "cause_confidence": 0.656,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 37994,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -298
+    },
+    "detected_at_sim": "2026-09-08T16:15:11Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_010074AZBD0GETCVX92KZ3VJ9D",
+    "customer": {
+      "id": "cus_0100737BNYP5Y1MQT7SD7WFT4J",
+      "display_name": "Ananya2 Bora",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Jaipur"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 50942,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.948,
+    "status": "resolved",
+    "arm": "holdout",
+    "decision": {
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 9810,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 11772
+    },
+    "detected_at_sim": "2026-09-02T17:45:41Z",
+    "headline": "Resolved: ₹509 at risk."
+  },
+  {
+    "id": "evt_01008MDH5GBDPKGS1T0E89A4BX",
+    "customer": {
+      "id": "cus_01008LTVBP3WB12BMXBW4ZEWQG",
+      "display_name": "Sai Baruah",
+      "segment": "new",
+      "farming_tier": "watch",
+      "city": "Jaipur"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 43888,
+    "cause_code": "expired_card",
+    "cause_confidence": 0.619,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -29959,
+      "margin_protected_paise": 3097
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-12T00:11:15Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01001U448QMZBBF4T73499JP77",
+    "customer": {
+      "id": "cus_01001TMHH363A573WCNPFVV3YY",
+      "display_name": "Swati Singh",
+      "segment": "casual",
+      "farming_tier": "normal",
+      "city": "Patna"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 32691,
+    "cause_code": "issuer_declined",
+    "cause_confidence": 0.71,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -10170,
+      "margin_protected_paise": 3552
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-09T02:09:40Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01009AYBHVP9A0Z7718ZWN0YFP",
+    "customer": {
+      "id": "cus_010099Q0RAAS4KFMNJGPZ2D3WT",
+      "display_name": "Nithya Tiwari",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 40755,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.758,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 2645,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 10263
+    },
+    "detected_at_sim": "2026-09-12T03:50:30Z",
+    "headline": "Resolved: ₹408 at risk."
+  },
+  {
+    "id": "evt_01008IV4G2N5WS1PM4Q8MB74VC",
+    "customer": {
+      "id": "cus_01008H0BNWDHA5TAQR1EFZ0MCB",
+      "display_name": "Meera Rajan",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Kolkata"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 155701,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.831,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "best_ev_paise": 22126,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 28539
+    },
+    "detected_at_sim": "2026-09-11T21:50:08Z",
+    "headline": "Recovered ₹1,557 after an incentive."
+  },
+  {
+    "id": "evt_01007ID4N89WFV1ZJFZYHA7N12",
+    "customer": {
+      "id": "cus_01007H19438GAVSX5EKXWMRV2H",
+      "display_name": "Mou Bora",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Thiruvananthapuram"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 88079,
+    "cause_code": "upi_timeout",
+    "cause_confidence": 0.969,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -7085,
+      "margin_protected_paise": 3977
+    },
+    "outcome": {
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 17610
+    },
+    "detected_at_sim": "2026-09-21T18:44:47Z",
+    "headline": "Came back unprompted after 5h 21m. No message sent."
+  },
+  {
+    "id": "evt_0100BKZ0NM1QH5MSP7A045QFVE",
+    "customer": {
+      "id": "cus_0100BJVX2ECHKNXTASZK28VRZ1",
+      "display_name": "Zainab Malhotra",
+      "segment": "regular",
+      "farming_tier": "normal",
+      "city": "Kochi"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 235541,
+    "cause_code": "bank_downtime",
+    "cause_confidence": 0.777,
+    "status": "resolved",
+    "arm": "baseline",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "best_ev_paise": -29511,
+      "margin_protected_paise": 5277
+    },
+    "outcome": {
+      "resolution_path": "expired",
+      "net_profit_paise": -24
+    },
+    "detected_at_sim": "2026-08-28T19:23:11Z",
+    "headline": "Event aged out with no resolution."
+  },
+  {
+    "id": "evt_0100AAVA31YEVH9N4606DRSKCJ",
+    "customer": {
+      "id": "cus_0100A9N4VMS32D5C51EMJHF4Z1",
+      "display_name": "Arun Gupta",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Ahmedabad"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 36680,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.906,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "best_ev_paise": 368,
+      "margin_protected_paise": 3199
+    },
+    "outcome": {
+      "resolution_path": "expired",
+      "net_profit_paise": -33
+    },
+    "detected_at_sim": "2026-09-12T07:02:09Z",
+    "headline": "Event aged out with no resolution."
+  },
+  {
+    "id": "evt_01004IP6S2RZ4JWRN225367V04",
+    "customer": {
+      "id": "cus_01004HRK6JANHXVZ2VT2S9T3ES",
+      "display_name": "Deepak Iyer",
+      "segment": "new",
+      "farming_tier": "normal",
+      "city": "Bengaluru"
+    },
+    "kind": "failed_renewal",
+    "value_at_risk_paise": 87802,
+    "cause_code": "insufficient_funds",
+    "cause_confidence": 0.889,
+    "status": "expired",
+    "arm": "agent",
+    "decision": {
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "best_ev_paise": -31720,
+      "margin_protected_paise": 1976
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": 0
+    },
+    "detected_at_sim": "2026-09-16T01:54:45Z",
+    "headline": "Customer did not return. Marked lost."
+  },
+  {
+    "id": "evt_01004QNVM6W5M86HKAWSCH3V0G",
+    "customer": {
+      "id": "cus_01004P0D5502WSVNKEAQF0NGJB",
+      "display_name": "Dhruv Rathi",
+      "segment": "power",
+      "farming_tier": "normal",
+      "city": "Pune"
+    },
+    "kind": "abandoned_checkout",
+    "value_at_risk_paise": 130347,
+    "cause_code": "do_not_honour",
+    "cause_confidence": 0.819,
+    "status": "resolved",
+    "arm": "agent",
+    "decision": {
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "best_ev_paise": 10770,
+      "margin_protected_paise": 0
+    },
+    "outcome": {
+      "resolution_path": "lost",
+      "net_profit_paise": -48
+    },
+    "detected_at_sim": "2026-09-13T20:45:46Z",
+    "headline": "No response after contact. Marked lost."
+  }
+]

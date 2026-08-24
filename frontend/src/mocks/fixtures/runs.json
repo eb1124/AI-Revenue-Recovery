@@ -1,0 +1,61 @@
+[
+  {
+    "id": "run_010002T1J1815SG05TFSAE11HK",
+    "status": "completed",
+    "arms": [
+      "agent",
+      "baseline",
+      "holdout"
+    ],
+    "population_size": 2000,
+    "sim_days": 30,
+    "seed": 42,
+    "progress": {
+      "sim_day": 30,
+      "total_days": 30,
+      "events_processed": 1184,
+      "events_total": 1184
+    },
+    "started_at": "2026-08-23T10:14:02Z",
+    "completed_at": "2026-08-23T10:29:41Z"
+  },
+  {
+    "id": "run_0100037M69QVG6992NNPX2YDY4",
+    "status": "running",
+    "arms": [
+      "agent",
+      "baseline",
+      "holdout"
+    ],
+    "population_size": 2000,
+    "sim_days": 30,
+    "seed": 43,
+    "progress": {
+      "sim_day": 12,
+      "total_days": 30,
+      "events_processed": 431,
+      "events_total": 1180
+    },
+    "started_at": "2026-08-24T09:02:17Z",
+    "completed_at": null
+  },
+  {
+    "id": "run_01000430BFKW2QX8P5GT3ZJXDJ",
+    "status": "failed",
+    "arms": [
+      "agent",
+      "baseline"
+    ],
+    "population_size": 500,
+    "sim_days": 14,
+    "seed": 7,
+    "progress": {
+      "sim_day": 4,
+      "total_days": 14,
+      "events_processed": 61,
+      "events_total": 412
+    },
+    "started_at": "2026-08-20T14:00:00Z",
+    "completed_at": "2026-08-20T14:06:53Z"
+  }
+]

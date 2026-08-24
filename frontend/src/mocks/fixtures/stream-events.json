@@ -1,0 +1,4911 @@
+[
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010036KHR1HW7F5PE5G97XN3XB",
+      "customer": {
+        "id": "cus_010035MCXN2JVCYF74NN266XAV",
+        "display_name": "Ira Iyer",
+        "segment": "regular",
+        "farming_tier": "flagged",
+        "city": "Nagpur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 172086,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010036KHR1HW7F5PE5G97XN3XB",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 12384,
+      "best_ev_paise": -27629
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CCST68GCSBQHCY6RM1F62Q",
+      "customer": {
+        "id": "cus_0100CB7MHTC1N5QT588N0WXWHV",
+        "display_name": "Arun Kapoor",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Surat"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 203331,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CCST68GCSBQHCY6RM1F62Q",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 20448,
+      "best_ev_paise": -37862
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 1,
+      "events_processed": 20,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 101965,
+        "margin_protected_paise": 36828,
+        "holds": 7
+      },
+      "baseline": {
+        "net_profit_paise": 95961,
+        "margin_protected_paise": 2013,
+        "holds": 2
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100BGQ33QNEG7WQG3R87NWQWZ",
+      "customer": {
+        "id": "cus_0100BFEA5FEN3DR8Y830FBRKZJ",
+        "display_name": "Dhruv Rathi",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Kochi"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 34502,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100BGQ33QNEG7WQG3R87NWQWZ",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 1335,
+      "best_ev_paise": -10868
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CCST68GCSBQHCY6RM1F62Q",
+      "resolution_path": "expired",
+      "net_profit_paise": -6,
+      "incremental_profit_paise": -5
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010036KHR1HW7F5PE5G97XN3XB",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009IJMF66FXYSGNHJYTXGKM5",
+      "customer": {
+        "id": "cus_01009HFSJB3VTRSBR6HS07NVVK",
+        "display_name": "Keerthana Reddy",
+        "segment": "casual",
+        "farming_tier": "flagged",
+        "city": "Patna"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 208019,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009IJMF66FXYSGNHJYTXGKM5",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 21171
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 1,
+      "events_processed": 39,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 203930,
+        "margin_protected_paise": 73655,
+        "holds": 13
+      },
+      "baseline": {
+        "net_profit_paise": 191921,
+        "margin_protected_paise": 4026,
+        "holds": 3
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100D4CHXM9Y4DK4DG5TCBBGR1",
+      "customer": {
+        "id": "cus_0100D3XW09G2NGE2G255ECQ7H8",
+        "display_name": "Rashmi Pandey",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Thiruvananthapuram"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 31127,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01009IJMF66FXYSGNHJYTXGKM5",
+      "action_id": "act_0100O5WVK53XBC2AH83WDKBA4H",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01008KN0K3HAVXFHH52VQ9ZTN3",
+      "customer": {
+        "id": "cus_01008J973S135YCF7FG7APDBNF",
+        "display_name": "Sneha Verma",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 114785,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01007Q2X13TS4CB1F2TZ61RPN2",
+      "customer": {
+        "id": "cus_01007PFWNFWXTVBM3BJ39WMVK8",
+        "display_name": "Kavita Jain",
+        "segment": "casual",
+        "farming_tier": "flagged",
+        "city": "Patna"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 54040,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100D4CHXM9Y4DK4DG5TCBBGR1",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 1228,
+      "best_ev_paise": -11156
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01008KN0K3HAVXFHH52VQ9ZTN3",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 10345
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01008KN0K3HAVXFHH52VQ9ZTN3",
+      "action_id": "act_0100O68PJK40VMGF9HH2FB96YQ",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100BGQ33QNEG7WQG3R87NWQWZ",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01007Q2X13TS4CB1F2TZ61RPN2",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2126
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01008CSDA6YMMSR6V8CTD526TD",
+      "customer": {
+        "id": "cus_01008BQ99JRMNRXGVC9RFVH4WG",
+        "display_name": "Arjun Chatterjee",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 94418,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009IJMF66FXYSGNHJYTXGKM5",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 45237,
+      "incremental_profit_paise": 37445
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01007Q2X13TS4CB1F2TZ61RPN2",
+      "action_id": "act_0100O7YVVVE4WG0XB4V64KC6T4",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 2,
+      "events_processed": 59,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 305895,
+        "margin_protected_paise": 110483,
+        "holds": 20
+      },
+      "baseline": {
+        "net_profit_paise": 287882,
+        "margin_protected_paise": 6039,
+        "holds": 5
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01008CSDA6YMMSR6V8CTD526TD",
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 12250
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100BEEQQTMGQRHMNY3TBHR463",
+      "customer": {
+        "id": "cus_0100BD7T77TJM4EPAC13A6TWWA",
+        "display_name": "Nithya Desai",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Madurai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 113617,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100D4CHXM9Y4DK4DG5TCBBGR1",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 6412,
+      "incremental_profit_paise": 3598
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01008CSDA6YMMSR6V8CTD526TD",
+      "action_id": "act_0100O8RYRJ4EMFMM7PZ5RG5DHY",
+      "type": "RETRY_NOW",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100BEEQQTMGQRHMNY3TBHR463",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 11052
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100BEEQQTMGQRHMNY3TBHR463",
+      "action_id": "act_0100O9VATKJ5HH1W3NS732BFT0",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01008KN0K3HAVXFHH52VQ9ZTN3",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23365,
+      "incremental_profit_paise": 15986
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005C8RK1D60CXJ7KP4MV03GW",
+      "customer": {
+        "id": "cus_01005B82B9HDN0HBV3WDD51JEY",
+        "display_name": "Farhan Bhatt",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 146069,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100BEEQQTMGQRHMNY3TBHR463",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23934,
+      "incremental_profit_paise": 22939
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 2,
+      "events_processed": 79,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 407860,
+        "margin_protected_paise": 147310,
+        "holds": 26
+      },
+      "baseline": {
+        "net_profit_paise": 383843,
+        "margin_protected_paise": 8052,
+        "holds": 6
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005C8RK1D60CXJ7KP4MV03GW",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 19488
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01005C8RK1D60CXJ7KP4MV03GW",
+      "action_id": "act_0100OAR4EB441XH73ZHBABTRM1",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100A09T8AMQPTWM5F0G5PCV5R",
+      "customer": {
+        "id": "cus_01009VGSASVBMZ7RWXZSF9NV4Z",
+        "display_name": "Farhan Trivedi",
+        "segment": "casual",
+        "farming_tier": "watch",
+        "city": "Coimbatore"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 51972,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01007Q2X13TS4CB1F2TZ61RPN2",
+      "resolution_path": "lost",
+      "net_profit_paise": -127,
+      "incremental_profit_paise": -116
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003K9839MS49SZ38PK774NDR",
+      "customer": {
+        "id": "cus_01003JXHAD13ZT29M2D7WFFBBF",
+        "display_name": "Ishaan Malhotra",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 33384,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100A09T8AMQPTWM5F0G5PCV5R",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 6337
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01008CSDA6YMMSR6V8CTD526TD",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 23422,
+      "incremental_profit_paise": 23079
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100A09T8AMQPTWM5F0G5PCV5R",
+      "action_id": "act_0100OB64XB6APW3Q159QT8JPYS",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CSWK12GZEZMRYYZNMPXC0R",
+      "customer": {
+        "id": "cus_0100CRWWPGDFEBWJDQT814EK28",
+        "display_name": "Shreya Sharma",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Guwahati"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 38008,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003K9839MS49SZ38PK774NDR",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 1363,
+      "best_ev_paise": 39
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 3,
+      "events_processed": 99,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 509825,
+        "margin_protected_paise": 184138,
+        "holds": 33
+      },
+      "baseline": {
+        "net_profit_paise": 479803,
+        "margin_protected_paise": 10065,
+        "holds": 8
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CSWK12GZEZMRYYZNMPXC0R",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2214
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010092KNA8ZYSTHEQ5HMES2TJR",
+      "customer": {
+        "id": "cus_0100916AX73CGPXA002WXJ4W9M",
+        "display_name": "Lakshmi Mukherjee",
+        "segment": "new",
+        "farming_tier": "flagged",
+        "city": "Nashik"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 124572,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100CSWK12GZEZMRYYZNMPXC0R",
+      "action_id": "act_0100OC5M9JKAV9F04VNX1DWNAC",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010092KNA8ZYSTHEQ5HMES2TJR",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 8004
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010092KNA8ZYSTHEQ5HMES2TJR",
+      "action_id": "act_0100ODHBJTPKK4BNADC1CN5CFN",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100A09T8AMQPTWM5F0G5PCV5R",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12124,
+      "incremental_profit_paise": 4377
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01003K9839MS49SZ38PK774NDR",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009G2JJKP683H4HJ1A86TVP6",
+      "customer": {
+        "id": "cus_01009FYHFQH9TPKQ7TBNMER3CR",
+        "display_name": "Farhan Krishnan",
+        "segment": "power",
+        "farming_tier": "watch",
+        "city": "Madurai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 65041,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005C8RK1D60CXJ7KP4MV03GW",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 35264,
+      "incremental_profit_paise": 23478
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009G2JJKP683H4HJ1A86TVP6",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 4382
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01009G2JJKP683H4HJ1A86TVP6",
+      "action_id": "act_0100OE0QXV82BRW08W8CECPKSA",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01002EETJZ4TK5CA9JM5ZA90PW",
+      "customer": {
+        "id": "cus_01002DJ2G7XH3QADT1BM1XPC7Y",
+        "display_name": "Kabir Tiwari",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 135659,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010092KNA8ZYSTHEQ5HMES2TJR",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 26038,
+      "incremental_profit_paise": 22920
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 3,
+      "events_processed": 118,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 611790,
+        "margin_protected_paise": 220966,
+        "holds": 40
+      },
+      "baseline": {
+        "net_profit_paise": 575764,
+        "margin_protected_paise": 12078,
+        "holds": 9
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01002EETJZ4TK5CA9JM5ZA90PW",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "margin_protected_paise": null,
+      "best_ev_paise": 10877
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CSWK12GZEZMRYYZNMPXC0R",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": -1577,
+      "incremental_profit_paise": -808
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010034P0C8T5E0RWW7VJZW99H9",
+      "customer": {
+        "id": "cus_010033SB75KPEGCG0GJ19AD1FN",
+        "display_name": "Vikram Bhatt",
+        "segment": "casual",
+        "farming_tier": "watch",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 198174,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01002EETJZ4TK5CA9JM5ZA90PW",
+      "action_id": "act_0100OF7S01D9Q409QNKRWKDVXD",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009G2JJKP683H4HJ1A86TVP6",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 19712,
+      "incremental_profit_paise": 12182
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100D8ANH24Q2TFVH6VBSKZ596",
+      "customer": {
+        "id": "cus_0100D7W7T6W6W3AT317JCJRPBH",
+        "display_name": "Ishaan Saikia",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Thiruvananthapuram"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 51070,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010034P0C8T5E0RWW7VJZW99H9",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 7216,
+      "best_ev_paise": -17595
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100D8ANH24Q2TFVH6VBSKZ596",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 6103
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01002EETJZ4TK5CA9JM5ZA90PW",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 19964,
+      "incremental_profit_paise": 11032
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100D8ANH24Q2TFVH6VBSKZ596",
+      "action_id": "act_0100OG19AXDK2WE5W0YZF3F40A",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 4,
+      "events_processed": 138,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 713755,
+        "margin_protected_paise": 257793,
+        "holds": 46
+      },
+      "baseline": {
+        "net_profit_paise": 671725,
+        "margin_protected_paise": 14091,
+        "holds": 11
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100760RWYD0KYQ45FPF7MV3MH",
+      "customer": {
+        "id": "cus_010075Q9X6AXEVSHAFWXHC8RPR",
+        "display_name": "Ayaan Deshpande",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Ranchi"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 235372,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100760RWYD0KYQ45FPF7MV3MH",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 18700
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010034P0C8T5E0RWW7VJZW99H9",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100760RWYD0KYQ45FPF7MV3MH",
+      "action_id": "act_0100OHQJF850H61WWGFYQNW1ME",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+      "customer": {
+        "id": "cus_010010R4EMC6ZXDXW3FV8FSBQB",
+        "display_name": "Saranya Murugan",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Coimbatore"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 156000,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 4,
+      "events_processed": 158,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 815720,
+        "margin_protected_paise": 294621,
+        "holds": 53
+      },
+      "baseline": {
+        "net_profit_paise": 767685,
+        "margin_protected_paise": 16104,
+        "holds": 12
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01000F6SG42RDVSFY54HN6R74N",
+      "customer": {
+        "id": "cus_010001KEVN5G8KVF7WQ96GNK0F",
+        "display_name": "Rohit Menon",
+        "segment": "regular",
+        "farming_tier": "flagged",
+        "city": "Kochi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 214000,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 9012
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+      "action_id": "act_0100OITBCPK89X8AN5XECH0JM0",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01000F6SG42RDVSFY54HN6R74N",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 29960,
+      "best_ev_paise": 0
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100D8ANH24Q2TFVH6VBSKZ596",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7910,
+      "incremental_profit_paise": 2374
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010084CZ5RAFXN60VWR5PH3CK8",
+      "customer": {
+        "id": "cus_010083WXRCAF8MB5GH5GJM4CPQ",
+        "display_name": "Vignesh Raghavan",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Rajkot"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 93581,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010084CZ5RAFXN60VWR5PH3CK8",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 14221
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010088Q0N0M98YHPXKXYNK44VB",
+      "customer": {
+        "id": "cus_01008773KEFH4C94D5M5DGDQWS",
+        "display_name": "Deepak Kumar",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Vadodara"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 234629,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010084CZ5RAFXN60VWR5PH3CK8",
+      "action_id": "act_0100OJQT0BTF4G1PEN1D36QED5",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010011VQNFBKZ9DD9NB6MSHZVW",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 20506,
+      "incremental_profit_paise": 19351
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010088Q0N0M98YHPXKXYNK44VB",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 22208,
+      "best_ev_paise": -8773
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 5,
+      "events_processed": 178,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010084CZ5RAFXN60VWR5PH3CK8",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 25024,
+      "incremental_profit_paise": 13514
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 917685,
+        "margin_protected_paise": 331448,
+        "holds": 60
+      },
+      "baseline": {
+        "net_profit_paise": 863646,
+        "margin_protected_paise": 18117,
+        "holds": 14
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005U537A289C820K1R18X1WW",
+      "customer": {
+        "id": "cus_01005THHM0GME3PKW42T8395AQ",
+        "display_name": "Priya Kulkarni",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Chennai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 31141,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100760RWYD0KYQ45FPF7MV3MH",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 62484,
+      "incremental_profit_paise": 43401
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005U537A289C820K1R18X1WW",
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 7327
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CA187JGMTQJ23S0TH087TN",
+      "customer": {
+        "id": "cus_0100C9HYTG9HW9AK1HVKFGT0YZ",
+        "display_name": "Dhruv Naidu",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Rajkot"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 47633,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01005U537A289C820K1R18X1WW",
+      "action_id": "act_0100OKT0SS9TTJEK0R0R5NVF5D",
+      "type": "RETRY_NOW",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009MS8E08XXN7Q7V8H8EAH98",
+      "customer": {
+        "id": "cus_01009LJTHR41FSPBMV34YSJJZN",
+        "display_name": "Trisha Patel",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 36679,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CA187JGMTQJ23S0TH087TN",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2760
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100CA187JGMTQJ23S0TH087TN",
+      "action_id": "act_0100OL3TCPWQT3ZKHMR6AT308Q",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009MS8E08XXN7Q7V8H8EAH98",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5045
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01009MS8E08XXN7Q7V8H8EAH98",
+      "action_id": "act_0100OM7CAJWB5PWT084MF9ZSQW",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01000F6SG42RDVSFY54HN6R74N",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010040YSGYZ8RPXA8Q9CD4HGFC",
+      "customer": {
+        "id": "cus_01003VAT1VFESXSMC3D4E9QZ0Z",
+        "display_name": "Gaurav Mukherjee",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Madurai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 70858,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 5,
+      "events_processed": 197,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1019650,
+        "margin_protected_paise": 368276,
+        "holds": 66
+      },
+      "baseline": {
+        "net_profit_paise": 959607,
+        "margin_protected_paise": 20130,
+        "holds": 16
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010088Q0N0M98YHPXKXYNK44VB",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004G0MK9PHSSZH0ZY4737FK2",
+      "customer": {
+        "id": "cus_01004FZHQRZQPY8KZP5W70VX6N",
+        "display_name": "Vignesh Kapoor",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 193120,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010040YSGYZ8RPXA8Q9CD4HGFC",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5270
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CA187JGMTQJ23S0TH087TN",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10487,
+      "incremental_profit_paise": 8813
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010040YSGYZ8RPXA8Q9CD4HGFC",
+      "action_id": "act_0100ON4AS95W722ZTAY79QJR3V",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005U537A289C820K1R18X1WW",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 6694,
+      "incremental_profit_paise": 5179
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004G0MK9PHSSZH0ZY4737FK2",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 6049
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100B8REPPWVWXVSQ1FJRE9DDD",
+      "customer": {
+        "id": "cus_0100B7MXSJ0A9ESZZRH7GQVZXG",
+        "display_name": "Nithya Mishra",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Chennai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 49041,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01004G0MK9PHSSZH0ZY4737FK2",
+      "action_id": "act_0100OO3JW1MQEXYCEQYX0KHMM1",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100B8REPPWVWXVSQ1FJRE9DDD",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 5222,
+      "best_ev_paise": -36593
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009MS8E08XXN7Q7V8H8EAH98",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 5632,
+      "incremental_profit_paise": 4397
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 6,
+      "events_processed": 217,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1121614,
+        "margin_protected_paise": 405103,
+        "holds": 73
+      },
+      "baseline": {
+        "net_profit_paise": 1055568,
+        "margin_protected_paise": 22142,
+        "holds": 17
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01008A8N7FWAZNAF9B6JBC743K",
+      "customer": {
+        "id": "cus_010089HFP0NVWEENYB4RE3X158",
+        "display_name": "Debashish Chopra",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Madurai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 32338,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010040YSGYZ8RPXA8Q9CD4HGFC",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18462,
+      "incremental_profit_paise": 17932
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01008A8N7FWAZNAF9B6JBC743K",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 4633
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01008A8N7FWAZNAF9B6JBC743K",
+      "action_id": "act_0100OPAAAKJSEXANW6NTQM34N0",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CQJ0JHMTHQ73P6FYE3C4P3",
+      "customer": {
+        "id": "cus_0100CPZNDVB7EZX2NR0E3VJK7J",
+        "display_name": "Arun Pandey",
+        "segment": "casual",
+        "farming_tier": "watch",
+        "city": "Hyderabad"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 54401,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004G0MK9PHSSZH0ZY4737FK2",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 32937,
+      "incremental_profit_paise": 11857
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006QZ2S3GH9M491MTANFCW6R",
+      "customer": {
+        "id": "cus_01006PVPA7H3610S4YDHBQXAA3",
+        "display_name": "Myra Tiwari",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 245242,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006QZ2S3GH9M491MTANFCW6R",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 17711,
+      "best_ev_paise": -3720
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CQJ0JHMTHQ73P6FYE3C4P3",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 11957
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 6,
+      "events_processed": 237,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1223579,
+        "margin_protected_paise": 441931,
+        "holds": 79
+      },
+      "baseline": {
+        "net_profit_paise": 1151528,
+        "margin_protected_paise": 24155,
+        "holds": 19
+      }
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100CQJ0JHMTHQ73P6FYE3C4P3",
+      "action_id": "act_0100OQVQ542YZCCABEHB46XJB9",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01008A8N7FWAZNAF9B6JBC743K",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7602,
+      "incremental_profit_paise": 6944
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004CC65MATP5R5S6CCDMRPMD",
+      "customer": {
+        "id": "cus_01004B6ND6P3QABVG476Y0XFSW",
+        "display_name": "Dinesh Malhotra",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 225392,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004CC65MATP5R5S6CCDMRPMD",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 7214
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100B8REPPWVWXVSQ1FJRE9DDD",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01004CC65MATP5R5S6CCDMRPMD",
+      "action_id": "act_0100ORSZDVMZCFP2FM4GZXWJTK",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01002UR9R7DFH6941433QSKDTR",
+      "customer": {
+        "id": "cus_01002T15FANXMFMAY5F11XVEZ6",
+        "display_name": "Mou Baruah",
+        "segment": "regular",
+        "farming_tier": "watch",
+        "city": "Guwahati"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 55223,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01002UR9R7DFH6941433QSKDTR",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2184
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006QZ2S3GH9M491MTANFCW6R",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009C5ZAM5MHWKDYMWE8ENRS0",
+      "customer": {
+        "id": "cus_01009BDCAYMBV2YT4QK89TQ5KV",
+        "display_name": "Rekha Krishnan",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Rajkot"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 127706,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01002UR9R7DFH6941433QSKDTR",
+      "action_id": "act_0100OSGSH864577VBYS1MYB3A3",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100C65KTZSN0MTF9PPG3KGVPS",
+      "customer": {
+        "id": "cus_0100C5YVQ31F74JFPSFSEQDDZM",
+        "display_name": "Naveen Pandey",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Coimbatore"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 149932,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009C5ZAM5MHWKDYMWE8ENRS0",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 6747,
+      "best_ev_paise": -28588
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01007ESAMB4HFNEDG6WKDN72Y3",
+      "customer": {
+        "id": "cus_01007D11PE0NJCDKV51JXAPNAD",
+        "display_name": "Anjali Chatterjee",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Ranchi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 34558,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100C65KTZSN0MTF9PPG3KGVPS",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 9422,
+      "best_ev_paise": -39404
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 7,
+      "events_processed": 257,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1325544,
+        "margin_protected_paise": 478759,
+        "holds": 86
+      },
+      "baseline": {
+        "net_profit_paise": 1247489,
+        "margin_protected_paise": 26168,
+        "holds": 20
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01002UR9R7DFH6941433QSKDTR",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 12161,
+      "incremental_profit_paise": 5671
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01007ESAMB4HFNEDG6WKDN72Y3",
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2510
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01007ESAMB4HFNEDG6WKDN72Y3",
+      "action_id": "act_0100OTTHYN9053AZGFZ57Q87E5",
+      "type": "RETRY_NOW",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CQJ0JHMTHQ73P6FYE3C4P3",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10970,
+      "incremental_profit_paise": 6977
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004CC65MATP5R5S6CCDMRPMD",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 53486,
+      "incremental_profit_paise": 27370
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004A13VDP26WBWPVVCNBPKTS",
+      "customer": {
+        "id": "cus_010049Z39YHZFV1PK0HAANG6CJ",
+        "display_name": "Sai Kapoor",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Hyderabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 30165,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009C5ZAM5MHWKDYMWE8ENRS0",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 25919,
+      "incremental_profit_paise": 14039
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01007ESAMB4HFNEDG6WKDN72Y3",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 6218,
+      "incremental_profit_paise": 4212
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004A13VDP26WBWPVVCNBPKTS",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 1421
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100C65KTZSN0MTF9PPG3KGVPS",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005IPWDT029G3Z2BNA210HJ2",
+      "customer": {
+        "id": "cus_01005HK8481QQHPHEQGTQB9YZF",
+        "display_name": "Vignesh Chauhan",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 155361,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 7,
+      "events_processed": 276,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1427509,
+        "margin_protected_paise": 515586,
+        "holds": 93
+      },
+      "baseline": {
+        "net_profit_paise": 1343450,
+        "margin_protected_paise": 28181,
+        "holds": 22
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005IPWDT029G3Z2BNA210HJ2",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 13326,
+      "best_ev_paise": -40929
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01004A13VDP26WBWPVVCNBPKTS",
+      "action_id": "act_0100OUBVCRFN9H4S7935A4RWMX",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005GW57821ZNWQVYVQJXW48G",
+      "customer": {
+        "id": "cus_01005FARR8VMKDEA7SYM13M3V1",
+        "display_name": "Rohan Murthy",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 43958,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005GW57821ZNWQVYVQJXW48G",
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 8724
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003AMBWY3A5J9TA7AX9E5HR2",
+      "customer": {
+        "id": "cus_010039WQ9516388HBYNWNFGY4E",
+        "display_name": "Manisha Subramaniam",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 36835,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003AMBWY3A5J9TA7AX9E5HR2",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5902
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004A13VDP26WBWPVVCNBPKTS",
+      "resolution_path": "lost",
+      "net_profit_paise": -284,
+      "incremental_profit_paise": -181
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01003AMBWY3A5J9TA7AX9E5HR2",
+      "action_id": "act_0100P0VD8Z8FFTW13Z85XD0T0R",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01005GW57821ZNWQVYVQJXW48G",
+      "action_id": "act_0100OV0DKRKGVWERARV5M5VBCP",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005IPWDT029G3Z2BNA210HJ2",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 8,
+      "events_processed": 296,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1529474,
+        "margin_protected_paise": 552414,
+        "holds": 99
+      },
+      "baseline": {
+        "net_profit_paise": 1439410,
+        "margin_protected_paise": 30194,
+        "holds": 23
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003I55NC6FGFKY499CCD6MHC",
+      "customer": {
+        "id": "cus_01003HZBF6FDQKKZWFGRQQ8PTE",
+        "display_name": "Ashok Saikia",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Mysuru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 52804,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003I55NC6FGFKY499CCD6MHC",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 11871
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100AC14X8GQ116RXKV092MW0H",
+      "customer": {
+        "id": "cus_0100ABR7ZFB1B58XR35T7T11G5",
+        "display_name": "Jhanvi Bansal",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 129005,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01003I55NC6FGFKY499CCD6MHC",
+      "action_id": "act_0100P1FMTKH695CKB8SK2E03T2",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005GW57821ZNWQVYVQJXW48G",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 9072,
+      "incremental_profit_paise": 7550
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 8,
+      "events_processed": 316,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1631439,
+        "margin_protected_paise": 589241,
+        "holds": 106
+      },
+      "baseline": {
+        "net_profit_paise": 1535371,
+        "margin_protected_paise": 32207,
+        "holds": 25
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01003AMBWY3A5J9TA7AX9E5HR2",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 4433,
+      "incremental_profit_paise": 3092
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100AC14X8GQ116RXKV092MW0H",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 13240
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004KPEHWNHJV363XR3Q9E1X4",
+      "customer": {
+        "id": "cus_01004JHK9Y4Q3BXRM0W90NR8WS",
+        "display_name": "Pooja Chauhan",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Visakhapatnam"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 205513,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004KPEHWNHJV363XR3Q9E1X4",
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5505
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100AC14X8GQ116RXKV092MW0H",
+      "action_id": "act_0100P2JFRQ54HWCC54RTXMTY47",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01004KPEHWNHJV363XR3Q9E1X4",
+      "action_id": "act_0100P3S29V4JD5A9PSDN5Z82G5",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01003I55NC6FGFKY499CCD6MHC",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10885,
+      "incremental_profit_paise": 5257
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+      "customer": {
+        "id": "cus_01001DFH9KVADZWQ0GX731D8TV",
+        "display_name": "Priya Subramaniam",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Hyderabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 224000,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 3305
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 9,
+      "events_processed": 335,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1733404,
+        "margin_protected_paise": 626069,
+        "holds": 112
+      },
+      "baseline": {
+        "net_profit_paise": 1631332,
+        "margin_protected_paise": 34220,
+        "holds": 26
+      }
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+      "action_id": "act_0100P4NEFNWDAEK3EQTKNEP74G",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003UDZT6DPVEA3GTPEKE8GCV",
+      "customer": {
+        "id": "cus_01003T90T9AGN8JNSG8V03SBDR",
+        "display_name": "Kiara Baruah",
+        "segment": "regular",
+        "farming_tier": "watch",
+        "city": "Guwahati"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 35845,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003UDZT6DPVEA3GTPEKE8GCV",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 3035
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01003UDZT6DPVEA3GTPEKE8GCV",
+      "action_id": "act_0100P57734N3PVDXK8EZ69CNYW",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006ETNXGHER35NKF4CF2T0KS",
+      "customer": {
+        "id": "cus_01006D27601R2HTGH5ABCAEDD1",
+        "display_name": "Rashmi Krishnan",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 249945,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100AC14X8GQ116RXKV092MW0H",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 31956,
+      "incremental_profit_paise": 29961
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006ETNXGHER35NKF4CF2T0KS",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 9931
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004KPEHWNHJV363XR3Q9E1X4",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 50325,
+      "incremental_profit_paise": 38063
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01006ETNXGHER35NKF4CF2T0KS",
+      "action_id": "act_0100P6J6J6DQP58Z3Q1SV137EH",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01003UDZT6DPVEA3GTPEKE8GCV",
+      "resolution_path": "lost",
+      "net_profit_paise": -269,
+      "incremental_profit_paise": -154
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 9,
+      "events_processed": 355,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1835369,
+        "margin_protected_paise": 662897,
+        "holds": 119
+      },
+      "baseline": {
+        "net_profit_paise": 1727292,
+        "margin_protected_paise": 36233,
+        "holds": 28
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01001ER2129FE3QYFFC2ZJ2521",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 58922,
+      "incremental_profit_paise": 44039
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010020X4748R0MXYJ6K7H07CQY",
+      "customer": {
+        "id": "cus_01001VNMDW0MKPZWW7ZA872ZF4",
+        "display_name": "Debashish Mishra",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Nagpur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 33665,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100442Z6AZF4WY0QRQX89YHV3",
+      "customer": {
+        "id": "cus_010043AAV0NRSJ022R0PRJHVBQ",
+        "display_name": "Naveen Bose",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Nashik"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 236769,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010020X4748R0MXYJ6K7H07CQY",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 4478
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01007O6GXNP2XYJH9P573T8H7J",
+      "customer": {
+        "id": "cus_01007N9MF6P5G6FN2BAFPNF6F3",
+        "display_name": "Vihaan Kumar",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Hyderabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 36743,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010020X4748R0MXYJ6K7H07CQY",
+      "action_id": "act_0100P7GMPDSRS9HFVC3KR0ET5V",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004QNVM6W5M86HKAWSCH3V0G",
+      "customer": {
+        "id": "cus_01004P0D5502WSVNKEAQF0NGJB",
+        "display_name": "Dhruv Rathi",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 130347,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100442Z6AZF4WY0QRQX89YHV3",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 8094
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004QNVM6W5M86HKAWSCH3V0G",
+      "action": "NUDGE_FREE",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 10770
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 10,
+      "events_processed": 375,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01004QNVM6W5M86HKAWSCH3V0G",
+      "action_id": "act_0100P9W8QECC8052PVRK9JVCRE",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010020X4748R0MXYJ6K7H07CQY",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 6299,
+      "incremental_profit_paise": 3210
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 1937334,
+        "margin_protected_paise": 699724,
+        "holds": 126
+      },
+      "baseline": {
+        "net_profit_paise": 1823253,
+        "margin_protected_paise": 38246,
+        "holds": 29
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01007O6GXNP2XYJH9P573T8H7J",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 1499,
+      "best_ev_paise": -3996
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100442Z6AZF4WY0QRQX89YHV3",
+      "action_id": "act_0100P8Y609CDJ7PKNG1WCTT3BQ",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01008U5ZJCBMRAEHH63VV6FYQX",
+      "customer": {
+        "id": "cus_01008TSMFH7T1PGGN9A7VXJKB9",
+        "display_name": "Sneha Gupta",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 37612,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01008U5ZJCBMRAEHH63VV6FYQX",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "margin_protected_paise": null,
+      "best_ev_paise": 8167
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006ETNXGHER35NKF4CF2T0KS",
+      "resolution_path": "lost",
+      "net_profit_paise": -102,
+      "incremental_profit_paise": -55
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009K54YQ1GGZKM5XHXY7BR6K",
+      "customer": {
+        "id": "cus_01009JCZNE14RZ3QYHV6FDF81B",
+        "display_name": "Saranya Rajan",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 47025,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01008U5ZJCBMRAEHH63VV6FYQX",
+      "action_id": "act_0100PA9VYSG4XZAYYER9AP04R2",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009K54YQ1GGZKM5XHXY7BR6K",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5658
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100B6Z0M1RWFTD6TN29YNYQDX",
+      "customer": {
+        "id": "cus_0100B5TZ03TFF09XGWAA17V1EX",
+        "display_name": "Myra Iyer",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Ranchi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 76898,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01007O6GXNP2XYJH9P573T8H7J",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004QNVM6W5M86HKAWSCH3V0G",
+      "resolution_path": "lost",
+      "net_profit_paise": -48,
+      "incremental_profit_paise": -21
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01009K54YQ1GGZKM5XHXY7BR6K",
+      "action_id": "act_0100PB3BJXCRC480E3A3NBA0JN",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 10,
+      "events_processed": 395,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2039299,
+        "margin_protected_paise": 736552,
+        "holds": 132
+      },
+      "baseline": {
+        "net_profit_paise": 1919214,
+        "margin_protected_paise": 40259,
+        "holds": 31
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009QQ81DSVP9228ZG180NHKJ",
+      "customer": {
+        "id": "cus_01009PAPTD6SHB86DK9Y4EMWWZ",
+        "display_name": "Manoj Yadav",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Surat"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 30647,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100442Z6AZF4WY0QRQX89YHV3",
+      "resolution_path": "lost",
+      "net_profit_paise": -110,
+      "incremental_profit_paise": -84
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100B6Z0M1RWFTD6TN29YNYQDX",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 5481
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003OE0ZNXJVZ28Z9MXPZG9VF",
+      "customer": {
+        "id": "cus_01003N97C4YSGH0873ASP04Q5D",
+        "display_name": "Vikram Jain",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 151292,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009QQ81DSVP9228ZG180NHKJ",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 559,
+      "best_ev_paise": -37268
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100B6Z0M1RWFTD6TN29YNYQDX",
+      "action_id": "act_0100PC4MGNEDA7MFYMKAA19D1H",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003OE0ZNXJVZ28Z9MXPZG9VF",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 9854
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009K54YQ1GGZKM5XHXY7BR6K",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 10085,
+      "incremental_profit_paise": 3570
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01003OE0ZNXJVZ28Z9MXPZG9VF",
+      "action_id": "act_0100PDDJJ1CSWAAZH36SYXDPFR",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01004IP6S2RZ4JWRN225367V04",
+      "customer": {
+        "id": "cus_01004HRK6JANHXVZ2VT2S9T3ES",
+        "display_name": "Deepak Iyer",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 87802,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010026QRWEM6J66TBKKYN0XVJT",
+      "customer": {
+        "id": "cus_010025X7VW71F4Z18KHSZAH1X0",
+        "display_name": "Sanjay Malhotra",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Nagpur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 36299,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01008U5ZJCBMRAEHH63VV6FYQX",
+      "resolution_path": "lost",
+      "net_profit_paise": -8560,
+      "incremental_profit_paise": -8372
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010026QRWEM6J66TBKKYN0XVJT",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 3107
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 11,
+      "events_processed": 414,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01004IP6S2RZ4JWRN225367V04",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 1976,
+      "best_ev_paise": -31720
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2141264,
+        "margin_protected_paise": 773379,
+        "holds": 139
+      },
+      "baseline": {
+        "net_profit_paise": 2015174,
+        "margin_protected_paise": 42272,
+        "holds": 33
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100B6Z0M1RWFTD6TN29YNYQDX",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13804,
+      "incremental_profit_paise": 10539
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010026QRWEM6J66TBKKYN0XVJT",
+      "action_id": "act_0100PE7CHD8JKPWKCCXASRGZ21",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010064QK5HFHZ8Q23DCBEGGYM2",
+      "customer": {
+        "id": "cus_010063JYQ58DY1J3RHX7T1MYAD",
+        "display_name": "Vignesh Deshpande",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Thiruvananthapuram"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 29995,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010064QK5HFHZ8Q23DCBEGGYM2",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 3687
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100ASMAHNQ0B793093846XBR3",
+      "customer": {
+        "id": "cus_0100ARA3FKET4C76WA946VVPXE",
+        "display_name": "Aryan Banerjee",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 66464,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01004IP6S2RZ4JWRN225367V04",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010064QK5HFHZ8Q23DCBEGGYM2",
+      "action_id": "act_0100PFA2ZYWBR8H35P5V44BM4M",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009QQ81DSVP9228ZG180NHKJ",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 7066,
+      "incremental_profit_paise": 5777
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01001U448QMZBBF4T73499JP77",
+      "customer": {
+        "id": "cus_01001TMHH363A573WCNPFVV3YY",
+        "display_name": "Swati Singh",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Patna"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 32691,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01003OE0ZNXJVZ28Z9MXPZG9VF",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 29958,
+      "incremental_profit_paise": 13432
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01001U448QMZBBF4T73499JP77",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 3552,
+      "best_ev_paise": -10170
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100ASMAHNQ0B793093846XBR3",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 11605
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 11,
+      "events_processed": 434,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2243229,
+        "margin_protected_paise": 810207,
+        "holds": 146
+      },
+      "baseline": {
+        "net_profit_paise": 2111135,
+        "margin_protected_paise": 44285,
+        "holds": 34
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100284HSD3TBF8P22PKC0SQMP",
+      "customer": {
+        "id": "cus_010027SS9T9KBPXVMPN6MNX39P",
+        "display_name": "Kavita Bhatt",
+        "segment": "power",
+        "farming_tier": "normal",
+        "city": "Coimbatore"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 210105,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100ASMAHNQ0B793093846XBR3",
+      "action_id": "act_0100PGS0X1ZQRKHMYM42V2XXPN",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100284HSD3TBF8P22PKC0SQMP",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 33213
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010082MSY5KP6QRZ8BRVK92BD0",
+      "customer": {
+        "id": "cus_0100819MQB80D7BWQGFXF6PASQ",
+        "display_name": "Keerthana Venkatesan",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 63329,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100284HSD3TBF8P22PKC0SQMP",
+      "action_id": "act_0100PHYV9QW0E166MXDXXZ6FVQ",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010026QRWEM6J66TBKKYN0XVJT",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 8281,
+      "incremental_profit_paise": 7008
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010082MSY5KP6QRZ8BRVK92BD0",
+      "action": "HOLD",
+      "reason_code": "uncertain_uplift",
+      "margin_protected_paise": 5994,
+      "best_ev_paise": -32972
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CU6AP0WHHE7QAPBMB0GJDJ",
+      "customer": {
+        "id": "cus_0100CT9FDZJ6DYD27QKS5JG5AF",
+        "display_name": "Amit Venkatesan",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 206039,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010064QK5HFHZ8Q23DCBEGGYM2",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 7012,
+      "incremental_profit_paise": 6753
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 12,
+      "events_processed": 454,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2345194,
+        "margin_protected_paise": 847034,
+        "holds": 152
+      },
+      "baseline": {
+        "net_profit_paise": 2207096,
+        "margin_protected_paise": 46298,
+        "holds": 36
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100DAWSD2HBA26HG3Q1TCGA3G",
+      "customer": {
+        "id": "cus_0100D9VQDNHD5499SSKR0CWZG3",
+        "display_name": "Saranya Singh",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Kolkata"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 128488,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CU6AP0WHHE7QAPBMB0GJDJ",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 17885,
+      "best_ev_paise": -33905
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01001U448QMZBBF4T73499JP77",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100ASMAHNQ0B793093846XBR3",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 13655,
+      "incremental_profit_paise": 6300
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100322SHMN8BW4NGEB94MHJHH",
+      "customer": {
+        "id": "cus_0100317HSC4ZQQND3HPW2FTNTQ",
+        "display_name": "Manisha Tiwari",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Thiruvananthapuram"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 98435,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100DAWSD2HBA26HG3Q1TCGA3G",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 10414
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100DAWSD2HBA26HG3Q1TCGA3G",
+      "action_id": "act_0100PIW7YAX82NV87GX8QZYWGZ",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100322SHMN8BW4NGEB94MHJHH",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 21397
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100322SHMN8BW4NGEB94MHJHH",
+      "action_id": "act_0100PJPSR6BGTYXF0CN644KA2T",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010082MSY5KP6QRZ8BRVK92BD0",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005S7B2MJJFKC8ME79YDSKHC",
+      "customer": {
+        "id": "cus_01005RBD6ZR65CQJAQ8A4YZXPJ",
+        "display_name": "Neha Raghavan",
+        "segment": "power",
+        "farming_tier": "watch",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 231450,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100284HSD3TBF8P22PKC0SQMP",
+      "resolution_path": "lost",
+      "net_profit_paise": -152,
+      "incremental_profit_paise": -55
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005S7B2MJJFKC8ME79YDSKHC",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 20153,
+      "best_ev_paise": -30298
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100DAWSD2HBA26HG3Q1TCGA3G",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 29942,
+      "incremental_profit_paise": 20930
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006GNTMGYHFF2ME9N19ZV6CW",
+      "customer": {
+        "id": "cus_01006FAX87X539MWC2P0JAZ7FJ",
+        "display_name": "Meera Baruah",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Madurai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 100378,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 12,
+      "events_processed": 474,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2447159,
+        "margin_protected_paise": 883862,
+        "holds": 159
+      },
+      "baseline": {
+        "net_profit_paise": 2303056,
+        "margin_protected_paise": 48311,
+        "holds": 37
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006GNTMGYHFF2ME9N19ZV6CW",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 3069,
+      "best_ev_paise": 364
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010042V20VXVQNER2BT53EVEK1",
+      "customer": {
+        "id": "cus_010041VJ3ABKASN5V6ENC9P73G",
+        "display_name": "Riya Mishra",
+        "segment": "regular",
+        "farming_tier": "watch",
+        "city": "Kolkata"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 75706,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100322SHMN8BW4NGEB94MHJHH",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18385,
+      "incremental_profit_paise": 14730
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CU6AP0WHHE7QAPBMB0GJDJ",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010042V20VXVQNER2BT53EVEK1",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 12844
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005S7B2MJJFKC8ME79YDSKHC",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010042V20VXVQNER2BT53EVEK1",
+      "action_id": "act_0100PKQVHPQ2SVRWNM68520PJV",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100BS92TZJAS158C1ZBNG78MJ",
+      "customer": {
+        "id": "cus_0100BR6BPQS92G0CS45S0XF0RG",
+        "display_name": "Ritwik Saikia",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 207477,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 13,
+      "events_processed": 493,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2549124,
+        "margin_protected_paise": 920690,
+        "holds": 165
+      },
+      "baseline": {
+        "net_profit_paise": 2399017,
+        "margin_protected_paise": 50324,
+        "holds": 39
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100BS92TZJAS158C1ZBNG78MJ",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 11776,
+      "best_ev_paise": -7931
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01009S5D8TZE1PMGP3S4CHNVMR",
+      "customer": {
+        "id": "cus_01009R6S4BHT12GGVA8X82X9HR",
+        "display_name": "Anika Reddy",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 50836,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01009S5D8TZE1PMGP3S4CHNVMR",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 4515
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01009S5D8TZE1PMGP3S4CHNVMR",
+      "action_id": "act_0100PL4G9VFXGF7BBXT1ADZZK1",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010050Z3FPPYH4NYNX4HW8N9KT",
+      "customer": {
+        "id": "cus_01004V20Z4C3VCMPYKM1TKSTTP",
+        "display_name": "Aarushi Saikia",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Coimbatore"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 76844,
+      "arm": "baseline"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100BS92TZJAS158C1ZBNG78MJ",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006M5YQRDNG08P8BQM513QBN",
+      "customer": {
+        "id": "cus_01006L6G1MB8NW3EQBP4XZ357K",
+        "display_name": "Sowmya Chauhan",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Hyderabad"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 203609,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006GNTMGYHFF2ME9N19ZV6CW",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010050Z3FPPYH4NYNX4HW8N9KT",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 2249,
+      "best_ev_paise": 207
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 13,
+      "events_processed": 513,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2651089,
+        "margin_protected_paise": 957517,
+        "holds": 172
+      },
+      "baseline": {
+        "net_profit_paise": 2494978,
+        "margin_protected_paise": 52337,
+        "holds": 40
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006M5YQRDNG08P8BQM513QBN",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 20668
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005MQ5KM93FWZT6S83DK0V5J",
+      "customer": {
+        "id": "cus_01005LVB2QGPD2Z23FRMHGRAWC",
+        "display_name": "Neha Joshi",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Chennai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 32245,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010042V20VXVQNER2BT53EVEK1",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 18507,
+      "incremental_profit_paise": 17876
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01006M5YQRDNG08P8BQM513QBN",
+      "action_id": "act_0100PMM54Q526AF5HDRNGQNRQ6",
+      "type": "NUDGE_FREE",
+      "channel": "email",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005MQ5KM93FWZT6S83DK0V5J",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 2443
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01009S5D8TZE1PMGP3S4CHNVMR",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 10400,
+      "incremental_profit_paise": 9103
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01005MQ5KM93FWZT6S83DK0V5J",
+      "action_id": "act_0100PNX4532BMCTAP50XJSH50R",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01002ORJSMEC8SKKCQACC6DD34",
+      "customer": {
+        "id": "cus_01002NDWMXEFTKX442GQBYV0K2",
+        "display_name": "Aditi Chatterjee",
+        "segment": "new",
+        "farming_tier": "watch",
+        "city": "Kolkata"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 162596,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 14,
+      "events_processed": 533,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2753054,
+        "margin_protected_paise": 994345,
+        "holds": 179
+      },
+      "baseline": {
+        "net_profit_paise": 2590938,
+        "margin_protected_paise": 54350,
+        "holds": 42
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100AAVA31YEVH9N4606DRSKCJ",
+      "customer": {
+        "id": "cus_0100A9N4VMS32D5C51EMJHF4Z1",
+        "display_name": "Arun Gupta",
+        "segment": "new",
+        "farming_tier": "normal",
+        "city": "Ahmedabad"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 36680,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005MQ5KM93FWZT6S83DK0V5J",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 8037,
+      "incremental_profit_paise": 7890
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01002ORJSMEC8SKKCQACC6DD34",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 12206
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100800Y9S9Y9FMGMPTZH004CS",
+      "customer": {
+        "id": "cus_01007VXBSEZ4PRKGZ3FWFXTVCY",
+        "display_name": "Rahul Jain",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Rajkot"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 30197,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01002ORJSMEC8SKKCQACC6DD34",
+      "action_id": "act_0100PO7Z6RZBSMYSSQ6JJVS6N5",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100AAVA31YEVH9N4606DRSKCJ",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 3199,
+      "best_ev_paise": 368
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100800Y9S9Y9FMGMPTZH004CS",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 2183,
+      "best_ev_paise": -23881
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010050Z3FPPYH4NYNX4HW8N9KT",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 17036,
+      "incremental_profit_paise": 7382
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006M5YQRDNG08P8BQM513QBN",
+      "resolution_path": "lost",
+      "net_profit_paise": -136,
+      "incremental_profit_paise": -116
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006UJ8WXBCHG16E197ETQZN3",
+      "customer": {
+        "id": "cus_01006T59PV8FAX1M3QXFBQ3W2G",
+        "display_name": "Farhan Reddy",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Madurai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 132249,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006UJ8WXBCHG16E197ETQZN3",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 8647,
+      "best_ev_paise": -38247
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01002ORJSMEC8SKKCQACC6DD34",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 34781,
+      "incremental_profit_paise": 13339
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100601JM4QAWT1MV212BX97HE",
+      "customer": {
+        "id": "cus_01005VMHW4NJGW493K0XT3Y9EZ",
+        "display_name": "Ayaan Chopra",
+        "segment": "casual",
+        "farming_tier": "watch",
+        "city": "Pune"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 119236,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 14,
+      "events_processed": 553,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2855019,
+        "margin_protected_paise": 1031172,
+        "holds": 185
+      },
+      "baseline": {
+        "net_profit_paise": 2686899,
+        "margin_protected_paise": 56363,
+        "holds": 43
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100601JM4QAWT1MV212BX97HE",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 14017
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100601JM4QAWT1MV212BX97HE",
+      "action_id": "act_0100PP1QS4DMT5MAD83KRGEY9Y",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01007AC5J5N2T2J148P3MQ32ZK",
+      "customer": {
+        "id": "cus_0100793R15JK1KTBA9DVM4RC95",
+        "display_name": "Pooja Sharma",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 142234,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100AAVA31YEVH9N4606DRSKCJ",
+      "resolution_path": "expired",
+      "net_profit_paise": -33,
+      "incremental_profit_paise": -20
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006UJ8WXBCHG16E197ETQZN3",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01007AC5J5N2T2J148P3MQ32ZK",
+      "action": "NUDGE_FREE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 15719
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01007AC5J5N2T2J148P3MQ32ZK",
+      "action_id": "act_0100PQMBBQBKG0YWRC1R8PMZ7B",
+      "type": "NUDGE_FREE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01005884R2J1XZ68CYQJTM3E2K",
+      "customer": {
+        "id": "cus_010057PKS8QFDPSAVAPP4ME237",
+        "display_name": "Saranya Venkatesan",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Rajkot"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 4230047,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 15,
+      "events_processed": 572,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 2956984,
+        "margin_protected_paise": 1068000,
+        "holds": 192
+      },
+      "baseline": {
+        "net_profit_paise": 2782860,
+        "margin_protected_paise": 58376,
+        "holds": 45
+      }
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100601JM4QAWT1MV212BX97HE",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 28361,
+      "incremental_profit_paise": 19090
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01007AC5J5N2T2J148P3MQ32ZK",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 32376,
+      "incremental_profit_paise": 18067
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100800Y9S9Y9FMGMPTZH004CS",
+      "resolution_path": "self_recovered",
+      "net_profit_paise": 7757,
+      "incremental_profit_paise": 7209
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100C27FMS1AE02XVQGJ4WFSRB",
+      "customer": {
+        "id": "cus_0100C1DWTP2BBWEMNHNY9RD7SG",
+        "display_name": "Anika Roy",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Kolkata"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 181290,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01005884R2J1XZ68CYQJTM3E2K",
+      "action": "NUDGE_INCENTIVE",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 208690
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01005884R2J1XZ68CYQJTM3E2K",
+      "action_id": "act_0100PRPYRFH3585MQW53FBJ6EY",
+      "type": "NUDGE_INCENTIVE",
+      "channel": "whatsapp",
+      "cost_paise": 35
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100C27FMS1AE02XVQGJ4WFSRB",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 31574
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100C27FMS1AE02XVQGJ4WFSRB",
+      "action_id": "act_0100PSFQNNM2BG78YJ68J6KJEA",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006KJFH11KR621HW0ZE0BAHR",
+      "customer": {
+        "id": "cus_01006JT16SGNZ8CPD2GPRP28ZZ",
+        "display_name": "Sana Joshi",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Bengaluru"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 39832,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 15,
+      "events_processed": 592,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 3058949,
+        "margin_protected_paise": 1104828,
+        "holds": 199
+      },
+      "baseline": {
+        "net_profit_paise": 2878821,
+        "margin_protected_paise": 60389,
+        "holds": 47
+      }
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01006KJFH11KR621HW0ZE0BAHR",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 1543,
+      "best_ev_paise": 241
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01005884R2J1XZ68CYQJTM3E2K",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 844196,
+      "incremental_profit_paise": 325905
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100CGJZ1KSCZVATXE9F5MPVQQ",
+      "customer": {
+        "id": "cus_0100CF289KHAQBAVDRWP4EHGHJ",
+        "display_name": "Ramesh Roy",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Delhi"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 89634,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100CGJZ1KSCZVATXE9F5MPVQQ",
+      "action": "HOLD",
+      "reason_code": "no_action_beats_hold",
+      "margin_protected_paise": 9379,
+      "best_ev_paise": -3677
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100BMQFTCJF9N7K9JPRNNAF53",
+      "customer": {
+        "id": "cus_0100BLAVMSWF40NZ4YF0ZMKWMW",
+        "display_name": "Ishaan Pandey",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Chennai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 14145110,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_01006KJFH11KR621HW0ZE0BAHR",
+      "resolution_path": "lost",
+      "net_profit_paise": 0,
+      "incremental_profit_paise": 0
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_010052H8PZH4A0RR2ANV49Z5Q9",
+      "customer": {
+        "id": "cus_010051SS9KFRTCX8NDB5ENARW0",
+        "display_name": "Myra Subramaniam",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Jaipur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 100341,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100BMQFTCJF9N7K9JPRNNAF53",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "margin_protected_paise": null,
+      "best_ev_paise": 1340619
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100C27FMS1AE02XVQGJ4WFSRB",
+      "resolution_path": "lost",
+      "net_profit_paise": -235,
+      "incremental_profit_paise": -220
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_010052H8PZH4A0RR2ANV49Z5Q9",
+      "action": "RETRY_NOW",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 17729
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100BMQFTCJF9N7K9JPRNNAF53",
+      "action_id": "act_0100PTBSWM65K1EZJ4SMM8C1CC",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 16,
+      "events_processed": 612,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 3160913,
+        "margin_protected_paise": 1141655,
+        "holds": 205
+      },
+      "baseline": {
+        "net_profit_paise": 2974781,
+        "margin_protected_paise": 62401,
+        "holds": 48
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100B26FTHC4BG0HAG823HYYMX",
+      "customer": {
+        "id": "cus_0100B1NR7X4SZNYN9XS8PAJWAA",
+        "display_name": "Krishna Sharma",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Bhubaneswar"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 52119,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_010052H8PZH4A0RR2ANV49Z5Q9",
+      "action_id": "act_0100PUM7S90QVW8E50DMB5MFFB",
+      "type": "RETRY_NOW",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100CGJZ1KSCZVATXE9F5MPVQQ",
+      "resolution_path": "expired",
+      "net_profit_paise": -6,
+      "incremental_profit_paise": -5
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100DEMWVBP2ZEXSADHHSSKXGA",
+      "customer": {
+        "id": "cus_0100DD1Q9V5H7ZM894BJNPTKKD",
+        "display_name": "Sneha Rathi",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Vadodara"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 162421,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100B26FTHC4BG0HAG823HYYMX",
+      "action": "ESCALATE_HUMAN",
+      "reason_code": "high_value_ambiguous",
+      "margin_protected_paise": null,
+      "best_ev_paise": 8668
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100B26FTHC4BG0HAG823HYYMX",
+      "action_id": "act_0100PVKAYCXH1DH8WB8Q2801A5",
+      "type": "ESCALATE_HUMAN",
+      "channel": null,
+      "cost_paise": 8500
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100DEMWVBP2ZEXSADHHSSKXGA",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "positive_ev",
+      "margin_protected_paise": null,
+      "best_ev_paise": 13192
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100BMQFTCJF9N7K9JPRNNAF53",
+      "resolution_path": "lost",
+      "net_profit_paise": -8506,
+      "incremental_profit_paise": -7703
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_010052H8PZH4A0RR2ANV49Z5Q9",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 20763,
+      "incremental_profit_paise": 14310
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_0100DEMWVBP2ZEXSADHHSSKXGA",
+      "action_id": "act_0100Q0Y8PHC2CKNYMERP51BYAE",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 16,
+      "events_processed": 631,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 3262878,
+        "margin_protected_paise": 1178483,
+        "holds": 212
+      },
+      "baseline": {
+        "net_profit_paise": 3070742,
+        "margin_protected_paise": 64414,
+        "holds": 50
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01002MFJT02KDKA8R36BFV0Q98",
+      "customer": {
+        "id": "cus_01002LEGSZAANGCTQ9YKQKH0B8",
+        "display_name": "Pari Kulkarni",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "failed_renewal",
+      "value_at_risk_paise": 175318,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01002MFJT02KDKA8R36BFV0Q98",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 38650
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100B26FTHC4BG0HAG823HYYMX",
+      "resolution_path": "agent_recovered",
+      "net_profit_paise": 3922,
+      "incremental_profit_paise": 2405
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01002MFJT02KDKA8R36BFV0Q98",
+      "action_id": "act_0100Q1R8HC8PW3QAVF9W37GRWV",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.outcome",
+    "data": {
+      "id": "evt_0100DEMWVBP2ZEXSADHHSSKXGA",
+      "resolution_path": "lost",
+      "net_profit_paise": -201,
+      "incremental_profit_paise": -162
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_0100BQA70PC6YB4S5WR8ZZSBCK",
+      "customer": {
+        "id": "cus_0100BPP4HT4BSHKJSKP7R5KF18",
+        "display_name": "Nisha Krishnan",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Pune"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 165583,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_0100BQA70PC6YB4S5WR8ZZSBCK",
+      "action": "HOLD",
+      "reason_code": "edge_too_thin",
+      "margin_protected_paise": 8297,
+      "best_ev_paise": 110
+    }
+  },
+  {
+    "event": "run.progress",
+    "data": {
+      "sim_day": 17,
+      "events_processed": 651,
+      "events_total": 1184,
+      "speed": 2880
+    }
+  },
+  {
+    "event": "metrics.tick",
+    "data": {
+      "agent": {
+        "net_profit_paise": 3364843,
+        "margin_protected_paise": 1215310,
+        "holds": 218
+      },
+      "baseline": {
+        "net_profit_paise": 3166703,
+        "margin_protected_paise": 66427,
+        "holds": 51
+      }
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01003CTJPARPHWVN4SS94GMWYW",
+      "customer": {
+        "id": "cus_01003B8NKTW183PVT6JVMZ7CB0",
+        "display_name": "Dhruv Chatterjee",
+        "segment": "casual",
+        "farming_tier": "normal",
+        "city": "Jaipur"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 92775,
+      "arm": "holdout"
+    }
+  },
+  {
+    "event": "case.decided",
+    "data": {
+      "id": "evt_01003CTJPARPHWVN4SS94GMWYW",
+      "action": "RETRY_SCHEDULED",
+      "reason_code": "policy_blocked",
+      "margin_protected_paise": null,
+      "best_ev_paise": 16693
+    }
+  },
+  {
+    "event": "case.acted",
+    "data": {
+      "id": "evt_01003CTJPARPHWVN4SS94GMWYW",
+      "action_id": "act_0100Q2563NW60B4HK4TY4M9PY9",
+      "type": "RETRY_SCHEDULED",
+      "channel": null,
+      "cost_paise": 200
+    }
+  },
+  {
+    "event": "case.detected",
+    "data": {
+      "id": "evt_01006ATW0HKGVQDZC9E7DSYW0W",
+      "customer": {
+        "id": "cus_010069NNHP7635V0HPVQD602HV",
+        "display_name": "Ritwik Rathi",
+        "segment": "regular",
+        "farming_tier": "normal",
+        "city": "Mumbai"
+      },
+      "kind": "abandoned_checkout",
+      "value_at_risk_paise": 29992,
+      "arm": "agent"
+    }
+  },
+  {
+    "event": "run.completed",
+    "data": {
+      "run_id": "run_010002T1J1815SG05TFSAE11HK",
+      "summary": {
+        "run_id": "run_010002T1J1815SG05TFSAE11HK",
+        "arms": {
+          "agent": {
+            "events": 1184,
+            "value_at_risk_paise": 74236227,
+            "recovered_paise": 31847341,
+            "spend_paise": 952213,
+            "net_profit_paise": 6117897,
+            "incremental_profit_paise": 4040562,
+            "recovery_rate": 0.429,
+            "actions_taken": 787,
+            "holds": 397,
+            "margin_protected_paise": 2209655,
+            "optouts": 11,
+            "messages_sent": 612
+          },
+          "baseline": {
+            "events": 1184,
+            "value_at_risk_paise": 74236227,
+            "recovered_paise": 33183593,
+            "spend_paise": 1609117,
+            "net_profit_paise": 5757641,
+            "incremental_profit_paise": 1264206,
+            "recovery_rate": 0.447,
+            "actions_taken": 1091,
+            "holds": 93,
+            "margin_protected_paise": 120777,
+            "optouts": 41,
+            "messages_sent": 968
+          },
+          "holdout": {
+            "events": 1184,
+            "value_at_risk_paise": 74236227,
+            "recovered_paise": 22345104,
+            "spend_paise": 0,
+            "net_profit_paise": 4960613,
+            "incremental_profit_paise": 0,
+            "recovery_rate": 0.301,
+            "actions_taken": 0,
+            "holds": 0,
+            "margin_protected_paise": 0,
+            "optouts": 0,
+            "messages_sent": 0
+          }
+        },
+        "deltas": {
+          "net_profit_vs_baseline_paise": 360256,
+          "net_profit_vs_baseline_pct": 0.063,
+          "spend_reduction_pct": 0.408,
+          "recovery_rate_delta": -0.018
+        },
+        "series": [
+          {
+            "sim_day": 1,
+            "agent_net_paise": 203051,
+            "baseline_net_paise": 189134,
+            "holdout_net_paise": 163042
+          },
+          {
+            "sim_day": 2,
+            "agent_net_paise": 407666,
+            "baseline_net_paise": 387644,
+            "holdout_net_paise": 329733
+          },
+          {
+            "sim_day": 3,
+            "agent_net_paise": 614135,
+            "baseline_net_paise": 574531,
+            "holdout_net_paise": 494482
+          },
+          {
+            "sim_day": 4,
+            "agent_net_paise": 817105,
+            "baseline_net_paise": 768653,
+            "holdout_net_paise": 662119
+          },
+          {
+            "sim_day": 5,
+            "agent_net_paise": 1018667,
+            "baseline_net_paise": 958160,
+            "holdout_net_paise": 828965
+          },
+          {
+            "sim_day": 6,
+            "agent_net_paise": 1226478,
+            "baseline_net_paise": 1153989,
+            "holdout_net_paise": 993052
+          },
+          {
+            "sim_day": 7,
+            "agent_net_paise": 1423957,
+            "baseline_net_paise": 1345967,
+            "holdout_net_paise": 1156650
+          },
+          {
+            "sim_day": 8,
+            "agent_net_paise": 1633961,
+            "baseline_net_paise": 1534360,
+            "holdout_net_paise": 1323994
+          },
+          {
+            "sim_day": 9,
+            "agent_net_paise": 1832721,
+            "baseline_net_paise": 1728690,
+            "holdout_net_paise": 1487443
+          },
+          {
+            "sim_day": 10,
+            "agent_net_paise": 2038581,
+            "baseline_net_paise": 1917076,
+            "holdout_net_paise": 1655327
+          },
+          {
+            "sim_day": 11,
+            "agent_net_paise": 2244496,
+            "baseline_net_paise": 2111161,
+            "holdout_net_paise": 1817462
+          },
+          {
+            "sim_day": 12,
+            "agent_net_paise": 2447885,
+            "baseline_net_paise": 2304560,
+            "holdout_net_paise": 1982780
+          },
+          {
+            "sim_day": 13,
+            "agent_net_paise": 2649413,
+            "baseline_net_paise": 2494040,
+            "holdout_net_paise": 2150588
+          },
+          {
+            "sim_day": 14,
+            "agent_net_paise": 2858506,
+            "baseline_net_paise": 2688366,
+            "holdout_net_paise": 2313941
+          },
+          {
+            "sim_day": 15,
+            "agent_net_paise": 3058214,
+            "baseline_net_paise": 2879076,
+            "holdout_net_paise": 2478554
+          },
+          {
+            "sim_day": 16,
+            "agent_net_paise": 3262147,
+            "baseline_net_paise": 3068492,
+            "holdout_net_paise": 2643527
+          },
+          {
+            "sim_day": 17,
+            "agent_net_paise": 3467974,
+            "baseline_net_paise": 3265800,
+            "holdout_net_paise": 2809892
+          },
+          {
+            "sim_day": 18,
+            "agent_net_paise": 3669006,
+            "baseline_net_paise": 3458046,
+            "holdout_net_paise": 2975196
+          },
+          {
+            "sim_day": 19,
+            "agent_net_paise": 3874966,
+            "baseline_net_paise": 3643514,
+            "holdout_net_paise": 3141438
+          },
+          {
+            "sim_day": 20,
+            "agent_net_paise": 4077894,
+            "baseline_net_paise": 3836025,
+            "holdout_net_paise": 3304680
+          },
+          {
+            "sim_day": 21,
+            "agent_net_paise": 4281573,
+            "baseline_net_paise": 4032935,
+            "holdout_net_paise": 3474223
+          },
+          {
+            "sim_day": 22,
+            "agent_net_paise": 4482638,
+            "baseline_net_paise": 4219376,
+            "holdout_net_paise": 3636901
+          },
+          {
+            "sim_day": 23,
+            "agent_net_paise": 4691901,
+            "baseline_net_paise": 4410897,
+            "holdout_net_paise": 3804469
+          },
+          {
+            "sim_day": 24,
+            "agent_net_paise": 4890689,
+            "baseline_net_paise": 4609071,
+            "holdout_net_paise": 3970533
+          },
+          {
+            "sim_day": 25,
+            "agent_net_paise": 5100745,
+            "baseline_net_paise": 4795378,
+            "holdout_net_paise": 4135371
+          },
+          {
+            "sim_day": 26,
+            "agent_net_paise": 5299723,
+            "baseline_net_paise": 4986298,
+            "holdout_net_paise": 4301414
+          },
+          {
+            "sim_day": 27,
+            "agent_net_paise": 5505060,
+            "baseline_net_paise": 5184842,
+            "holdout_net_paise": 4462394
+          },
+          {
+            "sim_day": 28,
+            "agent_net_paise": 5708270,
+            "baseline_net_paise": 5373782,
+            "holdout_net_paise": 4627484
+          },
+          {
+            "sim_day": 29,
+            "agent_net_paise": 5910300,
+            "baseline_net_paise": 5564578,
+            "holdout_net_paise": 4795318
+          },
+          {
+            "sim_day": 30,
+            "agent_net_paise": 6115209,
+            "baseline_net_paise": 5760652,
+            "holdout_net_paise": 4959995
+          }
+        ],
+        "qini": {
+          "coefficient": 0.187,
+          "points": [
+            {
+              "fraction": 0.1,
+              "agent": 0.308,
+              "random": 0.1
+            },
+            {
+              "fraction": 0.2,
+              "agent": 0.385,
+              "random": 0.2
+            },
+            {
+              "fraction": 0.3,
+              "agent": 0.462,
+              "random": 0.3
+            },
+            {
+              "fraction": 0.4,
+              "agent": 0.539,
+              "random": 0.4
+            },
+            {
+              "fraction": 0.5,
+              "agent": 0.615,
+              "random": 0.5
+            },
+            {
+              "fraction": 0.6,
+              "agent": 0.692,
+              "random": 0.6
+            },
+            {
+              "fraction": 0.8,
+              "agent": 0.846,
+              "random": 0.8
+            },
+            {
+              "fraction": 1,
+              "agent": 1,
+              "random": 1
+            }
+          ]
+        },
+        "calibration": [
+          {
+            "predicted": 0.02,
+            "observed": 0.021,
+            "n": 129
+          },
+          {
+            "predicted": 0.05,
+            "observed": 0.051,
+            "n": 104
+          },
+          {
+            "predicted": 0.1,
+            "observed": 0.092,
+            "n": 57
+          },
+          {
+            "predicted": 0.2,
+            "observed": 0.2,
+            "n": 57
+          },
+          {
+            "predicted": 0.35,
+            "observed": 0.349,
+            "n": 94
+          },
+          {
+            "predicted": 0.5,
+            "observed": 0.506,
+            "n": 41
+          },
+          {
+            "predicted": 0.65,
+            "observed": 0.658,
+            "n": 93
+          }
+        ]
+      }
+    }
+  }
+]

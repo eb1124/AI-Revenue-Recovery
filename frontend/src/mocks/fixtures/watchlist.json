@@ -1,0 +1,302 @@
+[
+  {
+    "customer_id": "cus_010001KEVN5G8KVF7WQ96GNK0F",
+    "display_name": "Rohit Menon",
+    "farming_tier": "flagged",
+    "farming_score": 0.71,
+    "abandons": 14,
+    "checkouts_observed": 17,
+    "incentives_sent": 9,
+    "incentives_extracted_paise": 412000
+  },
+  {
+    "customer_id": "cus_0100DHRGP6PGK08FX1R70HH9T2",
+    "display_name": "Sunita Chauhan",
+    "farming_tier": "flagged",
+    "farming_score": 0.743,
+    "abandons": 11,
+    "checkouts_observed": 19,
+    "incentives_sent": 5,
+    "incentives_extracted_paise": 191419
+  },
+  {
+    "customer_id": "cus_0100DIJ5DKPFJ6VZEV4HM7KSJS",
+    "display_name": "Manisha Singh",
+    "farming_tier": "flagged",
+    "farming_score": 0.798,
+    "abandons": 15,
+    "checkouts_observed": 21,
+    "incentives_sent": 15,
+    "incentives_extracted_paise": 633061
+  },
+  {
+    "customer_id": "cus_0100DJJZE1932S5G6T6Z4XHXP4",
+    "display_name": "Sudip Raghavan",
+    "farming_tier": "flagged",
+    "farming_score": 0.803,
+    "abandons": 12,
+    "checkouts_observed": 16,
+    "incentives_sent": 8,
+    "incentives_extracted_paise": 303090
+  },
+  {
+    "customer_id": "cus_0100DKRPJV4PY5GKZNF6GCCP60",
+    "display_name": "Arun Patel",
+    "farming_tier": "flagged",
+    "farming_score": 0.84,
+    "abandons": 15,
+    "checkouts_observed": 18,
+    "incentives_sent": 15,
+    "incentives_extracted_paise": 482977
+  },
+  {
+    "customer_id": "cus_0100DLMWWA48PJRW8Q8TMNZGFJ",
+    "display_name": "Ishaan Rathi",
+    "farming_tier": "flagged",
+    "farming_score": 0.723,
+    "abandons": 15,
+    "checkouts_observed": 19,
+    "incentives_sent": 15,
+    "incentives_extracted_paise": 494545
+  },
+  {
+    "customer_id": "cus_0100DMNMRVCN691NWPSKAQM30S",
+    "display_name": "Arun Saikia",
+    "farming_tier": "flagged",
+    "farming_score": 0.67,
+    "abandons": 17,
+    "checkouts_observed": 20,
+    "incentives_sent": 13,
+    "incentives_extracted_paise": 435231
+  },
+  {
+    "customer_id": "cus_0100DNAGN6BS1XAJ6J12DPNRGZ",
+    "display_name": "Praveen Bhatt",
+    "farming_tier": "flagged",
+    "farming_score": 0.912,
+    "abandons": 8,
+    "checkouts_observed": 12,
+    "incentives_sent": 7,
+    "incentives_extracted_paise": 416708
+  },
+  {
+    "customer_id": "cus_0100DOWXC5CV1ZNNJNK8VQ4QFH",
+    "display_name": "Reyansh Kumar",
+    "farming_tier": "flagged",
+    "farming_score": 0.845,
+    "abandons": 14,
+    "checkouts_observed": 22,
+    "incentives_sent": 11,
+    "incentives_extracted_paise": 388316
+  },
+  {
+    "customer_id": "cus_0100DP96GKDZBY1024Q80BMHPC",
+    "display_name": "Rekha Nair",
+    "farming_tier": "flagged",
+    "farming_score": 0.768,
+    "abandons": 11,
+    "checkouts_observed": 17,
+    "incentives_sent": 11,
+    "incentives_extracted_paise": 538193
+  },
+  {
+    "customer_id": "cus_0100DQTAZ1NX3TTJCNR73HRVK7",
+    "display_name": "Kavya Malhotra",
+    "farming_tier": "watch",
+    "farming_score": 0.646,
+    "abandons": 7,
+    "checkouts_observed": 14,
+    "incentives_sent": 6,
+    "incentives_extracted_paise": 200225
+  },
+  {
+    "customer_id": "cus_0100DRRW577DSCWHPQ0T18SDJ3",
+    "display_name": "Jhanvi Bhatt",
+    "farming_tier": "watch",
+    "farming_score": 0.595,
+    "abandons": 11,
+    "checkouts_observed": 22,
+    "incentives_sent": 8,
+    "incentives_extracted_paise": 385818
+  },
+  {
+    "customer_id": "cus_0100DSYHCD37TT77YP7Q1BDJ13",
+    "display_name": "Arun Rathi",
+    "farming_tier": "watch",
+    "farming_score": 0.53,
+    "abandons": 8,
+    "checkouts_observed": 22,
+    "incentives_sent": 6,
+    "incentives_extracted_paise": 210828
+  },
+  {
+    "customer_id": "cus_0100DTJA8KD6FFCG88GBJQH00V",
+    "display_name": "Kavya Bose",
+    "farming_tier": "watch",
+    "farming_score": 0.627,
+    "abandons": 10,
+    "checkouts_observed": 18,
+    "incentives_sent": 6,
+    "incentives_extracted_paise": 194235
+  },
+  {
+    "customer_id": "cus_0100DUHFFPHYPP8SA8BRG1P71S",
+    "display_name": "Senthil Tiwari",
+    "farming_tier": "watch",
+    "farming_score": 0.37,
+    "abandons": 6,
+    "checkouts_observed": 14,
+    "incentives_sent": 3,
+    "incentives_extracted_paise": 100091
+  },
+  {
+    "customer_id": "cus_0100DVQQH2SVR0EBD23X8PWQ1N",
+    "display_name": "Radha Pillai",
+    "farming_tier": "watch",
+    "farming_score": 0.499,
+    "abandons": 7,
+    "checkouts_observed": 16,
+    "incentives_sent": 3,
+    "incentives_extracted_paise": 107820
+  },
+  {
+    "customer_id": "cus_0100E0NDPC47YP999EBMS9SBSK",
+    "display_name": "Bala Yadav",
+    "farming_tier": "watch",
+    "farming_score": 0.388,
+    "abandons": 11,
+    "checkouts_observed": 22,
+    "incentives_sent": 7,
+    "incentives_extracted_paise": 294441
+  },
+  {
+    "customer_id": "cus_0100E1XJ3MFBKDBKPAN2ECPK8G",
+    "display_name": "Vikram Singh",
+    "farming_tier": "watch",
+    "farming_score": 0.579,
+    "abandons": 6,
+    "checkouts_observed": 14,
+    "incentives_sent": 6,
+    "incentives_extracted_paise": 222819
+  },
+  {
+    "customer_id": "cus_0100E275JYY41X2B94N9R0W5J9",
+    "display_name": "Ritu Agarwal",
+    "farming_tier": "watch",
+    "farming_score": 0.62,
+    "abandons": 7,
+    "checkouts_observed": 15,
+    "incentives_sent": 4,
+    "incentives_extracted_paise": 170653
+  },
+  {
+    "customer_id": "cus_0100E374PQMTNM1HJ1CKT2E0PC",
+    "display_name": "Preeti Raghavan",
+    "farming_tier": "watch",
+    "farming_score": 0.596,
+    "abandons": 7,
+    "checkouts_observed": 16,
+    "incentives_sent": 2,
+    "incentives_extracted_paise": 72744
+  },
+  {
+    "customer_id": "cus_0100E49HZNK4VXRR2ZQE3N53NZ",
+    "display_name": "Ayesha Verma",
+    "farming_tier": "watch",
+    "farming_score": 0.586,
+    "abandons": 7,
+    "checkouts_observed": 17,
+    "incentives_sent": 3,
+    "incentives_extracted_paise": 176717
+  },
+  {
+    "customer_id": "cus_0100E5KS5MZB7DPDHT5KFQFBY5",
+    "display_name": "Aryan Kulkarni",
+    "farming_tier": "watch",
+    "farming_score": 0.478,
+    "abandons": 7,
+    "checkouts_observed": 13,
+    "incentives_sent": 3,
+    "incentives_extracted_paise": 135686
+  },
+  {
+    "customer_id": "cus_0100E6NA56CSSQV9V2F2Y14DJF",
+    "display_name": "Sai Pandey",
+    "farming_tier": "watch",
+    "farming_score": 0.443,
+    "abandons": 5,
+    "checkouts_observed": 9,
+    "incentives_sent": 2,
+    "incentives_extracted_paise": 73699
+  },
+  {
+    "customer_id": "cus_0100E7233K4KBS4JGTE67F94FV",
+    "display_name": "Pavithra Bora",
+    "farming_tier": "watch",
+    "farming_score": 0.561,
+    "abandons": 5,
+    "checkouts_observed": 11,
+    "incentives_sent": 3,
+    "incentives_extracted_paise": 161677
+  },
+  {
+    "customer_id": "cus_0100E8JAA04CQG1Z95FSDTBM04",
+    "display_name": "Ashok Reddy",
+    "farming_tier": "normal",
+    "farming_score": 0.231,
+    "abandons": 3,
+    "checkouts_observed": 16,
+    "incentives_sent": 0,
+    "incentives_extracted_paise": 347
+  },
+  {
+    "customer_id": "cus_0100E90A61KQCMP4X5AXW9076C",
+    "display_name": "Karan Reddy",
+    "farming_tier": "normal",
+    "farming_score": 0.279,
+    "abandons": 4,
+    "checkouts_observed": 21,
+    "incentives_sent": 0,
+    "incentives_extracted_paise": 0
+  },
+  {
+    "customer_id": "cus_0100EAKDZJTWH3QSDC58G29DQ0",
+    "display_name": "Radha Chatterjee",
+    "farming_tier": "normal",
+    "farming_score": 0.325,
+    "abandons": 4,
+    "checkouts_observed": 21,
+    "incentives_sent": 1,
+    "incentives_extracted_paise": 58156
+  },
+  {
+    "customer_id": "cus_0100EB2YWQ7QMD7GSAP110STVN",
+    "display_name": "Rajesh Kulkarni",
+    "farming_tier": "normal",
+    "farming_score": 0.296,
+    "abandons": 1,
+    "checkouts_observed": 11,
+    "incentives_sent": 2,
+    "incentives_extracted_paise": 70086
+  },
+  {
+    "customer_id": "cus_0100EC5PPSBV3F0NFC8J3DN3KE",
+    "display_name": "Shreya Banerjee",
+    "farming_tier": "normal",
+    "farming_score": 0.308,
+    "abandons": 2,
+    "checkouts_observed": 18,
+    "incentives_sent": 2,
+    "incentives_extracted_paise": 77379
+  },
+  {
+    "customer_id": "cus_0100ED9EK8NG5WR18STSYSVN01",
+    "display_name": "Dhruv Das",
+    "farming_tier": "normal",
+    "farming_score": 0.108,
+    "abandons": 5,
+    "checkouts_observed": 21,
+    "incentives_sent": 0,
+    "incentives_extracted_paise": 0
+  }
+]

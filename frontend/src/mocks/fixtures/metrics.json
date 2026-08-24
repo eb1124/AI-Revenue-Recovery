@@ -1,0 +1,317 @@
+{
+  "run_id": "run_010002T1J1815SG05TFSAE11HK",
+  "arms": {
+    "agent": {
+      "events": 1184,
+      "value_at_risk_paise": 74236227,
+      "recovered_paise": 31847341,
+      "spend_paise": 952213,
+      "net_profit_paise": 6117897,
+      "incremental_profit_paise": 4040562,
+      "recovery_rate": 0.429,
+      "actions_taken": 787,
+      "holds": 397,
+      "margin_protected_paise": 2209655,
+      "optouts": 11,
+      "messages_sent": 612
+    },
+    "baseline": {
+      "events": 1184,
+      "value_at_risk_paise": 74236227,
+      "recovered_paise": 33183593,
+      "spend_paise": 1609117,
+      "net_profit_paise": 5757641,
+      "incremental_profit_paise": 1264206,
+      "recovery_rate": 0.447,
+      "actions_taken": 1091,
+      "holds": 93,
+      "margin_protected_paise": 120777,
+      "optouts": 41,
+      "messages_sent": 968
+    },
+    "holdout": {
+      "events": 1184,
+      "value_at_risk_paise": 74236227,
+      "recovered_paise": 22345104,
+      "spend_paise": 0,
+      "net_profit_paise": 4960613,
+      "incremental_profit_paise": 0,
+      "recovery_rate": 0.301,
+      "actions_taken": 0,
+      "holds": 0,
+      "margin_protected_paise": 0,
+      "optouts": 0,
+      "messages_sent": 0
+    }
+  },
+  "deltas": {
+    "net_profit_vs_baseline_paise": 360256,
+    "net_profit_vs_baseline_pct": 0.063,
+    "spend_reduction_pct": 0.408,
+    "recovery_rate_delta": -0.018
+  },
+  "series": [
+    {
+      "sim_day": 1,
+      "agent_net_paise": 203051,
+      "baseline_net_paise": 189134,
+      "holdout_net_paise": 163042
+    },
+    {
+      "sim_day": 2,
+      "agent_net_paise": 407666,
+      "baseline_net_paise": 387644,
+      "holdout_net_paise": 329733
+    },
+    {
+      "sim_day": 3,
+      "agent_net_paise": 614135,
+      "baseline_net_paise": 574531,
+      "holdout_net_paise": 494482
+    },
+    {
+      "sim_day": 4,
+      "agent_net_paise": 817105,
+      "baseline_net_paise": 768653,
+      "holdout_net_paise": 662119
+    },
+    {
+      "sim_day": 5,
+      "agent_net_paise": 1018667,
+      "baseline_net_paise": 958160,
+      "holdout_net_paise": 828965
+    },
+    {
+      "sim_day": 6,
+      "agent_net_paise": 1226478,
+      "baseline_net_paise": 1153989,
+      "holdout_net_paise": 993052
+    },
+    {
+      "sim_day": 7,
+      "agent_net_paise": 1423957,
+      "baseline_net_paise": 1345967,
+      "holdout_net_paise": 1156650
+    },
+    {
+      "sim_day": 8,
+      "agent_net_paise": 1633961,
+      "baseline_net_paise": 1534360,
+      "holdout_net_paise": 1323994
+    },
+    {
+      "sim_day": 9,
+      "agent_net_paise": 1832721,
+      "baseline_net_paise": 1728690,
+      "holdout_net_paise": 1487443
+    },
+    {
+      "sim_day": 10,
+      "agent_net_paise": 2038581,
+      "baseline_net_paise": 1917076,
+      "holdout_net_paise": 1655327
+    },
+    {
+      "sim_day": 11,
+      "agent_net_paise": 2244496,
+      "baseline_net_paise": 2111161,
+      "holdout_net_paise": 1817462
+    },
+    {
+      "sim_day": 12,
+      "agent_net_paise": 2447885,
+      "baseline_net_paise": 2304560,
+      "holdout_net_paise": 1982780
+    },
+    {
+      "sim_day": 13,
+      "agent_net_paise": 2649413,
+      "baseline_net_paise": 2494040,
+      "holdout_net_paise": 2150588
+    },
+    {
+      "sim_day": 14,
+      "agent_net_paise": 2858506,
+      "baseline_net_paise": 2688366,
+      "holdout_net_paise": 2313941
+    },
+    {
+      "sim_day": 15,
+      "agent_net_paise": 3058214,
+      "baseline_net_paise": 2879076,
+      "holdout_net_paise": 2478554
+    },
+    {
+      "sim_day": 16,
+      "agent_net_paise": 3262147,
+      "baseline_net_paise": 3068492,
+      "holdout_net_paise": 2643527
+    },
+    {
+      "sim_day": 17,
+      "agent_net_paise": 3467974,
+      "baseline_net_paise": 3265800,
+      "holdout_net_paise": 2809892
+    },
+    {
+      "sim_day": 18,
+      "agent_net_paise": 3669006,
+      "baseline_net_paise": 3458046,
+      "holdout_net_paise": 2975196
+    },
+    {
+      "sim_day": 19,
+      "agent_net_paise": 3874966,
+      "baseline_net_paise": 3643514,
+      "holdout_net_paise": 3141438
+    },
+    {
+      "sim_day": 20,
+      "agent_net_paise": 4077894,
+      "baseline_net_paise": 3836025,
+      "holdout_net_paise": 3304680
+    },
+    {
+      "sim_day": 21,
+      "agent_net_paise": 4281573,
+      "baseline_net_paise": 4032935,
+      "holdout_net_paise": 3474223
+    },
+    {
+      "sim_day": 22,
+      "agent_net_paise": 4482638,
+      "baseline_net_paise": 4219376,
+      "holdout_net_paise": 3636901
+    },
+    {
+      "sim_day": 23,
+      "agent_net_paise": 4691901,
+      "baseline_net_paise": 4410897,
+      "holdout_net_paise": 3804469
+    },
+    {
+      "sim_day": 24,
+      "agent_net_paise": 4890689,
+      "baseline_net_paise": 4609071,
+      "holdout_net_paise": 3970533
+    },
+    {
+      "sim_day": 25,
+      "agent_net_paise": 5100745,
+      "baseline_net_paise": 4795378,
+      "holdout_net_paise": 4135371
+    },
+    {
+      "sim_day": 26,
+      "agent_net_paise": 5299723,
+      "baseline_net_paise": 4986298,
+      "holdout_net_paise": 4301414
+    },
+    {
+      "sim_day": 27,
+      "agent_net_paise": 5505060,
+      "baseline_net_paise": 5184842,
+      "holdout_net_paise": 4462394
+    },
+    {
+      "sim_day": 28,
+      "agent_net_paise": 5708270,
+      "baseline_net_paise": 5373782,
+      "holdout_net_paise": 4627484
+    },
+    {
+      "sim_day": 29,
+      "agent_net_paise": 5910300,
+      "baseline_net_paise": 5564578,
+      "holdout_net_paise": 4795318
+    },
+    {
+      "sim_day": 30,
+      "agent_net_paise": 6115209,
+      "baseline_net_paise": 5760652,
+      "holdout_net_paise": 4959995
+    }
+  ],
+  "qini": {
+    "coefficient": 0.187,
+    "points": [
+      {
+        "fraction": 0.1,
+        "agent": 0.308,
+        "random": 0.1
+      },
+      {
+        "fraction": 0.2,
+        "agent": 0.385,
+        "random": 0.2
+      },
+      {
+        "fraction": 0.3,
+        "agent": 0.462,
+        "random": 0.3
+      },
+      {
+        "fraction": 0.4,
+        "agent": 0.539,
+        "random": 0.4
+      },
+      {
+        "fraction": 0.5,
+        "agent": 0.615,
+        "random": 0.5
+      },
+      {
+        "fraction": 0.6,
+        "agent": 0.692,
+        "random": 0.6
+      },
+      {
+        "fraction": 0.8,
+        "agent": 0.846,
+        "random": 0.8
+      },
+      {
+        "fraction": 1,
+        "agent": 1,
+        "random": 1
+      }
+    ]
+  },
+  "calibration": [
+    {
+      "predicted": 0.02,
+      "observed": 0.021,
+      "n": 129
+    },
+    {
+      "predicted": 0.05,
+      "observed": 0.051,
+      "n": 104
+    },
+    {
+      "predicted": 0.1,
+      "observed": 0.092,
+      "n": 57
+    },
+    {
+      "predicted": 0.2,
+      "observed": 0.2,
+      "n": 57
+    },
+    {
+      "predicted": 0.35,
+      "observed": 0.349,
+      "n": 94
+    },
+    {
+      "predicted": 0.5,
+      "observed": 0.506,
+      "n": 41
+    },
+    {
+      "predicted": 0.65,
+      "observed": 0.658,
+      "n": 93
+    }
+  ]
+}
