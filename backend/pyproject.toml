@@ -1,0 +1,51 @@
+[project]
+name = "hold-backend"
+version = "0.1.0"
+description = "HOLD — revenue-recovery agent backend (FastAPI + SQLModel + Postgres)"
+requires-python = ">=3.11"
+dependencies = [
+    # Web / API — section 8.1
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "sse-starlette>=2.1",
+    # DB / ORM — section 8.1, 5.1
+    "sqlmodel>=0.0.22",
+    "psycopg[binary]>=3.2",
+    # IDs — section 5.2: "TEXT ULIDs, prefixed by type"
+    "python-ulid>=2,<3",
+    # Scheduler — section 8.1 (the sweep loop)
+    "apscheduler>=3.10",
+    # ML — section 7
+    "scikit-learn>=1.5",
+    "pandas>=2.2",
+    "numpy>=2.0",
+    "joblib>=1.4",
+    # LLM — section 4.4, 8.6
+    "anthropic>=0.40",
+    # Config
+    "pydantic-settings>=2.5",
+]
+
+[dependency-groups]
+dev = [
+    # Six guardrail tests only — section 8.1, 9.5
+    "pytest>=8.3",
+    "ruff>=0.7",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint.per-file-ignores]
+# FastAPI's dependency-injection idiom is `param: T = Depends(...)` in the
+# signature itself — that's the framework's documented pattern, not a
+# mutable-default-argument bug (B008's actual target).
+"app/api/*.py" = ["B008"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]

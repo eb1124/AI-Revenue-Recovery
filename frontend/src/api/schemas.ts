@@ -339,9 +339,16 @@ export const FarmingSignalsSchema = z.object({
 })
 export type FarmingSignals = z.infer<typeof FarmingSignalsSchema>
 
+// EXTENDED beyond the literal 8.4 example: the Watchlist's FarmingDetail
+// drilldown (10.9) needs "the exact case where HOLD cut them off —
+// annotated inline", which is impossible to identify from outcome/kind
+// alone. `action` is the natural field for that (every event that reached
+// this stage has one), and it's shared with CustomerContext.recent_events
+// so both call sites benefit.
 export const RecentEventSchema = z.object({
   id: z.string(),
   kind: RiskEventKindSchema,
+  action: ActionSchema,
   outcome: ResolutionPathSchema,
   at: IsoDateTime,
 })
@@ -577,6 +584,20 @@ export const PolicyProposeRequestSchema = z.object({
   text: z.string(),
 })
 export type PolicyProposeRequest = z.infer<typeof PolicyProposeRequestSchema>
+
+// EXTENDED beyond 8.4: the propose endpoint returns a PolicyProposal, but
+// nothing in the documented API surface actually persists it — 10.10's
+// "Add policy" button needs somewhere to send the confirmed proposal. The
+// authorable subset of Policy (no id/enabled/trigger_count — the server
+// assigns those, matching how every other create endpoint in this contract
+// works, e.g. WorldConfigCreateRequest).
+export const PolicyCreateRequestSchema = z.object({
+  name: z.string(),
+  kind: PolicyKindSchema,
+  applies_to: z.array(ActionSchema),
+  rule: z.unknown(),
+})
+export type PolicyCreateRequest = z.infer<typeof PolicyCreateRequestSchema>
 
 // ASSUMED: `policies` in the request body is typed as a list of policy IDs to
 // simulate as enabled — the spec names the field but not its element type.

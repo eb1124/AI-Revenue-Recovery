@@ -22,3 +22,116 @@
 body {
   font-variant-numeric: tabular-nums;
 }
+
+/* The HELD stamp (section 10.2/10.4): rotated −4°, scale 1.06 → 1 over
+   180ms on entry. Resting state matches the animation's end state exactly,
+   so prefers-reduced-motion users see no flash — just the static rotation. */
+@keyframes held-stamp-in {
+  from {
+    transform: scale(1.06) rotate(-4deg);
+  }
+  to {
+    transform: scale(1) rotate(-4deg);
+  }
+}
+
+.held-stamp {
+  transform: rotate(-4deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .held-stamp {
+    animation: held-stamp-in 180ms ease-out;
+  }
+}
+
+/* Hold Ledger (section 10.6): the printing feed fades out at the bottom
+   edge via one mask on the scrolling container — never per-row opacity. */
+.hold-ledger-fade {
+  mask-image: linear-gradient(to bottom, black 0%, black 78%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 78%, transparent 100%);
+}
+
+/* EVInterval (section 10.7/10.4 motion #4): the whisker draws left-to-right
+   over 300ms on open. Per-row left/width targets come in as CSS custom
+   properties (data-dependent, so a static keyframe can't hardcode them);
+   the resting state matches the animation's end state, same trick as the
+   HELD stamp, so reduced-motion users just see the final bar with no flash. */
+.ev-interval-bar {
+  left: var(--ev-left-pct);
+  width: var(--ev-width-pct);
+}
+
+@keyframes ev-interval-draw {
+  from {
+    left: var(--ev-zero-pct);
+    width: 0;
+  }
+  to {
+    left: var(--ev-left-pct);
+    width: var(--ev-width-pct);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ev-interval-bar {
+    animation: ev-interval-draw 300ms ease-out;
+  }
+}
+
+/* World screen sliders (section 10.11) — a styled native <input type=range>,
+   not a hand-rolled pointer-drag widget, so keyboard arrow/Home/End/Page
+   support and step-snapping come from the browser for free. Track and
+   thumb only; the default-value tick and value bubble are separate
+   absolutely-positioned siblings drawn by WorldSlider.tsx. */
+.knob-slider {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  background: var(--color-rule);
+  outline: none;
+}
+
+.knob-slider::-webkit-slider-runnable-track {
+  height: 2px;
+  background: transparent;
+}
+
+.knob-slider::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  margin-top: -6px;
+  border-radius: var(--radius);
+  background: var(--color-ink);
+  cursor: pointer;
+}
+
+.knob-slider::-moz-range-track {
+  height: 2px;
+  background: var(--color-rule);
+}
+
+.knob-slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--color-ink);
+  cursor: pointer;
+}
+
+/* Never the hold indigo here — this is a generic focus indicator, not a
+   HOLD-decision context (section 10.2's colour reservation). */
+.knob-slider:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}
+
+.knob-slider:focus-visible::-moz-range-thumb {
+  outline: 2px solid var(--color-ink);
+  outline-offset: 2px;
+}

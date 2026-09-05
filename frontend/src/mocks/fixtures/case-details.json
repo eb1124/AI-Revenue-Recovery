@@ -48,13 +48,15 @@
           "id": "evt_010007A9AN75PA3A1J6FCPXSE4",
           "kind": "abandoned_checkout",
           "outcome": "self_recovered",
-          "at": "2026-08-27T00:35:30Z"
+          "at": "2026-08-27T00:35:30Z",
+          "action": "HOLD"
         },
         {
           "id": "evt_010008VGTWE4KS6CHZFVTQ125G",
           "kind": "abandoned_checkout",
           "outcome": "self_recovered",
-          "at": "2026-08-04T00:35:30Z"
+          "at": "2026-08-04T00:35:30Z",
+          "action": "HOLD"
         }
       ]
     },
@@ -563,19 +565,22 @@
           "id": "evt_01000GH6XGQ1YJ91APR8VE5MG6",
           "kind": "abandoned_checkout",
           "outcome": "agent_recovered",
-          "at": "2026-08-20T04:34:18Z"
+          "at": "2026-08-20T04:34:18Z",
+          "action": "NUDGE_FREE"
         },
         {
           "id": "evt_01000HV24Z6FGKFN5ZTB6GREF8",
           "kind": "abandoned_checkout",
           "outcome": "agent_recovered",
-          "at": "2026-08-13T04:34:18Z"
+          "at": "2026-08-13T04:34:18Z",
+          "action": "NUDGE_FREE"
         },
         {
           "id": "evt_01000IF1VBD8G1N2WRNS1JHFGF",
           "kind": "abandoned_checkout",
           "outcome": "agent_recovered",
-          "at": "2026-08-06T04:34:18Z"
+          "at": "2026-08-06T04:34:18Z",
+          "action": "NUDGE_FREE"
         }
       ]
     },

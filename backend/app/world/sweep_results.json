@@ -1,0 +1,544 @@
+{
+  "results": [
+    {
+      "params": {
+        "salary_timing_lift": 3.332,
+        "self_recovery_base": 0.485,
+        "incentive_elasticity": 1.198,
+        "farmer_share": 0.141,
+        "farmer_learning_rate": 0.234,
+        "message_fatigue": 0.535,
+        "margin_rate_bps": 5880,
+        "optout_sensitivity": 0.391,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1000
+      },
+      "agent_net": 536403,
+      "baseline_net": 288938,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.014,
+        "self_recovery_base": 0.287,
+        "incentive_elasticity": 1.978,
+        "farmer_share": 0.081,
+        "farmer_learning_rate": 0.333,
+        "message_fatigue": 0.228,
+        "margin_rate_bps": 3019,
+        "optout_sensitivity": 0.122,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1001
+      },
+      "agent_net": 269052,
+      "baseline_net": 157919,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.923,
+        "self_recovery_base": 0.367,
+        "incentive_elasticity": 1.923,
+        "farmer_share": 0.286,
+        "farmer_learning_rate": 0.208,
+        "message_fatigue": 0.888,
+        "margin_rate_bps": 628,
+        "optout_sensitivity": 2.501,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1002
+      },
+      "agent_net": 95347,
+      "baseline_net": 72083,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.405,
+        "self_recovery_base": 0.577,
+        "incentive_elasticity": 2.891,
+        "farmer_share": 0.393,
+        "farmer_learning_rate": 0.088,
+        "message_fatigue": 0.699,
+        "margin_rate_bps": 1098,
+        "optout_sensitivity": 0.481,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1003
+      },
+      "agent_net": 177481,
+      "baseline_net": 80649,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.279,
+        "self_recovery_base": 0.254,
+        "incentive_elasticity": 1.033,
+        "farmer_share": 0.342,
+        "farmer_learning_rate": 0.146,
+        "message_fatigue": 0.78,
+        "margin_rate_bps": 3514,
+        "optout_sensitivity": 0.583,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1004
+      },
+      "agent_net": 845882,
+      "baseline_net": 1027892,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.876,
+        "self_recovery_base": 0.258,
+        "incentive_elasticity": 2.317,
+        "farmer_share": 0.093,
+        "farmer_learning_rate": 0.31,
+        "message_fatigue": 0.895,
+        "margin_rate_bps": 5281,
+        "optout_sensitivity": 0.881,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1005
+      },
+      "agent_net": 1294952,
+      "baseline_net": 122789,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.375,
+        "self_recovery_base": 0.365,
+        "incentive_elasticity": 1.561,
+        "farmer_share": 0.132,
+        "farmer_learning_rate": 0.492,
+        "message_fatigue": 0.012,
+        "margin_rate_bps": 1285,
+        "optout_sensitivity": 1.956,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1006
+      },
+      "agent_net": 182219,
+      "baseline_net": 37958,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.225,
+        "self_recovery_base": 0.24,
+        "incentive_elasticity": 2.587,
+        "farmer_share": 0.365,
+        "farmer_learning_rate": 0.185,
+        "message_fatigue": 0.205,
+        "margin_rate_bps": 5340,
+        "optout_sensitivity": 1.898,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1007
+      },
+      "agent_net": 490136,
+      "baseline_net": 339154,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.511,
+        "self_recovery_base": 0.265,
+        "incentive_elasticity": 1.695,
+        "farmer_share": 0.117,
+        "farmer_learning_rate": 0.383,
+        "message_fatigue": 0.478,
+        "margin_rate_bps": 1608,
+        "optout_sensitivity": 2.615,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1008
+      },
+      "agent_net": 175934,
+      "baseline_net": 794931,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.266,
+        "self_recovery_base": 0.614,
+        "incentive_elasticity": 2.865,
+        "farmer_share": 0.097,
+        "farmer_learning_rate": 0.446,
+        "message_fatigue": 0.766,
+        "margin_rate_bps": 2780,
+        "optout_sensitivity": 0.971,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1009
+      },
+      "agent_net": 2505786,
+      "baseline_net": 189525,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.684,
+        "self_recovery_base": 0.434,
+        "incentive_elasticity": 1.331,
+        "farmer_share": 0.194,
+        "farmer_learning_rate": 0.475,
+        "message_fatigue": 0.468,
+        "margin_rate_bps": 2681,
+        "optout_sensitivity": 2.756,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1010
+      },
+      "agent_net": 225613,
+      "baseline_net": 363259,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.957,
+        "self_recovery_base": 0.66,
+        "incentive_elasticity": 1.095,
+        "farmer_share": 0.344,
+        "farmer_learning_rate": 0.101,
+        "message_fatigue": 0.344,
+        "margin_rate_bps": 5353,
+        "optout_sensitivity": 0.295,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1011
+      },
+      "agent_net": 900808,
+      "baseline_net": 3922014,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.4,
+        "self_recovery_base": 0.224,
+        "incentive_elasticity": 1.419,
+        "farmer_share": 0.136,
+        "farmer_learning_rate": 0.363,
+        "message_fatigue": 0.632,
+        "margin_rate_bps": 1373,
+        "optout_sensitivity": 2.299,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1012
+      },
+      "agent_net": 168319,
+      "baseline_net": 42575,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.772,
+        "self_recovery_base": 0.434,
+        "incentive_elasticity": 1.337,
+        "farmer_share": 0.195,
+        "farmer_learning_rate": 0.359,
+        "message_fatigue": 0.216,
+        "margin_rate_bps": 3866,
+        "optout_sensitivity": 1.861,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1013
+      },
+      "agent_net": 1356007,
+      "baseline_net": 393985,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.713,
+        "self_recovery_base": 0.144,
+        "incentive_elasticity": 2.544,
+        "farmer_share": 0.212,
+        "farmer_learning_rate": 0.219,
+        "message_fatigue": 0.478,
+        "margin_rate_bps": 4812,
+        "optout_sensitivity": 2.511,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1014
+      },
+      "agent_net": 138579,
+      "baseline_net": 165381,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.219,
+        "self_recovery_base": 0.553,
+        "incentive_elasticity": 1.006,
+        "farmer_share": 0.351,
+        "farmer_learning_rate": 0.016,
+        "message_fatigue": 0.982,
+        "margin_rate_bps": 5973,
+        "optout_sensitivity": 1.818,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1015
+      },
+      "agent_net": 1845108,
+      "baseline_net": 168443,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.668,
+        "self_recovery_base": 0.49,
+        "incentive_elasticity": 1.137,
+        "farmer_share": 0.28,
+        "farmer_learning_rate": 0.5,
+        "message_fatigue": 0.718,
+        "margin_rate_bps": 1702,
+        "optout_sensitivity": 1.266,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1016
+      },
+      "agent_net": 298718,
+      "baseline_net": 106538,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.599,
+        "self_recovery_base": 0.566,
+        "incentive_elasticity": 1.428,
+        "farmer_share": 0.328,
+        "farmer_learning_rate": 0.169,
+        "message_fatigue": 0.009,
+        "margin_rate_bps": 5638,
+        "optout_sensitivity": 1.747,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1017
+      },
+      "agent_net": 367665,
+      "baseline_net": 2198516,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.226,
+        "self_recovery_base": 0.141,
+        "incentive_elasticity": 2.09,
+        "farmer_share": 0.369,
+        "farmer_learning_rate": 0.075,
+        "message_fatigue": 0.972,
+        "margin_rate_bps": 3912,
+        "optout_sensitivity": 2.175,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1018
+      },
+      "agent_net": 215882,
+      "baseline_net": 333621,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.075,
+        "self_recovery_base": 0.547,
+        "incentive_elasticity": 1.392,
+        "farmer_share": 0.241,
+        "farmer_learning_rate": 0.118,
+        "message_fatigue": 0.108,
+        "margin_rate_bps": 2220,
+        "optout_sensitivity": 2.73,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1019
+      },
+      "agent_net": 1657869,
+      "baseline_net": 138572,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.822,
+        "self_recovery_base": 0.365,
+        "incentive_elasticity": 2.233,
+        "farmer_share": 0.072,
+        "farmer_learning_rate": 0.145,
+        "message_fatigue": 0.646,
+        "margin_rate_bps": 2067,
+        "optout_sensitivity": 2.295,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1020
+      },
+      "agent_net": 102338,
+      "baseline_net": 1365820,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.474,
+        "self_recovery_base": 0.343,
+        "incentive_elasticity": 1.81,
+        "farmer_share": 0.068,
+        "farmer_learning_rate": 0.113,
+        "message_fatigue": 0.826,
+        "margin_rate_bps": 1931,
+        "optout_sensitivity": 0.227,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1021
+      },
+      "agent_net": 114095,
+      "baseline_net": 148582,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.213,
+        "self_recovery_base": 0.573,
+        "incentive_elasticity": 2.713,
+        "farmer_share": 0.302,
+        "farmer_learning_rate": 0.073,
+        "message_fatigue": 0.479,
+        "margin_rate_bps": 2913,
+        "optout_sensitivity": 1.523,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1022
+      },
+      "agent_net": 221587,
+      "baseline_net": 282352,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.113,
+        "self_recovery_base": 0.497,
+        "incentive_elasticity": 2.412,
+        "farmer_share": 0.378,
+        "farmer_learning_rate": 0.402,
+        "message_fatigue": 0.774,
+        "margin_rate_bps": 2835,
+        "optout_sensitivity": 2.5,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1023
+      },
+      "agent_net": 549422,
+      "baseline_net": 278492,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.899,
+        "self_recovery_base": 0.492,
+        "incentive_elasticity": 1.176,
+        "farmer_share": 0.265,
+        "farmer_learning_rate": 0.258,
+        "message_fatigue": 0.214,
+        "margin_rate_bps": 2554,
+        "optout_sensitivity": 2.338,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1024
+      },
+      "agent_net": 230497,
+      "baseline_net": 109941,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.998,
+        "self_recovery_base": 0.317,
+        "incentive_elasticity": 2.393,
+        "farmer_share": 0.296,
+        "farmer_learning_rate": 0.224,
+        "message_fatigue": 0.9,
+        "margin_rate_bps": 2963,
+        "optout_sensitivity": 0.567,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1025
+      },
+      "agent_net": 412148,
+      "baseline_net": 253167,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 3.596,
+        "self_recovery_base": 0.538,
+        "incentive_elasticity": 2.425,
+        "farmer_share": 0.321,
+        "farmer_learning_rate": 0.408,
+        "message_fatigue": 0.06,
+        "margin_rate_bps": 1954,
+        "optout_sensitivity": 2.281,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1026
+      },
+      "agent_net": 1133517,
+      "baseline_net": 1042676,
+      "agent_wins": true
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.09,
+        "self_recovery_base": 0.539,
+        "incentive_elasticity": 1.468,
+        "farmer_share": 0.391,
+        "farmer_learning_rate": 0.25,
+        "message_fatigue": 0.975,
+        "margin_rate_bps": 2120,
+        "optout_sensitivity": 2.897,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1027
+      },
+      "agent_net": 216738,
+      "baseline_net": 1239913,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 1.936,
+        "self_recovery_base": 0.099,
+        "incentive_elasticity": 1.988,
+        "farmer_share": 0.175,
+        "farmer_learning_rate": 0.18,
+        "message_fatigue": 0.126,
+        "margin_rate_bps": 5324,
+        "optout_sensitivity": 0.623,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1028
+      },
+      "agent_net": 193569,
+      "baseline_net": 312474,
+      "agent_wins": false
+    },
+    {
+      "params": {
+        "salary_timing_lift": 2.275,
+        "self_recovery_base": 0.32,
+        "incentive_elasticity": 1.088,
+        "farmer_share": 0.263,
+        "farmer_learning_rate": 0.111,
+        "message_fatigue": 0.35,
+        "margin_rate_bps": 3477,
+        "optout_sensitivity": 1.304,
+        "population_size": 250,
+        "sim_days": 6,
+        "seed": 1029
+      },
+      "agent_net": 73342,
+      "baseline_net": 243297,
+      "agent_wins": false
+    }
+  ]
+}

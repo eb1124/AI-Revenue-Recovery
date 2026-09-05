@@ -67,6 +67,18 @@ export const casesHandlers = [
         decided_by: 'human_override' as const,
         explanation: body.reason,
       },
+      // Section 10.7: "the case re-renders with decided_by: human_override,
+      // and a new audit entry appears" — the override is itself an auditable
+      // event, on top of whatever detect/diagnose/decide entries exist.
+      audit_trail: [
+        ...existing.audit_trail,
+        {
+          stage: 'override' as const,
+          summary: `Overridden to ${body.action}: ${body.reason}`,
+          sim_time: existing.outcome.resolved_at_sim,
+          actor: 'human' as const,
+        },
+      ],
     }
     db.caseDetails[id] = updated
     item.decision = {

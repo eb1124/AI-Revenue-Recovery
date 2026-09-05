@@ -69,6 +69,11 @@ export const auditHandlers = [
     const runId = url.searchParams.get('run_id')
     const stage = url.searchParams.get('stage')
     const customerId = url.searchParams.get('customer_id')
+    // EXTENDED beyond 8.4's documented query params — 10.12 lists "free
+    // text" as one of the four filters, but the endpoint spec never names
+    // its param. Matches id/summary/actor, same convention as /api/cases's
+    // existing `q`.
+    const q = url.searchParams.get('q')?.toLowerCase().trim()
     const cursor = url.searchParams.get('cursor')
     const limit = Number(url.searchParams.get('limit') ?? 50)
 
@@ -76,6 +81,9 @@ export const auditHandlers = [
     if (runId) items = items.filter((a) => a.run_id === runId)
     if (stage) items = items.filter((a) => a.stage === stage)
     if (customerId) items = items.filter((a) => a.customer_id === customerId)
+    if (q) {
+      items = items.filter((a) => a.id.toLowerCase().includes(q) || a.summary.toLowerCase().includes(q) || a.actor.toLowerCase().includes(q))
+    }
 
     const { items: page, next_cursor } = paginate(items, cursor, limit)
     return HttpResponse.json({ items: page, next_cursor })
@@ -92,7 +100,19 @@ export const auditHandlers = [
   http.get(`${API_BASE}/audit/export.csv`, ({ request }) => {
     const url = new URL(request.url)
     const runId = url.searchParams.get('run_id')
-    const entries = runId ? db.audit.filter((a) => a.run_id === runId) : db.audit
+    const stage = url.searchParams.get('stage')
+    const customerId = url.searchParams.get('customer_id')
+    const q = url.searchParams.get('q')?.toLowerCase().trim()
+
+    // Exports whatever the current filtered view represents, not the whole log.
+    let entries = db.audit
+    if (runId) entries = entries.filter((a) => a.run_id === runId)
+    if (stage) entries = entries.filter((a) => a.stage === stage)
+    if (customerId) entries = entries.filter((a) => a.customer_id === customerId)
+    if (q) {
+      entries = entries.filter((a) => a.id.toLowerCase().includes(q) || a.summary.toLowerCase().includes(q) || a.actor.toLowerCase().includes(q))
+    }
+
     return new HttpResponse(toCsv(entries), { headers: { 'Content-Type': 'text/csv' } })
   }),
 ]

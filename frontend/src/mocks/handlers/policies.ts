@@ -1,10 +1,25 @@
 import { http, HttpResponse } from 'msw'
-import { PolicyProposeRequestSchema, PolicySimulateRequestSchema, PolicyUpdateRequestSchema, type PolicyProposal } from '../../api/schemas'
+import {
+  PolicyCreateRequestSchema,
+  PolicyProposeRequestSchema,
+  PolicySimulateRequestSchema,
+  PolicyUpdateRequestSchema,
+  type Policy,
+  type PolicyProposal,
+} from '../../api/schemas'
 import { API_BASE } from '../apiBase'
-import { db } from '../db'
+import { db, generateId } from '../db'
 
 export const policiesHandlers = [
   http.get(`${API_BASE}/policies`, () => HttpResponse.json(db.policies)),
+
+  // EXTENDED beyond 8.4 — see schemas.ts PolicyCreateRequestSchema.
+  http.post(`${API_BASE}/policies`, async ({ request }) => {
+    const body = PolicyCreateRequestSchema.parse(await request.json())
+    const policy: Policy = { ...body, id: generateId('pol'), enabled: true, authored_by: 'llm_proposal', trigger_count: 0 }
+    db.policies.push(policy)
+    return HttpResponse.json(policy, { status: 201 })
+  }),
 
   http.put(`${API_BASE}/policies/:id`, async ({ request, params }) => {
     const policy = db.policies.find((p) => p.id === params.id)

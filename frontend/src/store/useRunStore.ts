@@ -15,6 +15,8 @@ export interface DwellQueueItem {
   receivedAt: number
 }
 
+const MAX_DWELL_QUEUE = 50
+
 interface RunStoreState {
   /** Which run the shell (RunBar) and Floor screen are watching. */
   activeRunId: string | null
@@ -55,7 +57,10 @@ export const useRunStore = create<RunStoreState>((set) => ({
   setSelectedCaseId: (caseId) => set({ selectedCaseId: caseId }),
 
   dwellQueue: [],
-  enqueueDwellItem: (item) => set((state) => ({ dwellQueue: [...state.dwellQueue, item] })),
+  // Cap 50: if the producer (stream) outpaces the 900ms-per-item consumer
+  // (DecisionStage), drop the OLDEST pending items rather than draining
+  // faster — the visible pace must stay constant (section 10.6).
+  enqueueDwellItem: (item) => set((state) => ({ dwellQueue: [...state.dwellQueue, item].slice(-MAX_DWELL_QUEUE) })),
   dequeueDwellItem: () => set((state) => ({ dwellQueue: state.dwellQueue.slice(1) })),
   clearDwellQueue: () => set({ dwellQueue: [] }),
 }))

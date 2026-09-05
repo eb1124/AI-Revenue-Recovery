@@ -1,4 +1,4 @@
-import type { Action, Candidate, CaseDetail, CaseListItem, WatchlistDetail, WatchlistEntry } from '../api/schemas'
+import type { Action, Candidate, CaseDetail, CaseListItem, FarmingTier, RecentEvent, ResolutionPath, RiskEventKind, WatchlistDetail, WatchlistEntry } from '../api/schemas'
 
 // Fallback generators for records the fixture set doesn't cover in full depth:
 // only 12 of the 200 cases.json rows have a hand-authored CaseDetail
@@ -47,7 +47,8 @@ function buildCandidates(item: CaseListItem): Candidate[] {
     const isChosen = action === chosen
     let ev_paise: number
     if (action === 'HOLD') {
-      ev_paise = chosen === 'HOLD' ? 0 : -Math.round(200 + seed * 3000 + i * 137)
+      // EV(HOLD) ≡ 0 by construction (section 4.2) — always, not just when HOLD is chosen.
+      ev_paise = 0
     } else if (isChosen) {
       ev_paise = Math.max(600, Math.round(item.value_at_risk_paise * (0.03 + seed * 0.05)))
     } else {
@@ -147,6 +148,31 @@ export function synthesizeCaseDetail(item: CaseListItem): CaseDetail {
   }
 }
 
+const RISK_EVENT_KINDS: RiskEventKind[] = ['abandoned_checkout', 'failed_renewal']
+const RESOLUTION_PATHS: ResolutionPath[] = ['self_recovered', 'agent_recovered', 'lost', 'expired']
+
+// Section 10.9: FarmingDetail needs "the customer's event history with the
+// exact case where HOLD cut them off — annotated inline." Newest first,
+// roughly weekly apart. For a tracked tier (flagged/watch — the tiers this
+// screen exists to explain), the middle event is deliberately the HOLD
+// cutoff, with a coherent self_recovered outcome (restraint paying off is
+// the whole thesis) rather than a random one.
+function synthesizeCustomerEvents(customerId: string, tier: FarmingTier, count: number): RecentEvent[] {
+  const cutoffIndex = tier === 'flagged' || tier === 'watch' ? Math.floor(count / 2) : -1
+
+  return Array.from({ length: count }, (_, i) => {
+    const gapDays = hash01(`${customerId}:${i}:gap`) * 3
+    const daysAgo = Math.round(4 + i * 7 + gapDays)
+    const at = new Date(Date.UTC(2026, 7, 27) - daysAgo * 86400000).toISOString()
+    const kind = RISK_EVENT_KINDS[Math.floor(hash01(`${customerId}:${i}:kind`) * RISK_EVENT_KINDS.length)]
+    const isCutoff = i === cutoffIndex
+    const action: Action = isCutoff ? 'HOLD' : ACTIONS[Math.floor(hash01(`${customerId}:${i}:action`) * ACTIONS.length)]
+    const outcome = isCutoff ? 'self_recovered' : RESOLUTION_PATHS[Math.floor(hash01(`${customerId}:${i}:outcome`) * RESOLUTION_PATHS.length)]
+
+    return { id: `evt_wl_${customerId}_${i}`, kind, action, outcome, at }
+  })
+}
+
 export function synthesizeWatchlistDetail(entry: WatchlistEntry): WatchlistDetail {
   const seed = hash01(entry.customer_id)
   const steps = 6
@@ -168,6 +194,6 @@ export function synthesizeWatchlistDetail(entry: WatchlistEntry): WatchlistDetai
       timing_regularity: Math.round((0.2 + ((seed * 11) % 1) * 0.6) * 1000) / 1000,
       stage_consistency: Math.round((0.2 + ((seed * 19) % 1) * 0.6) * 1000) / 1000,
     },
-    events: [],
+    events: synthesizeCustomerEvents(entry.customer_id, entry.farming_tier, 5),
   }
 }

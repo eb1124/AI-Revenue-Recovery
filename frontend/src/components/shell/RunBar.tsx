@@ -51,6 +51,27 @@ export function RunBar() {
   const [localSpeed, setLocalSpeed] = useState<number>(DEFAULT_SPEED)
   const currentSpeed = streamSpeed ?? localSpeed
 
+  const isPaused = activeRun?.status === 'paused'
+  const canToggle = activeRun !== null && (activeRun.status === 'running' || isPaused)
+  const isMutating = pauseRun.isPending || resumeRun.isPending
+
+  // Section 10.6: "Spacebar -> pause/resume." RunBar is mounted globally
+  // (AppShell header), so this works from any screen, not just the Floor.
+  // Declared before the `!activeRun` early return below (Rules of Hooks).
+  useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key !== ' ') return
+      const target = e.target as HTMLElement | null
+      const isTyping = target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable)
+      if (isTyping || !activeRun || !canToggle || isMutating) return
+      e.preventDefault()
+      if (isPaused) resumeRun.mutate(activeRun.id)
+      else pauseRun.mutate(activeRun.id)
+    }
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
+  }, [canToggle, isMutating, isPaused, activeRun, pauseRun, resumeRun])
+
   if (!activeRun) {
     return (
       <div className="flex h-10 items-center border-b border-rule px-6">
@@ -59,9 +80,6 @@ export function RunBar() {
     )
   }
 
-  const isPaused = activeRun.status === 'paused'
-  const canToggle = activeRun.status === 'running' || isPaused
-  const isMutating = pauseRun.isPending || resumeRun.isPending
   const { progress } = activeRun
   const progressPct = progress.total_days > 0 ? Math.min(100, Math.round((progress.sim_day / progress.total_days) * 100)) : 0
 
